@@ -1,0 +1,201 @@
+RED HAT PXE INSTALL
+PXE - Pre Execution Environment
+1.	Network Config 			Already 
+2.	FTP Based YUM Server 		- Team Corner
+3.	DHCP Server ( Boot Server ) 	- Team Next 
+4.	TFTP Server config 		- TFTP
+5.	PXE Config 				- Server
+6.	Kickstart Config 			- 
+
+Configure Network :-
+Server : 192.168.137.1/24(static)
+Client : 192.168.137.201-220/24(DHCP)
+
+Configure Yum Repo via DVD :
+Insert DVD
+umount /dev/sr0
+mount /dev/sr0 /media
+nano /etc/yum.conf
+
+1) Give IP to server
+2) Enable Network via ifup command
+3) If network does not up then give ifdown eth0 first then give ifup eth0.
+4) To install applications certain dependencies are there that's why we use YUM to install applications.
+5) For that, instead of copying files we simply mount dvd and use it.
+6) You can check mounted folders, dvd by giving mount command.
+7) Likewise for unmounting we use umount /<path> command.
+8) mount the dvd on media  folder
+	mount /dev/sr0 /media
+9) For Configuring YUM create REPO file
+	nano /etc/yum.conf
+	 we can use this file.
+	open file go at bottom of file
+	change only last four lines
+
+	first is repository id i.e. 001
+	second is repository name i.e. server
+	third is baseurl i.e. file location which is 
+	ftp://media /server
+	fourth is gpgcheck=0 we disabled it.
+	ctrl +o to save and ctrl + x to exit.
+	YUM REPO  has been created we can check REPO lists by 	yum repolist command.
+	It shows repo id , repo name and status.
+10) Now we have to install some packages named as below :-
+	yum -y install dhcp tftp-server syslinux httpd vsftpd nfs-	utils system-config-kickstart
+11) For availing the install media on the network we can 	anyone of these httpd or vsftpd or nfs-utils. Here I am 	using vsftpd for it.
+12) To make the installation unattended we install system-	config-kickstart.
+The Advantage of using yum is dependencies are resolved by it automatically.
+
+For Conguring DHCP :-  
+allow booting;
+allow bootp;
+authoritative;
+
+subnet 192.168.137.0 netmask 255.255.255.0
+{ range dynamic-bootp 192.168.137.201 192.168.137.220;
+default-lease-time 600;
+max-lease-time 1200;
+next-server 192.168.137.1;
+filename  "pxelinux.0";
+}
+
+Here, next server is our TFTP SERVER through which we delivers boot files to client.
+Function oif DHCP is to assign the ip to client then tells them that server ip is 192.168.137.1 and the file which is picked from there is "PXELINUX.0".
+In PXE Solutions we use two additional lines i.e. next server and filename + allow booting, bootp and authorative. This is additional part of the PXE.
+
+Now we Configure DHCP first :
+nano /etc/dhcp/dhcpd.conf
+By default the filke is blank and there is a message that you can use sample file from the location : 
+/usr/share/doc/dhcp*/dhcpd.conf.sample
+So we Copy Paste it
+cp /usr/share/doc/dhcp-4.1.1/dhcpd.conf.sample /etc/dhcp/dhcpd.conf
+overwrite yes
+again open the same file and edit it
+remove unnecessary lines
+left lease times , authoritative
+add allow booting, bootp
+change subnet 192.168.137.0,
+netmask 255.255.255.0,
+{ range 192.168.137.201-192.168.137.220
+next-server 192.168.137.1;
+filename "pxelinux.0";
+}
+save and exit then
+service dhcpd start
+If service failed to start then check the file again.
+You can check logs by command
+tail -f /var/log/messages
+After service is started.
+chkconfig dhcpd on
+chkconfig --list dhcpd
+2,3,4,5 on
+
+Configuring TFTP Server :(Give the full permission to each file like ftp,ks,pxelinux)
+
+By default the tftp server is disabled, to enable it use the following command :
+nano /etc/xinetd.d/tftp
+change disable=yes to no
+save and exit.
+
+Then copy files to TFTP SERVER 
+in DVD folder isolinux contains files 
+vmlinuz  is kernel
+initrd.img is image file
+isolinux.cfg ids boot file
+
+cp -a /media/isolinux/* /var/lib/tftpboot
+overwrite yes to all
+
+mkdir /var/lib/tftpboot/pxelinux.cfg
+if it exists then 
+rm -rf /var/lib/tftpboot/pxelinux.cfg/
+then create it
+then within it we copy file
+
+
+
+cp /var/lib/tftpboot/isolinux.cfg /var/lib/tftpboot/pxelinux.cfg/default
+
+ls /var/lib/tftpboot
+
+if pxelinux.0 is present then remove it first
+rm -f /var/lib/tftpboot/pxelinux.0
+cp /usr/share/syslinux/pxelinux.0 /var/lib/tftpboot/
+service xinetd start
+chkconfig xinetd on
+
+Configure FTP Server :
+cp -vr /media/* /var/ftp/pub
+nano /etc/vsftpd/vsftpd.conf
+we have to only check that anonymous_enable=YES
+service vsftpd start
+chkconfig vsftpd on
+setenforce 0
+iptables -L
+system-config-firewall
+disable
+service dhcpd restart
+service xinetd restart
+service vsftpd restart
+
+
+
+
+
+CLIENT DEVICE :-
+First Boot device set to network
+save changes
+Boot Menu comes on screen
+linux repo=ftp://192.168.137.1/pub enter
+skip media check
+Configure TCP/IP
+IPv4 Dynamic
+
+
+On server :
+system-config-kickstart
+make changes
+
+If we see at root we will find anaconda-ks.cfg which is automatically created
+ls /root/
+if we wanna se contents
+less /root/ananconda-ks.cfg
+the options given while installing are automatically saved here as kickstart file
+open this file in system-config-kickstart utility
+make changes
+package selection is available only when yum is working properly
+save the file at
+/var/ftp/pub
+
+
+
+
+to check kickstart file
+less /var/ftp/pub/ks.cfg
+
+Reboot Client Machine
+linux ks=ftp://192.168.137.1/pub/ks.cfg
+give this command to make the installation unattended
+
+
+On server :
+nano /var/ftp/pub/ks.cfg
+where repo set to local location change it to
+remove it or make it a comment
+
+nano /var/lib/tftpboot/pxelinux.cfg/default
+you can change timeout
+in label linux
+add to line
+append initrd=initrd.img linux ks=ftp://192.168.137.1/pub/ks.cfg
+save and exit
+
+On Client :
+Reboot
+when time expires it automatically starts installation
+ort you can select first label
+
+If system RAM is low then it is install in text mode.
+
+
+

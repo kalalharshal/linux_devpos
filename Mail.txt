@@ -1,0 +1,1865 @@
+login as: root
+root@192.168.2.70's password:
+Last login: Mon May 26 10:41:22 2014 from 192.168.5.55
+[root@server ~]# clear
+[root@server ~]# mailq
+Mail queue is empty
+[root@server ~]# mail a
+Subject: aa
+a
+a
+a
+EOT
+[root@server ~]# su - a
+[a@server ~]$ mail
+No mail for a
+[a@server ~]$ exit
+logout
+[root@server ~]# vi /etc/postfix/ma
+main.cf    master.cf
+[root@server ~]# vi /etc/postfix/main.cf
+[root@server ~]# service postfix restart
+Shutting down postfix:                                     [  OK  ]
+Starting postfix:                                          [  OK  ]
+[root@server ~]# mail a
+Subject: a
+a
+EOT
+[root@server ~]# su - a
+[a@server ~]$ mail
+Heirloom Mail version 12.4 7/29/08.  Type ? for help.
+"/var/spool/mail/a": 1 message 1 new
+>N  1 root                  Tue May 27 07:42  18/536   "a"
+&
+Message  1:
+From root@mail.linux.com  Tue May 27 07:42:30 2014
+Return-Path: <root@mail.linux.com>
+X-Original-To: a
+Delivered-To: a@mail.linux.com
+Date: Tue, 27 May 2014 07:42:30 +0530
+To: a@mail.linux.com
+Subject: a
+User-Agent: Heirloom mailx 12.4 7/29/08
+Content-Type: text/plain; charset=us-ascii
+From: root@mail.linux.com (root)
+Status: R
+
+a
+
+&
+At EOF
+& q
+Held 1 message in /var/spool/mail/a
+[a@server ~]$ clear
+[a@server ~]$ exit
+logout
+[root@server ~]# yum install webalizer
+Loaded plugins: aliases, changelog, downloadonly, kabi, presto, protect-packages, refresh-packagekit, rhnplugin,
+              : security, tmprepo, verify, versionlock
+This system is not registered with RHN.
+RHN support will be disabled.
+Loading support for Red Hat kernel ABI
+Setting up Install Process
+Resolving Dependencies
+--> Running transaction check
+---> Package webalizer.i686 0:2.21_02-3.3.el6 set to be updated
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+==================================================================================================================
+ Package                   Arch                 Version                         Repository                   Size
+==================================================================================================================
+Installing:
+ webalizer                 i686                 2.21_02-3.3.el6                 outsiderepo                 126 k
+
+Transaction Summary
+==================================================================================================================
+Install       1 Package(s)
+Upgrade       0 Package(s)
+
+Total download size: 126 k
+Installed size: 329 k
+Is this ok [y/N]: y
+Downloading Packages:
+Setting up and reading Presto delta metadata
+Processing delta metadata
+Package(s) data still to download: 126 k
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing     : webalizer-2.21_02-3.3.el6.i686                                                             1/1
+
+Installed:
+  webalizer.i686 0:2.21_02-3.3.el6
+
+Complete!
+[root@server ~]# cd /etc/httpd/conf.d/
+[root@server conf.d]# ls
+manual.conf  mod_dnssd.conf  mrtg.conf  perl.conf  php.conf  README  webalizer.conf  welcome.conf
+[root@server conf.d]# vi webalizer.conf
+[root@server conf.d]# service httpd restart
+Stopping httpd:                                            [  OK  ]
+Starting httpd:                                            [  OK  ]
+[root@server conf.d]# webalizer
+Warning: Invalid keyword 'Alias' (webalizer.conf)
+Webalizer V2.21-02 (Linux 2.6.32-71.el6.i686 i686) English
+Using logfile STDIN (clf)
+Creating output in current directory
+Hostname for reports is 'server'
+History file not found...
+^Z
+[1]+  Stopped                 webalizer
+[root@server conf.d]# vi webalizer.conf
+[root@server conf.d]# cd /var/www/usage/
+[root@server usage]# ls
+msfree.png  webalizer.png
+[root@server usage]# webalizer
+No valid records found!
+[root@server usage]# yum install http -y
+Loaded plugins: aliases, changelog, downloadonly, kabi, presto, protect-packages, refresh-packagekit, rhnplugin,
+              : security, tmprepo, verify, versionlock
+This system is not registered with RHN.
+RHN support will be disabled.
+Loading support for Red Hat kernel ABI
+Setting up Install Process
+No package http available.
+Error: Nothing to do
+[root@server usage]# yum install httpd -y
+Loaded plugins: aliases, changelog, downloadonly, kabi, presto, protect-packages, refresh-packagekit, rhnplugin,
+              : security, tmprepo, verify, versionlock
+This system is not registered with RHN.
+RHN support will be disabled.
+Loading support for Red Hat kernel ABI
+Setting up Install Process
+Package httpd-2.2.15-5.el6.i686 already installed and latest version
+Nothing to do
+[root@server usage]# clear
+[root@server usage]# cd /var/log/httpd/
+[root@server httpd]# ls
+access_log           access_log-20140513  access_log-20140527  error_log-20140507  error_log-20140519
+access_log-20140507  access_log-20140522  error_log            error_log-20140512  error_log-20140525
+[root@server httpd]# more access_log-20140513
+192.168.2.151 - - [12/May/2014:10:00:30 +0530] "GET /pub/rhel/repodata/repomd.xml HTTP/1.1" 404 306 "-" "urlgrabbe
+r/3.9.1 yum/3.2.27"
+192.168.2.151 - - [12/May/2014:10:01:05 +0530] "GET /pub/rhel/repodata/repomd.xml HTTP/1.1" 404 306 "-" "urlgrabbe
+r/3.9.1 yum/3.2.27"
+192.168.2.151 - - [12/May/2014:10:02:12 +0530] "GET /pub/rhel/repodata/repomd.xml HTTP/1.1" 404 306 "-" "urlgrabbe
+r/3.9.1 yum/3.2.27"
+192.168.2.151 - - [12/May/2014:10:03:16 +0530] "GET /pub/rhel/repodata/repomd.xml HTTP/1.1" 404 306 "-" "urlgrabbe
+r/3.9.1 yum/3.2.27"
+192.168.2.151 - - [12/May/2014:10:06:45 +0530] "GET /pub/rhel/repodata/repomd.xml HTTP/1.1" 404 306 "-" "urlgrabbe
+r/3.9.1 yum/3.2.27"
+192.168.2.151 - - [12/May/2014:10:21:02 +0530] "GET /pub/rhel/repodata/repomd.xml HTTP/1.1" 404 306 "-" "urlgrabbe
+r/3.9.1 yum/3.2.27"
+192.168.2.151 - - [12/May/2014:10:21:34 +0530] "GET /pub/rhel/repodata/repomd.xml HTTP/1.1" 404 306 "-" "urlgrabbe
+r/3.9.1 yum/3.2.27"
+[root@server httpd]# elinks http://192.168.2.70
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     +--------------------------------------+
+                                     ¦                                      ¦
+                                     ¦  Do you really want to exit ELinks?  ¦
+                                     ¦                                      ¦
+                                     ¦          [ Yes ]   [ No ]            ¦
+                                     +--------------------------------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Request sent                                                                                             [------]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server httpd]# useradd -d /var/www/html/mainweb mainweb
+[root@server httpd]# su - mainweb
+[mainweb@server ~]$ vi index.html
+[mainweb@server ~]$ cd ..
+[mainweb@server html]$ ls
+itop  mainweb
+[mainweb@server html]$ chmod 755 mainweb/
+[mainweb@server html]$ vi /etc/httpd/conf/httpd.conf
+[mainweb@server html]$ exut
+-bash: exut: command not found
+[mainweb@server html]$ exit
+logout
+[root@server httpd]# vi /etc/httpd/conf/httpd.conf
+[root@server httpd]# serive httpd restart
+-bash: serive: command not found
+[root@server httpd]# service httpd restart
+Stopping httpd:                                            [  OK  ]
+Starting httpd:                                            [  OK  ]
+[root@server httpd]# elink http://192.168.2.70
+-bash: elink: command not found
+[root@server httpd]# elinks http://192.168.2.70
+                                                                                             http://192.168.2.70/
+   our website
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     +--------------------------------------+
+                                     ¦                                      ¦
+                                     ¦  Do you really want to exit ELinks?  ¦
+                                     ¦                                      ¦
+                                     ¦          [ Yes ]   [ No ]            ¦
+                                     +--------------------------------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OK                                                                                                       [------]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server httpd]# webalizer
+[root@server httpd]# crontab -e
+crontab: installing new crontab
+[root@server httpd]# clear
+[root@server httpd]# uname -a
+Linux server 2.6.32-71.el6.i686 #1 SMP Wed Sep 1 01:26:34 EDT 2010 i686 i686 i386 GNU/Linux
+
+[root@server httpd]# service vsftpd restart
+Shutting down vsftpd:                                      [  OK  ]
+Starting vsftpd for vsftpd:                                [  OK  ]
+
+[root@server httpd]# passwd mainweb
+Changing password for user mainweb.
+New password:
+BAD PASSWORD: it is based on a dictionary word
+BAD PASSWORD: is too simple
+Retype new password:
+passwd: all authentication tokens updated successfully.
+
+[root@server httpd]# setenforce 0
+setenforce: SELinux is disabled
+
+[root@server httpd]# cd /var/www/usage/
+
+[root@server usage]# ls
+ctry_usage_201405.png   hourly_usage_201405.png  msfree.png         usage.png
+daily_usage_201405.png  index.html               usage_201405.html  webalizer.png
+
+[root@server usage]# chkconfig sendmail off
+error reading information on service sendmail: No such file or directory
+
+[root@server usage]# chkconfig postfix on
+[root@server usage]# chkconfig dovecot on
+[root@server usage]# chkconfig httpd on
+[root@server usage]# chkconfig vsftpd on
+[root@server usage]# chkconfig xinetd on
+
+[root@server usage]# cd /var/www/html/mainweb/
+[root@server mainweb]# ls
+
+index.html  squirrelmail-1.4.22-2.el6.src.rpm  squirrelmail-1.4.22-4.el6.noarch.rpm.html
+[root@server mainweb]# ls
+index.html                         squirrelmail-1.4.22-4.el6.noarch.rpm
+squirrelmail-1.4.22-2.el6.src.rpm  squirrelmail-1.4.22-4.el6.noarch.rpm.html
+
+[root@server mainweb]# rpm -ivh
+rpm: no packages given for install
+
+[root@server mainweb]# rpm -ivh squirrelmail-1.4.22-4.el6.noarch.rpm
+warning: squirrelmail-1.4.22-4.el6.noarch.rpm: Header V3 RSA/SHA256 Signature, key ID 0608b895: NOKEY
+error: Failed dependencies:
+        hunspell-en is needed by squirrelmail-1.4.22-4.el6.noarch
+        php-mbstring is needed by squirrelmail-1.4.22-4.el6.noarch
+        php-pear-DB is needed by squirrelmail-1.4.22-4.el6.noarch
+[root@server mainweb]# yum install hunspell php-mb* php-pear* -y
+Loaded plugins: aliases, changelog, downloadonly, kabi, presto, protect-packages, refresh-packagekit, rhnplugin,
+              : security, tmprepo, verify, versionlock
+This system is not registered with RHN.
+RHN support will be disabled.
+Loading support for Red Hat kernel ABI
+Setting up Install Process
+Package hunspell-1.2.8-16.el6.i686 already installed and latest version
+No package php-mb* available.
+Package 1:php-pear-1.9.0-2.el6.noarch already installed and latest version
+Nothing to do
+[root@server mainweb]# clear
+
+[root@server mainweb]# ls
+index.html                         squirrelmail-1.4.22-4.el6.noarch.rpm
+squirrelmail-1.4.22-2.el6.src.rpm  squirrelmail-1.4.22-4.el6.noarch.rpm.html
+
+[root@server mainweb]# yum install hunspell php-mb* php-pear* -y
+Loaded plugins: aliases, changelog, downloadonly, kabi, presto, protect-packages, refresh-packagekit, rhnplugin,
+              : security, tmprepo, verify, versionlock
+This system is not registered with RHN.
+RHN support will be disabled.
+Loading support for Red Hat kernel ABI
+Setting up Install Process
+Package hunspell-1.2.8-16.el6.i686 already installed and latest version
+No package php-mb* available.
+Package 1:php-pear-1.9.0-2.el6.noarch already installed and latest version
+Nothing to do
+
+[root@server mainweb]# yum install hunspell*
+Loaded plugins: aliases, changelog, downloadonly, kabi, presto, protect-packages, refresh-packagekit, rhnplugin,
+              : security, tmprepo, verify, versionlock
+This system is not registered with RHN.
+RHN support will be disabled.
+Loading support for Red Hat kernel ABI
+Setting up Install Process
+Package hunspell-1.2.8-16.el6.i686 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package hunspell-ar.noarch 0:0.20080110-4.1.el6 set to be updated
+---> Package hunspell-as.noarch 0:1.0.3-3.1.el6 set to be updated
+---> Package hunspell-az.noarch 0:0.20040827-4.1.el6 set to be updated
+---> Package hunspell-be.noarch 0:1.1-1.1.el6 set to be updated
+---> Package hunspell-ber.noarch 0:0.20080210-3.1.el6 set to be updated
+---> Package hunspell-bg.noarch 0:4.1-5.1.el6 set to be updated
+---> Package hunspell-bn.noarch 1:0.04-2.el6 set to be updated
+---> Package hunspell-br.noarch 1:0.2-2.1.el6 set to be updated
+---> Package hunspell-ca.noarch 0:0.20090630-2.1.el6 set to be updated
+---> Package hunspell-cop.noarch 0:0.2.0-4.1.el6 set to be updated
+---> Package hunspell-cs.noarch 0:20060303-10.el6 set to be updated
+---> Package hunspell-csb.noarch 0:0.20050311-4.1.el6 set to be updated
+---> Package hunspell-cy.noarch 0:0.20040425-5.1.el6 set to be updated
+---> Package hunspell-da.noarch 0:1.7.29-1.1.el6 set to be updated
+---> Package hunspell-de.noarch 0:0.20090107-4.1.el6 set to be updated
+---> Package hunspell-devel.i686 0:1.2.8-16.el6 set to be updated
+---> Package hunspell-el.noarch 1:0.7-5.el6 set to be updated
+---> Package hunspell-eo.noarch 0:0.20041129-3.1.el6 set to be updated
+---> Package hunspell-es.noarch 0:0.20081215-3.1.el6 set to be updated
+---> Package hunspell-et.noarch 0:0.20030606-5.1.el6 set to be updated
+---> Package hunspell-eu.noarch 0:0.20080507-3.1.el6 set to be updated
+---> Package hunspell-fa.noarch 0:0.20070116-3.1.el6 set to be updated
+---> Package hunspell-fj.noarch 0:0.20050811-4.1.el6 set to be updated
+---> Package hunspell-fo.noarch 0:0.2.37-1.1.el6 set to be updated
+---> Package hunspell-fr.noarch 0:3.4-1.1.el6 set to be updated
+---> Package hunspell-fur.noarch 0:0.20050912-4.1.el6 set to be updated
+---> Package hunspell-fy.noarch 0:2.0.0-4.1.el6 set to be updated
+---> Package hunspell-ga.noarch 0:4.4-3.1.el6 set to be updated
+---> Package hunspell-gd.noarch 0:1.0.0-0.3.rc.2.el6 set to be updated
+---> Package hunspell-gl.noarch 0:0.20080515-3.1.el6 set to be updated
+---> Package hunspell-gu.noarch 0:20061015-3.1.el6 set to be updated
+---> Package hunspell-gv.noarch 0:0.20040505-4.1.el6 set to be updated
+---> Package hunspell-he.i686 0:1.1-3.2.el6 set to be updated
+---> Package hunspell-hi.noarch 0:20050726-6.el6 set to be updated
+---> Package hunspell-hil.noarch 1:0.13-1.el6 set to be updated
+---> Package hunspell-hr.noarch 1:0.20040608-4.1.el6 set to be updated
+---> Package hunspell-hsb.noarch 0:0.20060327.2-3.1.el6 set to be updated
+---> Package hunspell-hu.noarch 0:1.5-3.el6 set to be updated
+---> Package hunspell-hy.noarch 0:0.10.1-3.1.el6 set to be updated
+---> Package hunspell-ia.noarch 0:0.20050226-3.1.el6 set to be updated
+---> Package hunspell-id.noarch 0:0.20040812-3.1.el6 set to be updated
+---> Package hunspell-is.noarch 0:0.20090823-1.1.el6 set to be updated
+---> Package hunspell-it.noarch 0:2.4-0.3.20070901.1.el6 set to be updated
+---> Package hunspell-kk.noarch 0:1.1-1.1.el6 set to be updated
+---> Package hunspell-km.noarch 0:1.1-2.1.el6 set to be updated
+---> Package hunspell-kn.noarch 0:1.0.3-2.1.el6 set to be updated
+---> Package hunspell-ko.noarch 0:0.3.3-1.el6 set to be updated
+---> Package hunspell-ku.noarch 0:0.21-6.1.el6 set to be updated
+---> Package hunspell-la.noarch 0:0.20080903-4.1.el6 set to be updated
+---> Package hunspell-lt.noarch 0:1.2.1-5.1.el6 set to be updated
+---> Package hunspell-lv.noarch 0:0.8.2-2.el6 set to be updated
+---> Package hunspell-mai.noarch 0:1.0.1-1.1.el6 set to be updated
+---> Package hunspell-mg.noarch 0:0.20050109-4.1.el6 set to be updated
+---> Package hunspell-mi.noarch 0:0.20080630-3.1.el6 set to be updated
+---> Package hunspell-mk.noarch 0:0.20051126-3.1.el6 set to be updated
+---> Package hunspell-ml.noarch 0:0.1-4.1.el6 set to be updated
+---> Package hunspell-mn.noarch 0:0.20080709-2.1.el6 set to be updated
+---> Package hunspell-mr.noarch 0:20060920-6.1.el6 set to be updated
+---> Package hunspell-ms.noarch 0:0.20050117-4.1.el6 set to be updated
+---> Package hunspell-mt.noarch 0:0.20020708-4.1.el6 set to be updated
+---> Package hunspell-nb.noarch 0:2.0.10-5.1.el6 set to be updated
+---> Package hunspell-nds.noarch 0:0.1-3.1.el6 set to be updated
+---> Package hunspell-ne.noarch 0:20080425-1.1.el6 set to be updated
+---> Package hunspell-nl.noarch 0:1.10-2.el6 set to be updated
+---> Package hunspell-nn.noarch 0:2.0.10-5.1.el6 set to be updated
+---> Package hunspell-nr.noarch 0:0.20060120-4.1.el6 set to be updated
+---> Package hunspell-nso.noarch 0:0.20060120-3.1.el6 set to be updated
+---> Package hunspell-ny.noarch 0:0.20050108-4.1.el6 set to be updated
+---> Package hunspell-oc.noarch 0:0.5-3.1.el6 set to be updated
+---> Package hunspell-or.noarch 1:0.03-1.el6 set to be updated
+---> Package hunspell-pa.noarch 0:20050726-4.1.el6 set to be updated
+---> Package hunspell-pl.noarch 0:0.20090908-1.1.el6 set to be updated
+---> Package hunspell-pt.noarch 0:0.20090702-4.el6 set to be updated
+---> Package hunspell-ro.noarch 0:3.3-1.el6 set to be updated
+---> Package hunspell-ru.noarch 1:0.99f7-4.1.el6 set to be updated
+---> Package hunspell-rw.noarch 0:0.20050109-3.1.el6 set to be updated
+---> Package hunspell-sc.noarch 0:0.20081101-4.1.el6 set to be updated
+---> Package hunspell-si.noarch 0:0.2.1-2.el6 set to be updated
+---> Package hunspell-sk.noarch 1:0.20090330-2.1.el6 set to be updated
+---> Package hunspell-sl.noarch 0:0.20070127-4.1.el6 set to be updated
+---> Package hunspell-so.noarch 0:0.1.2-2.1.el6 set to be updated
+---> Package hunspell-sq.noarch 0:1.6-3.1.el6 set to be updated
+---> Package hunspell-sr.noarch 0:0.20090511-2.1.el6 set to be updated
+---> Package hunspell-ss.noarch 0:0.20060705-3.1.el6 set to be updated
+---> Package hunspell-st.noarch 0:0.20060123-3.1.el6 set to be updated
+---> Package hunspell-sv.noarch 0:1.39-3.el6 set to be updated
+---> Package hunspell-sw.noarch 0:0.20050819-4.1.el6 set to be updated
+---> Package hunspell-ta.noarch 0:20100226-1.el6 set to be updated
+---> Package hunspell-te.noarch 0:0.20050929-5.el6 set to be updated
+---> Package hunspell-tet.noarch 0:0.20050108-5.1.el6 set to be updated
+---> Package hunspell-th.noarch 0:0.20061212-4.1.el6 set to be updated
+---> Package hunspell-tk.noarch 0:0.20080213-3.1.el6 set to be updated
+---> Package hunspell-tl.noarch 0:0.20050109-4.1.el6 set to be updated
+---> Package hunspell-tn.noarch 0:0.20060123-5.el6 set to be updated
+---> Package hunspell-ts.noarch 0:0.20060123-3.1.el6 set to be updated
+---> Package hunspell-uk.noarch 0:1.6.0-1.1.el6 set to be updated
+---> Package hunspell-ur.noarch 0:0.64-2.1.el6 set to be updated
+---> Package hunspell-uz.noarch 0:0.6-3.1.el6 set to be updated
+---> Package hunspell-ve.noarch 0:0.20060706-3.1.el6 set to be updated
+---> Package hunspell-vi.noarch 0:0.20080604-3.1.el6 set to be updated
+---> Package hunspell-wa.noarch 0:0.4.15-4.1.el6 set to be updated
+---> Package hunspell-xh.noarch 0:0.20060123-3.1.el6 set to be updated
+---> Package hunspell-zu.noarch 0:0.20060120-4.1.el6 set to be updated
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+==================================================================================================================
+ Package                    Arch               Version                              Repository               Size
+==================================================================================================================
+Installing:
+ hunspell-ar                noarch             0.20080110-4.1.el6                   outsiderepo             267 k
+ hunspell-as                noarch             1.0.3-3.1.el6                        outsiderepo              87 k
+ hunspell-az                noarch             0.20040827-4.1.el6                   outsiderepo              64 k
+ hunspell-be                noarch             1.1-1.1.el6                          outsiderepo             3.3 M
+ hunspell-ber               noarch             0.20080210-3.1.el6                   outsiderepo              15 k
+ hunspell-bg                noarch             4.1-5.1.el6                          outsiderepo             288 k
+ hunspell-bn                noarch             1:0.04-2.el6                         outsiderepo             1.0 M
+ hunspell-br                noarch             1:0.2-2.1.el6                        outsiderepo             1.9 M
+ hunspell-ca                noarch             0.20090630-2.1.el6                   outsiderepo             331 k
+ hunspell-cop               noarch             0.2.0-4.1.el6                        outsiderepo              48 k
+ hunspell-cs                noarch             20060303-10.el6                      outsiderepo             913 k
+ hunspell-csb               noarch             0.20050311-4.1.el6                   outsiderepo              29 k
+ hunspell-cy                noarch             0.20040425-5.1.el6                   outsiderepo             627 k
+ hunspell-da                noarch             1.7.29-1.1.el6                       outsiderepo             320 k
+ hunspell-de                noarch             0.20090107-4.1.el6                   outsiderepo             873 k
+ hunspell-devel             i686               1.2.8-16.el6                         outsiderepo              54 k
+ hunspell-el                noarch             1:0.7-5.el6                          outsiderepo             1.4 M
+ hunspell-eo                noarch             0.20041129-3.1.el6                   outsiderepo              94 k
+ hunspell-es                noarch             0.20081215-3.1.el6                   outsiderepo             314 k
+ hunspell-et                noarch             0.20030606-5.1.el6                   outsiderepo             763 k
+ hunspell-eu                noarch             0.20080507-3.1.el6                   outsiderepo             784 k
+ hunspell-fa                noarch             0.20070116-3.1.el6                   outsiderepo             849 k
+ hunspell-fj                noarch             0.20050811-4.1.el6                   outsiderepo              86 k
+ hunspell-fo                noarch             0.2.37-1.1.el6                       outsiderepo             334 k
+ hunspell-fr                noarch             3.4-1.1.el6                          outsiderepo             258 k
+ hunspell-fur               noarch             0.20050912-4.1.el6                   outsiderepo             127 k
+ hunspell-fy                noarch             2.0.0-4.1.el6                        outsiderepo             802 k
+ hunspell-ga                noarch             4.4-3.1.el6                          outsiderepo             319 k
+ hunspell-gd                noarch             1.0.0-0.3.rc.2.el6                   outsiderepo             465 k
+ hunspell-gl                noarch             0.20080515-3.1.el6                   outsiderepo             207 k
+ hunspell-gu                noarch             20061015-3.1.el6                     outsiderepo             596 k
+ hunspell-gv                noarch             0.20040505-4.1.el6                   outsiderepo             106 k
+ hunspell-he                i686               1.1-3.2.el6                          outsiderepo             454 k
+ hunspell-hi                noarch             20050726-6.el6                       outsiderepo              69 k
+ hunspell-hil               noarch             1:0.13-1.el6                         outsiderepo              70 k
+ hunspell-hr                noarch             1:0.20040608-4.1.el6                 outsiderepo             711 k
+ hunspell-hsb               noarch             0.20060327.2-3.1.el6                 outsiderepo             165 k
+ hunspell-hu                noarch             1.5-3.el6                            outsiderepo             611 k
+ hunspell-hy                noarch             0.10.1-3.1.el6                       outsiderepo             429 k
+ hunspell-ia                noarch             0.20050226-3.1.el6                   outsiderepo              91 k
+ hunspell-id                noarch             0.20040812-3.1.el6                   outsiderepo             116 k
+ hunspell-is                noarch             0.20090823-1.1.el6                   outsiderepo             611 k
+ hunspell-it                noarch             2.4-0.3.20070901.1.el6               outsiderepo             365 k
+ hunspell-kk                noarch             1.1-1.1.el6                          outsiderepo             203 k
+ hunspell-km                noarch             1.1-2.1.el6                          outsiderepo             355 k
+ hunspell-kn                noarch             1.0.3-2.1.el6                        outsiderepo             274 k
+ hunspell-ko                noarch             0.3.3-1.el6                          outsiderepo             774 k
+ hunspell-ku                noarch             0.21-6.1.el6                         outsiderepo              42 k
+ hunspell-la                noarch             0.20080903-4.1.el6                   outsiderepo             142 k
+ hunspell-lt                noarch             1.2.1-5.1.el6                        outsiderepo             344 k
+ hunspell-lv                noarch             0.8.2-2.el6                          outsiderepo             624 k
+ hunspell-mai               noarch             1.0.1-1.1.el6                        outsiderepo             197 k
+ hunspell-mg                noarch             0.20050109-4.1.el6                   outsiderepo              61 k
+ hunspell-mi                noarch             0.20080630-3.1.el6                   outsiderepo              83 k
+ hunspell-mk                noarch             0.20051126-3.1.el6                   outsiderepo             497 k
+ hunspell-ml                noarch             0.1-4.1.el6                          outsiderepo             735 k
+ hunspell-mn                noarch             0.20080709-2.1.el6                   outsiderepo             469 k
+ hunspell-mr                noarch             20060920-6.1.el6                     outsiderepo              62 k
+ hunspell-ms                noarch             0.20050117-4.1.el6                   outsiderepo              86 k
+ hunspell-mt                noarch             0.20020708-4.1.el6                   outsiderepo             1.5 M
+ hunspell-nb                noarch             2.0.10-5.1.el6                       outsiderepo             1.2 M
+ hunspell-nds               noarch             0.1-3.1.el6                          outsiderepo              32 k
+ hunspell-ne                noarch             20080425-1.1.el6                     outsiderepo             166 k
+ hunspell-nl                noarch             1.10-2.el6                           outsiderepo             930 k
+ hunspell-nn                noarch             2.0.10-5.1.el6                       outsiderepo             764 k
+ hunspell-nr                noarch             0.20060120-4.1.el6                   outsiderepo              86 k
+ hunspell-nso               noarch             0.20060120-3.1.el6                   outsiderepo              39 k
+ hunspell-ny                noarch             0.20050108-4.1.el6                   outsiderepo              27 k
+ hunspell-oc                noarch             0.5-3.1.el6                          outsiderepo             177 k
+ hunspell-or                noarch             1:0.03-1.el6                         outsiderepo              17 k
+ hunspell-pa                noarch             20050726-4.1.el6                     outsiderepo              22 k
+ hunspell-pl                noarch             0.20090908-1.1.el6                   outsiderepo             1.0 M
+ hunspell-pt                noarch             0.20090702-4.el6                     outsiderepo             1.4 M
+ hunspell-ro                noarch             3.3-1.el6                            outsiderepo             502 k
+ hunspell-ru                noarch             1:0.99f7-4.1.el6                     outsiderepo             448 k
+ hunspell-rw                noarch             0.20050109-3.1.el6                   outsiderepo              26 k
+ hunspell-sc                noarch             0.20081101-4.1.el6                   outsiderepo             345 k
+ hunspell-si                noarch             0.2.1-2.el6                          outsiderepo             235 k
+ hunspell-sk                noarch             1:0.20090330-2.1.el6                 outsiderepo             553 k
+ hunspell-sl                noarch             0.20070127-4.1.el6                   outsiderepo             1.0 M
+ hunspell-so                noarch             0.1.2-2.1.el6                        outsiderepo              31 k
+ hunspell-sq                noarch             1.6-3.1.el6                          outsiderepo             542 k
+ hunspell-sr                noarch             0.20090511-2.1.el6                   outsiderepo             1.0 M
+ hunspell-ss                noarch             0.20060705-3.1.el6                   outsiderepo              87 k
+ hunspell-st                noarch             0.20060123-3.1.el6                   outsiderepo              40 k
+ hunspell-sv                noarch             1.39-3.el6                           outsiderepo             296 k
+ hunspell-sw                noarch             0.20050819-4.1.el6                   outsiderepo             220 k
+ hunspell-ta                noarch             20100226-1.el6                       outsiderepo             473 k
+ hunspell-te                noarch             0.20050929-5.el6                     outsiderepo             520 k
+ hunspell-tet               noarch             0.20050108-5.1.el6                   outsiderepo              38 k
+ hunspell-th                noarch             0.20061212-4.1.el6                   outsiderepo             148 k
+ hunspell-tk                noarch             0.20080213-3.1.el6                   outsiderepo              38 k
+ hunspell-tl                noarch             0.20050109-4.1.el6                   outsiderepo              52 k
+ hunspell-tn                noarch             0.20060123-5.el6                     outsiderepo              45 k
+ hunspell-ts                noarch             0.20060123-3.1.el6                   outsiderepo              35 k
+ hunspell-uk                noarch             1.6.0-1.1.el6                        outsiderepo             475 k
+ hunspell-ur                noarch             0.64-2.1.el6                         outsiderepo             308 k
+ hunspell-uz                noarch             0.6-3.1.el6                          outsiderepo             284 k
+ hunspell-ve                noarch             0.20060706-3.1.el6                   outsiderepo              50 k
+ hunspell-vi                noarch             0.20080604-3.1.el6                   outsiderepo              16 k
+ hunspell-wa                noarch             0.4.15-4.1.el6                       outsiderepo              69 k
+ hunspell-xh                noarch             0.20060123-3.1.el6                   outsiderepo              80 k
+ hunspell-zu                noarch             0.20060120-4.1.el6                   outsiderepo             264 k
+
+Transaction Summary
+==================================================================================================================
+Install     103 Package(s)
+Upgrade       0 Package(s)
+
+Total download size: 41 M
+Installed size: 214 M
+Is this ok [y/N]: y
+Downloading Packages:
+Setting up and reading Presto delta metadata
+Processing delta metadata
+Package(s) data still to download: 41 M
+------------------------------------------------------------------------------------------------------------------
+Total                                                                              32 MB/s |  41 MB     00:01
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing     : hunspell-nn-2.0.10-5.1.el6.noarch                                                        1/103
+  Installing     : hunspell-hu-1.5-3.el6.noarch                                                             2/103
+  Installing     : hunspell-sl-0.20070127-4.1.el6.noarch                                                    3/103
+  Installing     : hunspell-sv-1.39-3.el6.noarch                                                            4/103
+  Installing     : hunspell-kk-1.1-1.1.el6.noarch                                                           5/103
+  Installing     : hunspell-pl-0.20090908-1.1.el6.noarch                                                    6/103
+  Installing     : hunspell-st-0.20060123-3.1.el6.noarch                                                    7/103
+  Installing     : 1:hunspell-hil-0.13-1.el6.noarch                                                         8/103
+  Installing     : 1:hunspell-br-0.2-2.1.el6.noarch                                                         9/103
+  Installing     : hunspell-az-0.20040827-4.1.el6.noarch                                                   10/103
+  Installing     : hunspell-mt-0.20020708-4.1.el6.noarch                                                   11/103
+  Installing     : 1:hunspell-sk-0.20090330-2.1.el6.noarch                                                 12/103
+  Installing     : hunspell-kn-1.0.3-2.1.el6.noarch                                                        13/103
+  Installing     : hunspell-tn-0.20060123-5.el6.noarch                                                     14/103
+  Installing     : hunspell-cy-0.20040425-5.1.el6.noarch                                                   15/103
+  Installing     : hunspell-ku-0.21-6.1.el6.noarch                                                         16/103
+  Installing     : hunspell-mg-0.20050109-4.1.el6.noarch                                                   17/103
+  Installing     : 1:hunspell-or-0.03-1.el6.noarch                                                         18/103
+  Installing     : hunspell-pt-0.20090702-4.el6.noarch                                                     19/103
+  Installing     : hunspell-it-2.4-0.3.20070901.1.el6.noarch                                               20/103
+  Installing     : hunspell-fa-0.20070116-3.1.el6.noarch                                                   21/103
+  Installing     : hunspell-da-1.7.29-1.1.el6.noarch                                                       22/103
+  Installing     : hunspell-bg-4.1-5.1.el6.noarch                                                          23/103
+  Installing     : hunspell-fur-0.20050912-4.1.el6.noarch                                                  24/103
+  Installing     : hunspell-wa-0.4.15-4.1.el6.noarch                                                       25/103
+  Installing     : hunspell-ber-0.20080210-3.1.el6.noarch                                                  26/103
+  Installing     : hunspell-nb-2.0.10-5.1.el6.noarch                                                       27/103
+  Installing     : hunspell-csb-0.20050311-4.1.el6.noarch                                                  28/103
+  Installing     : hunspell-cop-0.2.0-4.1.el6.noarch                                                       29/103
+  Installing     : hunspell-ts-0.20060123-3.1.el6.noarch                                                   30/103
+  Installing     : hunspell-fo-0.2.37-1.1.el6.noarch                                                       31/103
+  Installing     : 1:hunspell-hr-0.20040608-4.1.el6.noarch                                                 32/103
+  Installing     : hunspell-lv-0.8.2-2.el6.noarch                                                          33/103
+  Installing     : hunspell-mai-1.0.1-1.1.el6.noarch                                                       34/103
+  Installing     : hunspell-fr-3.4-1.1.el6.noarch                                                          35/103
+  Installing     : hunspell-uz-0.6-3.1.el6.noarch                                                          36/103
+  Installing     : hunspell-mn-0.20080709-2.1.el6.noarch                                                   37/103
+  Installing     : 1:hunspell-ru-0.99f7-4.1.el6.noarch                                                     38/103
+  Installing     : hunspell-ms-0.20050117-4.1.el6.noarch                                                   39/103
+  Installing     : hunspell-nr-0.20060120-4.1.el6.noarch                                                   40/103
+  Installing     : 1:hunspell-el-0.7-5.el6.noarch                                                          41/103
+  Installing     : hunspell-xh-0.20060123-3.1.el6.noarch                                                   42/103
+  Installing     : hunspell-tet-0.20050108-5.1.el6.noarch                                                  43/103
+  Installing     : hunspell-vi-0.20080604-3.1.el6.noarch                                                   44/103
+  Installing     : hunspell-id-0.20040812-3.1.el6.noarch                                                   45/103
+  Installing     : hunspell-as-1.0.3-3.1.el6.noarch                                                        46/103
+  Installing     : hunspell-mk-0.20051126-3.1.el6.noarch                                                   47/103
+  Installing     : hunspell-ve-0.20060706-3.1.el6.noarch                                                   48/103
+  Installing     : hunspell-be-1.1-1.1.el6.noarch                                                          49/103
+  Installing     : hunspell-te-0.20050929-5.el6.noarch                                                     50/103
+  Installing     : hunspell-eo-0.20041129-3.1.el6.noarch                                                   51/103
+  Installing     : hunspell-cs-20060303-10.el6.noarch                                                      52/103
+  Installing     : hunspell-ga-4.4-3.1.el6.noarch                                                          53/103
+  Installing     : hunspell-ko-0.3.3-1.el6.noarch                                                          54/103
+  Installing     : hunspell-et-0.20030606-5.1.el6.noarch                                                   55/103
+  Installing     : hunspell-is-0.20090823-1.1.el6.noarch                                                   56/103
+  Installing     : hunspell-de-0.20090107-4.1.el6.noarch                                                   57/103
+  Installing     : hunspell-gu-20061015-3.1.el6.noarch                                                     58/103
+  Installing     : hunspell-ar-0.20080110-4.1.el6.noarch                                                   59/103
+  Installing     : hunspell-ne-20080425-1.1.el6.noarch                                                     60/103
+  Installing     : hunspell-he-1.1-3.2.el6.i686                                                            61/103
+  Installing     : hunspell-sq-1.6-3.1.el6.noarch                                                          62/103
+  Installing     : hunspell-tl-0.20050109-4.1.el6.noarch                                                   63/103
+  Installing     : hunspell-es-0.20081215-3.1.el6.noarch                                                   64/103
+  Installing     : hunspell-gv-0.20040505-4.1.el6.noarch                                                   65/103
+  Installing     : hunspell-ml-0.1-4.1.el6.noarch                                                          66/103
+  Installing     : hunspell-nl-1.10-2.el6.noarch                                                           67/103
+  Installing     : 1:hunspell-bn-0.04-2.el6.noarch                                                         68/103
+  Installing     : hunspell-nds-0.1-3.1.el6.noarch                                                         69/103
+  Installing     : hunspell-oc-0.5-3.1.el6.noarch                                                          70/103
+  Installing     : hunspell-sw-0.20050819-4.1.el6.noarch                                                   71/103
+  Installing     : hunspell-uk-1.6.0-1.1.el6.noarch                                                        72/103
+  Installing     : hunspell-ss-0.20060705-3.1.el6.noarch                                                   73/103
+  Installing     : hunspell-mi-0.20080630-3.1.el6.noarch                                                   74/103
+  Installing     : hunspell-gd-1.0.0-0.3.rc.2.el6.noarch                                                   75/103
+  Installing     : hunspell-so-0.1.2-2.1.el6.noarch                                                        76/103
+  Installing     : hunspell-la-0.20080903-4.1.el6.noarch                                                   77/103
+  Installing     : hunspell-ta-20100226-1.el6.noarch                                                       78/103
+  Installing     : hunspell-nso-0.20060120-3.1.el6.noarch                                                  79/103
+  Installing     : hunspell-hi-20050726-6.el6.noarch                                                       80/103
+  Installing     : hunspell-sc-0.20081101-4.1.el6.noarch                                                   81/103
+  Installing     : hunspell-ca-0.20090630-2.1.el6.noarch                                                   82/103
+  Installing     : hunspell-tk-0.20080213-3.1.el6.noarch                                                   83/103
+  Installing     : hunspell-ny-0.20050108-4.1.el6.noarch                                                   84/103
+  Installing     : hunspell-lt-1.2.1-5.1.el6.noarch                                                        85/103
+  Installing     : hunspell-zu-0.20060120-4.1.el6.noarch                                                   86/103
+  Installing     : hunspell-pa-20050726-4.1.el6.noarch                                                     87/103
+  Installing     : hunspell-eu-0.20080507-3.1.el6.noarch                                                   88/103
+  Installing     : hunspell-gl-0.20080515-3.1.el6.noarch                                                   89/103
+  Installing     : hunspell-ia-0.20050226-3.1.el6.noarch                                                   90/103
+  Installing     : hunspell-fy-2.0.0-4.1.el6.noarch                                                        91/103
+  Installing     : hunspell-th-0.20061212-4.1.el6.noarch                                                   92/103
+  Installing     : hunspell-fj-0.20050811-4.1.el6.noarch                                                   93/103
+  Installing     : hunspell-si-0.2.1-2.el6.noarch                                                          94/103
+  Installing     : hunspell-km-1.1-2.1.el6.noarch                                                          95/103
+  Installing     : hunspell-ro-3.3-1.el6.noarch                                                            96/103
+  Installing     : hunspell-rw-0.20050109-3.1.el6.noarch                                                   97/103
+  Installing     : hunspell-hy-0.10.1-3.1.el6.noarch                                                       98/103
+  Installing     : hunspell-hsb-0.20060327.2-3.1.el6.noarch                                                99/103
+  Installing     : hunspell-mr-20060920-6.1.el6.noarch                                                    100/103
+  Installing     : hunspell-sr-0.20090511-2.1.el6.noarch                                                  101/103
+  Installing     : hunspell-ur-0.64-2.1.el6.noarch                                                        102/103
+  Installing     : hunspell-devel-1.2.8-16.el6.i686                                                       103/103
+
+Installed:
+  hunspell-ar.noarch 0:0.20080110-4.1.el6                   hunspell-as.noarch 0:1.0.3-3.1.el6
+  hunspell-az.noarch 0:0.20040827-4.1.el6                   hunspell-be.noarch 0:1.1-1.1.el6
+  hunspell-ber.noarch 0:0.20080210-3.1.el6                  hunspell-bg.noarch 0:4.1-5.1.el6
+  hunspell-bn.noarch 1:0.04-2.el6                           hunspell-br.noarch 1:0.2-2.1.el6
+  hunspell-ca.noarch 0:0.20090630-2.1.el6                   hunspell-cop.noarch 0:0.2.0-4.1.el6
+  hunspell-cs.noarch 0:20060303-10.el6                      hunspell-csb.noarch 0:0.20050311-4.1.el6
+  hunspell-cy.noarch 0:0.20040425-5.1.el6                   hunspell-da.noarch 0:1.7.29-1.1.el6
+  hunspell-de.noarch 0:0.20090107-4.1.el6                   hunspell-devel.i686 0:1.2.8-16.el6
+  hunspell-el.noarch 1:0.7-5.el6                            hunspell-eo.noarch 0:0.20041129-3.1.el6
+  hunspell-es.noarch 0:0.20081215-3.1.el6                   hunspell-et.noarch 0:0.20030606-5.1.el6
+  hunspell-eu.noarch 0:0.20080507-3.1.el6                   hunspell-fa.noarch 0:0.20070116-3.1.el6
+  hunspell-fj.noarch 0:0.20050811-4.1.el6                   hunspell-fo.noarch 0:0.2.37-1.1.el6
+  hunspell-fr.noarch 0:3.4-1.1.el6                          hunspell-fur.noarch 0:0.20050912-4.1.el6
+  hunspell-fy.noarch 0:2.0.0-4.1.el6                        hunspell-ga.noarch 0:4.4-3.1.el6
+  hunspell-gd.noarch 0:1.0.0-0.3.rc.2.el6                   hunspell-gl.noarch 0:0.20080515-3.1.el6
+  hunspell-gu.noarch 0:20061015-3.1.el6                     hunspell-gv.noarch 0:0.20040505-4.1.el6
+  hunspell-he.i686 0:1.1-3.2.el6                            hunspell-hi.noarch 0:20050726-6.el6
+  hunspell-hil.noarch 1:0.13-1.el6                          hunspell-hr.noarch 1:0.20040608-4.1.el6
+  hunspell-hsb.noarch 0:0.20060327.2-3.1.el6                hunspell-hu.noarch 0:1.5-3.el6
+  hunspell-hy.noarch 0:0.10.1-3.1.el6                       hunspell-ia.noarch 0:0.20050226-3.1.el6
+  hunspell-id.noarch 0:0.20040812-3.1.el6                   hunspell-is.noarch 0:0.20090823-1.1.el6
+  hunspell-it.noarch 0:2.4-0.3.20070901.1.el6               hunspell-kk.noarch 0:1.1-1.1.el6
+  hunspell-km.noarch 0:1.1-2.1.el6                          hunspell-kn.noarch 0:1.0.3-2.1.el6
+  hunspell-ko.noarch 0:0.3.3-1.el6                          hunspell-ku.noarch 0:0.21-6.1.el6
+  hunspell-la.noarch 0:0.20080903-4.1.el6                   hunspell-lt.noarch 0:1.2.1-5.1.el6
+  hunspell-lv.noarch 0:0.8.2-2.el6                          hunspell-mai.noarch 0:1.0.1-1.1.el6
+  hunspell-mg.noarch 0:0.20050109-4.1.el6                   hunspell-mi.noarch 0:0.20080630-3.1.el6
+  hunspell-mk.noarch 0:0.20051126-3.1.el6                   hunspell-ml.noarch 0:0.1-4.1.el6
+  hunspell-mn.noarch 0:0.20080709-2.1.el6                   hunspell-mr.noarch 0:20060920-6.1.el6
+  hunspell-ms.noarch 0:0.20050117-4.1.el6                   hunspell-mt.noarch 0:0.20020708-4.1.el6
+  hunspell-nb.noarch 0:2.0.10-5.1.el6                       hunspell-nds.noarch 0:0.1-3.1.el6
+  hunspell-ne.noarch 0:20080425-1.1.el6                     hunspell-nl.noarch 0:1.10-2.el6
+  hunspell-nn.noarch 0:2.0.10-5.1.el6                       hunspell-nr.noarch 0:0.20060120-4.1.el6
+  hunspell-nso.noarch 0:0.20060120-3.1.el6                  hunspell-ny.noarch 0:0.20050108-4.1.el6
+  hunspell-oc.noarch 0:0.5-3.1.el6                          hunspell-or.noarch 1:0.03-1.el6
+  hunspell-pa.noarch 0:20050726-4.1.el6                     hunspell-pl.noarch 0:0.20090908-1.1.el6
+  hunspell-pt.noarch 0:0.20090702-4.el6                     hunspell-ro.noarch 0:3.3-1.el6
+  hunspell-ru.noarch 1:0.99f7-4.1.el6                       hunspell-rw.noarch 0:0.20050109-3.1.el6
+  hunspell-sc.noarch 0:0.20081101-4.1.el6                   hunspell-si.noarch 0:0.2.1-2.el6
+  hunspell-sk.noarch 1:0.20090330-2.1.el6                   hunspell-sl.noarch 0:0.20070127-4.1.el6
+  hunspell-so.noarch 0:0.1.2-2.1.el6                        hunspell-sq.noarch 0:1.6-3.1.el6
+  hunspell-sr.noarch 0:0.20090511-2.1.el6                   hunspell-ss.noarch 0:0.20060705-3.1.el6
+  hunspell-st.noarch 0:0.20060123-3.1.el6                   hunspell-sv.noarch 0:1.39-3.el6
+  hunspell-sw.noarch 0:0.20050819-4.1.el6                   hunspell-ta.noarch 0:20100226-1.el6
+  hunspell-te.noarch 0:0.20050929-5.el6                     hunspell-tet.noarch 0:0.20050108-5.1.el6
+  hunspell-th.noarch 0:0.20061212-4.1.el6                   hunspell-tk.noarch 0:0.20080213-3.1.el6
+  hunspell-tl.noarch 0:0.20050109-4.1.el6                   hunspell-tn.noarch 0:0.20060123-5.el6
+  hunspell-ts.noarch 0:0.20060123-3.1.el6                   hunspell-uk.noarch 0:1.6.0-1.1.el6
+  hunspell-ur.noarch 0:0.64-2.1.el6                         hunspell-uz.noarch 0:0.6-3.1.el6
+  hunspell-ve.noarch 0:0.20060706-3.1.el6                   hunspell-vi.noarch 0:0.20080604-3.1.el6
+  hunspell-wa.noarch 0:0.4.15-4.1.el6                       hunspell-xh.noarch 0:0.20060123-3.1.el6
+  hunspell-zu.noarch 0:0.20060120-4.1.el6
+
+Complete!
+
+[root@server mainweb]# rpm -ivh squirrelmail-1.4.22-4.el6.noarch.rpm
+warning: squirrelmail-1.4.22-4.el6.noarch.rpm: Header V3 RSA/SHA256 Signature, key ID 0608b895: NOKEY
+error: Failed dependencies:
+        hunspell-en is needed by squirrelmail-1.4.22-4.el6.noarch
+        php-mbstring is needed by squirrelmail-1.4.22-4.el6.noarch
+        php-pear-DB is needed by squirrelmail-1.4.22-4.el6.noarch
+
+[root@server mainweb]# clear
+
+[root@server mainweb]# rpm -ivh squirrelmail-1.4.22-4.el6.noarch.rpm
+warning: squirrelmail-1.4.22-4.el6.noarch.rpm: Header V3 RSA/SHA256 Signature, key ID 0608b895: NOKEY
+error: Failed dependencies:
+        hunspell-en is needed by squirrelmail-1.4.22-4.el6.noarch
+        php-mbstring is needed by squirrelmail-1.4.22-4.el6.noarch
+        php-pear-DB is needed by squirrelmail-1.4.22-4.el6.noarch
+
+[root@server mainweb]# yum install
+Loaded plugins: aliases, changelog, downloadonly, kabi, presto, protect-packages, refresh-packagekit, rhnplugin,
+              : security, tmprepo, verify, versionlock
+This system is not registered with RHN.
+RHN support will be disabled.
+Loading support for Red Hat kernel ABI
+Error: Need to pass a list of pkgs to install
+Usage: yum [options] COMMAND
+
+List of Commands:
+
+alias          Adds or lists aliases
+changelog      Display changelog data, since a specified time, on a group of packages
+check          Check for problems in the rpmdb
+check-update   Check for available package updates
+clean          Remove cached data
+deplist        List a package's dependencies
+distribution-synchronization Synchronize installed packages to the latest available versions
+downgrade      downgrade a package
+erase          Remove a package or packages from your system
+groupinfo      Display details about a package group
+groupinstall   Install the packages in a group on your system
+grouplist      List available package groups
+groupremove    Remove the packages in a group from your system
+help           Display a helpful usage message
+history        Display, or use, the transaction history
+info           Display details about a package or group of packages
+info-updateinfo Returns security data for the packages listed, that affects your system
+install        Install a package or packages on your system
+list           List a package or groups of packages
+list-updateinfo Returns security data for the packages listed, that affects your system
+localinstall   Install a local RPM
+makecache      Generate the metadata cache
+provides       Find what package provides the given value
+reinstall      reinstall a package
+repolist       Display the configured software repositories
+resolvedep     Determine which package provides the given dependency
+search         Search package details for the given string
+shell          Run an interactive yum shell
+summary-updateinfo Returns security data for the packages listed, that affects your system
+update         Update a package or packages on your system
+update-minimal Works like update, but goes to the 'newest' package match which fixes a problem that affects your system
+upgrade        Update packages taking obsoletes into account
+verify-all     Verify packages and display data on bad verifications
+verify-multilib Verify packages and display data on bad verifications
+verify-rpm     Verify packages and display data on bad verifications
+version        Display a version for the machine and/or available repos.
+versionlock    Control package version locks.
+
+
+Options:
+  -h, --help            show this help message and exit
+  -t, --tolerant        be tolerant of errors
+  -C, --cacheonly       run entirely from system cache, don't update cache
+  -c [config file], --config=[config file]
+                        config file location
+  -R [minutes], --randomwait=[minutes]
+                        maximum command wait time
+  -d [debug level], --debuglevel=[debug level]
+                        debugging output level
+  --showduplicates      show duplicates, in repos, in list/search commands
+  -e [error level], --errorlevel=[error level]
+                        error output level
+  --rpmverbosity=[debug level name]
+                        debugging output level for rpm
+  -q, --quiet           quiet operation
+  -v, --verbose         verbose operation
+  -y, --assumeyes       answer yes for all questions
+  --version             show Yum version and exit
+  --installroot=[path]  set install root
+  --enablerepo=[repo]   enable one or more repositories (wildcards allowed)
+  --disablerepo=[repo]  disable one or more repositories (wildcards allowed)
+  -x [package], --exclude=[package]
+                        exclude package(s) by name or glob
+  --disableexcludes=[repo]
+                        disable exclude from main, for a repo or for
+                        everything
+  --obsoletes           enable obsoletes processing during updates
+  --noplugins           disable Yum plugins
+  --nogpgcheck          disable gpg signature checking
+  --disableplugin=[plugin]
+                        disable plugins by name
+  --enableplugin=[plugin]
+                        enable plugins by name
+  --skip-broken         skip packages with depsolving problems
+  --color=COLOR         control whether color is used
+  --releasever=RELEASEVER
+                        set value of $releasever in yum config and repo files
+  --disablepresto       disable Presto plugin and don't download any deltarpms
+
+  Plugin Options:
+    --changelog         Show changelog delta of updated packages
+    --downloadonly      don't update, just download
+    --downloaddir=DLDIR
+                        specifies an alternate directory to store packages
+    --override-protection=[package]
+                        remove package from the list of protected packages
+    --security          Include security relevant packages
+    --bugfixes          Include bugfix relevant packages
+    --cve=CVE           Include packages needed to fix the given CVE
+    --bz=BZ             Include packages needed to fix the given BZ
+    --advisory=ADVISORY
+                        Include packages needed to fix the given advisory
+    --tmprepo=[url]     enable one or more repositories from URLs
+    --tmprepo-keep-created
+                        keep created direcotry based tmp. repos.
+    --verify-filenames=VERIFY_FILENAMES
+                        Only verify files matching this
+    --verify-configuration-files=VERIFY_CONFIGURATION_FILES
+                        Verify files tagged as configuration files
+
+[root@server mainweb]# clear
+
+[root@server mainweb]# rpm -ivh squirrelmail-1.4.22-4.el6.noarch.rpm
+warning: squirrelmail-1.4.22-4.el6.noarch.rpm: Header V3 RSA/SHA256 Signature, key ID 0608b895: NOKEY
+error: Failed dependencies:
+        hunspell-en is needed by squirrelmail-1.4.22-4.el6.noarch
+        php-mbstring is needed by squirrelmail-1.4.22-4.el6.noarch
+        php-pear-DB is needed by squirrelmail-1.4.22-4.el6.noarch
+
+[root@server mainweb]# yum install php-mbstring
+Loaded plugins: aliases, changelog, downloadonly, kabi, presto, protect-packages, refresh-packagekit, rhnplugin,
+              : security, tmprepo, verify, versionlock
+This system is not registered with RHN.
+RHN support will be disabled.
+Loading support for Red Hat kernel ABI
+Setting up Install Process
+No package php-mbstring available.
+Error: Nothing to do
+[root@server mainweb]# yum install php-mbstr*
+Loaded plugins: aliases, changelog, downloadonly, kabi, presto, protect-packages, refresh-packagekit, rhnplugin,
+              : security, tmprepo, verify, versionlock
+This system is not registered with RHN.
+RHN support will be disabled.
+Loading support for Red Hat kernel ABI
+Setting up Install Process
+No package php-mbstr* available.
+Error: Nothing to do
+
+[root@server mainweb]# yum install php-pear*
+Loaded plugins: aliases, changelog, downloadonly, kabi, presto, protect-packages, refresh-packagekit, rhnplugin,
+              : security, tmprepo, verify, versionlock
+This system is not registered with RHN.
+RHN support will be disabled.
+Loading support for Red Hat kernel ABI
+Setting up Install Process
+Package 1:php-pear-1.9.0-2.el6.noarch already installed and latest version
+Nothing to do
+
+[root@server mainweb]# clear
+
+[root@server mainweb]# ls
+index.html                         squirrelmail-1.4.22-4.el6.noarch.rpm
+squirrelmail-1.4.22-2.el6.src.rpm  squirrelmail-1.4.22-4.el6.noarch.rpm.html
+
+[root@server mainweb]# rpm -ivh squirrelmail-1.4.22-4.el6.noarch.rpm --force --nodeps
+warning: squirrelmail-1.4.22-4.el6.noarch.rpm: Header V3 RSA/SHA256 Signature, key ID 0608b895: NOKEY
+Preparing...                ########################################### [100%]
+   1:squirrelmail           ########################################### [100%]
+
+[root@server mainweb]# cd /etc/httpd/conf.d
+
+[root@server conf.d]# ls
+manual.conf     mrtg.conf  php.conf  squirrelmail.conf  welcome.conf
+mod_dnssd.conf  perl.conf  README    webalizer.conf
+
+[root@server conf.d]# vi squirrelmail.conf
+
+[root@server conf.d]# service httpd restart
+Stopping httpd:                                            [  OK  ]
+Starting httpd:                                            [  OK  ]
+
+[root@server conf.d]# vi squirrelmail.conf
+
+[root@server conf.d]# cd /usr/share/sq
+sql-bench/    squirrelmail/
+
+[root@server conf.d]# cd /usr/share/squirrelmail/
+
+[root@server squirrelmail]# ls
+
+class  config  functions  help  images  include  index.php  locale  plugins  src  themes
+
+[root@server squirrelmail]# dir
+class  config  functions  help  images  include  index.php  locale  plugins  src  themes
+
+[root@server squirrelmail]# cd config/
+
+[root@server config]# dir
+config_default.php  config_local.php  config.php  conf.pl  index.php
+
+[root@server config]# ./conf.pl
+SquirrelMail Configuration : Read: config.php (1.4.0)
+---------------------------------------------------------
+Main Menu --
+1.  Organization Preferences
+2.  Server Settings
+3.  Folder Defaults
+4.  General Options
+5.  Themes
+6.  Address Books
+7.  Message of the Day (MOTD)
+8.  Plugins
+9.  Database
+10. Languages
+
+D.  Set pre-defined settings for specific IMAP servers
+
+C   Turn color off
+S   Save data
+Q   Quit
+
+Command >> 1
+SquirrelMail Configuration : Read: config.php (1.4.0)
+---------------------------------------------------------
+Organization Preferences
+1.  Organization Name      : SquirrelMail
+2.  Organization Logo      : ../images/sm_logo.png
+3.  Org. Logo Width/Height : (308/111)
+4.  Organization Title     : SquirrelMail $version
+5.  Signout Page           :
+6.  Top Frame              : _top
+7.  Provider link          : http://squirrelmail.org/
+8.  Provider name          : SquirrelMail
+
+R   Return to Main Menu
+C   Turn color off
+S   Save data
+Q   Quit
+
+Command >> 1
+
+We have tried to make the name SquirrelMail as transparent as
+possible.  If you set up an organization name, most places where
+SquirrelMail would take credit will be credited to your organization.
+
+If your Organization Name includes a '$', please precede it with a \.
+Other '$' will be considered the beginning of a variable that
+must be defined before the $org_name is printed.
+$version, for example, is included by default, and will print the
+string representing the current SquirrelMail version.
+
+[SquirrelMail]: OurClass Linux Server
+SquirrelMail Configuration : Read: config.php (1.4.0)
+---------------------------------------------------------
+Organization Preferences
+1.  Organization Name      : OurClass Linux Server
+2.  Organization Logo      : ../images/sm_logo.png
+3.  Org. Logo Width/Height : (308/111)
+4.  Organization Title     : SquirrelMail $version
+5.  Signout Page           :
+6.  Top Frame              : _top
+7.  Provider link          : http://squirrelmail.org/
+8.  Provider name          : SquirrelMail
+
+R   Return to Main Menu
+C   Turn color off
+S   Save data
+Q   Quit
+
+Command >> 4
+
+A title is what is displayed at the top of the browser window in
+the titlebar.  Usually this will end up looking something like:
+"Netscape: SquirrelMail $version"
+
+If your Organization Title includes a '$', please precede it with a \.
+Other '$' will be considered the beginning of a variable that
+must be defined before the $org_title is printed.
+$version, for example, is included by default, and will print the
+string representing the current SquirrelMail version.
+
+[SquirrelMail $version]: OurOrg
+SquirrelMail Configuration : Read: config.php (1.4.0)
+---------------------------------------------------------
+Organization Preferences
+1.  Organization Name      : OurClass Linux Server
+2.  Organization Logo      : ../images/sm_logo.png
+3.  Org. Logo Width/Height : (308/111)
+4.  Organization Title     : OurOrg
+5.  Signout Page           :
+6.  Top Frame              : _top
+7.  Provider link          : http://squirrelmail.org/
+8.  Provider name          : SquirrelMail
+
+R   Return to Main Menu
+C   Turn color off
+S   Save data
+Q   Quit
+
+Command >> 8
+
+Here you can set the name of the link on the right of the page.
+The default is 'SquirrelMail'
+
+[SquirrelMail]: OurTeam
+SquirrelMail Configuration : Read: config.php (1.4.0)
+---------------------------------------------------------
+Organization Preferences
+1.  Organization Name      : OurClass Linux Server
+2.  Organization Logo      : ../images/sm_logo.png
+3.  Org. Logo Width/Height : (308/111)
+4.  Organization Title     : OurOrg
+5.  Signout Page           :
+6.  Top Frame              : _top
+7.  Provider link          : http://squirrelmail.org/
+8.  Provider name          : OurTeam
+
+R   Return to Main Menu
+C   Turn color off
+S   Save data
+Q   Quit
+
+Command >> S
+
+Data saved in config.php
+Press enter to continue...
+SquirrelMail Configuration : Read: config.php (1.4.0)
+---------------------------------------------------------
+Organization Preferences
+1.  Organization Name      : OurClass Linux Server
+2.  Organization Logo      : ../images/sm_logo.png
+3.  Org. Logo Width/Height : (308/111)
+4.  Organization Title     : OurOrg
+5.  Signout Page           :
+6.  Top Frame              : _top
+7.  Provider link          : http://squirrelmail.org/
+8.  Provider name          : OurTeam
+
+R   Return to Main Menu
+C   Turn color off
+S   Save data
+Q   Quit
+
+Command >> q
+
+
+Exiting conf.pl.
+You might want to test your configuration by browsing to
+http://your-squirrelmail-location/src/configtest.php
+Happy SquirrelMailing!
+
+[root@server config]# service postfix restart
+Shutting down postfix:                                     [  OK  ]
+Starting postfix:                                          [  OK  ]
+[root@server config]# service dovecot restart
+Stopping Dovecot Imap:                                     [  OK  ]
+Starting Dovecot Imap:                                     [  OK  ]
+[root@server config]# tail -f /var/log/messages
+May 27 08:00:59 server yum: Installed: hunspell-si-0.2.1-2.el6.noarch
+May 27 08:00:59 server yum: Installed: hunspell-km-1.1-2.1.el6.noarch
+May 27 08:01:00 server yum: Installed: hunspell-ro-3.3-1.el6.noarch
+May 27 08:01:00 server yum: Installed: hunspell-rw-0.20050109-3.1.el6.noarch
+May 27 08:01:01 server yum: Installed: hunspell-hy-0.10.1-3.1.el6.noarch
+May 27 08:01:02 server yum: Installed: hunspell-hsb-0.20060327.2-3.1.el6.noarch
+May 27 08:01:02 server yum: Installed: hunspell-mr-20060920-6.1.el6.noarch
+May 27 08:01:03 server yum: Installed: hunspell-sr-0.20090511-2.1.el6.noarch
+May 27 08:01:04 server yum: Installed: hunspell-ur-0.64-2.1.el6.noarch
+May 27 08:01:05 server yum: Installed: hunspell-devel-1.2.8-16.el6.i686
+
+
+
+
+
+
+
+
+^C
+[root@server config]# tail -f /var/log/maillog
+May 27 08:06:02 server postfix/pickup[12033]: 2F75620379: uid=514 from=<root>
+May 27 08:06:02 server postfix/cleanup[12088]: 2F75620379: message-id=<20140527023602.2F75620379@mail.linux.com>
+May 27 08:06:02 server postfix/qmgr[12034]: 2F75620379: from=<root@mail.linux.com>, size=597, nrcpt=1 (queue active)
+May 27 08:06:02 server postfix/local[12090]: 11F3221918: to=<mark001@mail.linux.com>, orig_to=<mark001>, relay=local, delay=0.23, delays=0.17/0.01/0/0.05, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:06:02 server postfix/qmgr[12034]: 11F3221918: removed
+May 27 08:06:02 server postfix/local[12091]: 2F75620379: to=<vishal@mail.linux.com>, orig_to=<vishal>, relay=local, delay=0.26, delays=0.19/0.01/0/0.06, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:06:02 server postfix/qmgr[12034]: 2F75620379: removed
+May 27 08:06:07 server dovecot: imap-login: Login: user=<a>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=12096, secured
+May 27 08:06:07 server dovecot: imap(a): Error: user a: Initialization failed: mail_location not set and autodetection failed: Mail storage autodetection failed with home=/home/a
+May 27 08:06:07 server dovecot: imap(a): Error: Invalid user settings. Refer to server log for more information.
+
+
+
+
+
+May 27 08:06:47 server dovecot: imap-login: Login: user=<mainweb>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=12100, secured
+May 27 08:06:47 server dovecot: imap(mainweb): Error: user mainweb: Initialization failed: mail_location not set and autodetection failed: Mail storage autodetection failed with home=/var/www/html/mainweb
+May 27 08:06:47 server dovecot: imap(mainweb): Error: Invalid user settings. Refer to server log for more information.
+May 27 08:07:01 server postfix/sendmail[12118]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:07:01 server postfix/sendmail[12118]: warning: or the command is run from a set-uid root process
+May 27 08:07:01 server postfix/sendmail[12118]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:07:01 server postfix/sendmail[12121]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:07:01 server postfix/sendmail[12121]: warning: or the command is run from a set-uid root process
+May 27 08:07:01 server postfix/sendmail[12121]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:07:01 server postfix/pickup[12033]: 3B40221918: uid=505 from=<root>
+May 27 08:07:01 server postfix/cleanup[12088]: 3B40221918: message-id=<20140527023701.3B40221918@mail.linux.com>
+May 27 08:07:01 server postfix/qmgr[12034]: 3B40221918: from=<root@mail.linux.com>, size=594, nrcpt=1 (queue active)
+May 27 08:07:01 server postfix/pickup[12033]: 49E0221916: uid=514 from=<root>
+May 27 08:07:01 server postfix/cleanup[12088]: 49E0221916: message-id=<20140527023701.49E0221916@mail.linux.com>
+May 27 08:07:01 server postfix/qmgr[12034]: 49E0221916: from=<root@mail.linux.com>, size=597, nrcpt=1 (queue active)
+May 27 08:07:01 server postfix/local[12090]: 3B40221918: to=<mark001@mail.linux.com>, orig_to=<mark001>, relay=local, delay=0.17, delays=0.1/0/0/0.06, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:07:01 server postfix/qmgr[12034]: 3B40221918: removed
+May 27 08:07:01 server postfix/local[12091]: 49E0221916: to=<vishal@mail.linux.com>, orig_to=<vishal>, relay=local, delay=0.18, delays=0.15/0/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:07:01 server postfix/qmgr[12034]: 49E0221916: removed
+^C
+[root@server config]# setenforce
+usage:  setenforce [ Enforcing | Permissive | 1 | 0 ]
+
+[root@server config]# setenforce 0
+setenforce: SELinux is disabled
+
+[root@server config]# vi /etc/dovecot/dovecot.conf
+
+[root@server config]# service dovecot restart
+Stopping Dovecot Imap:                                     [  OK  ]
+Starting Dovecot Imap:                                     [  OK  ]
+
+[root@server config]# tail -f /var/log/maillog
+May 27 08:07:01 server postfix/qmgr[12034]: 3B40221918: from=<root@mail.linux.com>, size=594, nrcpt=1 (queue active)
+May 27 08:07:01 server postfix/pickup[12033]: 49E0221916: uid=514 from=<root>
+May 27 08:07:01 server postfix/cleanup[12088]: 49E0221916: message-id=<20140527023701.49E0221916@mail.linux.com>
+May 27 08:07:01 server postfix/qmgr[12034]: 49E0221916: from=<root@mail.linux.com>, size=597, nrcpt=1 (queue active)
+May 27 08:07:01 server postfix/local[12090]: 3B40221918: to=<mark001@mail.linux.com>, orig_to=<mark001>, relay=local, delay=0.17, delays=0.1/0/0/0.06, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:07:01 server postfix/qmgr[12034]: 3B40221918: removed
+May 27 08:07:01 server postfix/local[12091]: 49E0221916: to=<vishal@mail.linux.com>, orig_to=<vishal>, relay=local, delay=0.18, delays=0.15/0/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:07:01 server postfix/qmgr[12034]: 49E0221916: removed
+May 27 08:07:26 server dovecot: master: Warning: Killed with signal 15 (by pid=12145 uid=0 code=kill)
+May 27 08:07:27 server dovecot: master: Dovecot v2.0.beta6 (3156315704ef) starting up (core dumps disabled)
+
+
+
+
+
+
+
+May 27 08:07:41 server dovecot: imap-login: Login: user=<mainweb>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=12164, secured
+May 27 08:07:41 server dovecot: imap(mainweb): Error: user mainweb: Initialization failed: mail_location not set and autodetection failed: Mail storage autodetection failed with home=/var/www/html/mainweb
+May 27 08:07:41 server dovecot: imap(mainweb): Error: Invalid user settings. Refer to server log for more information.
+May 27 08:08:01 server postfix/sendmail[12180]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:08:01 server postfix/sendmail[12180]: warning: or the command is run from a set-uid root process
+May 27 08:08:01 server postfix/sendmail[12180]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:08:01 server postfix/sendmail[12185]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:08:01 server postfix/sendmail[12185]: warning: or the command is run from a set-uid root process
+May 27 08:08:01 server postfix/sendmail[12185]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:08:01 server postfix/pickup[12033]: 65B0C21915: uid=505 from=<root>
+May 27 08:08:01 server postfix/cleanup[12088]: 65B0C21915: message-id=<20140527023801.65B0C21915@mail.linux.com>
+May 27 08:08:01 server postfix/qmgr[12034]: 65B0C21915: from=<root@mail.linux.com>, size=594, nrcpt=1 (queue active)
+May 27 08:08:01 server postfix/pickup[12033]: 7914721913: uid=514 from=<root>
+May 27 08:08:01 server postfix/cleanup[12088]: 7914721913: message-id=<20140527023801.7914721913@mail.linux.com>
+May 27 08:08:01 server postfix/qmgr[12034]: 7914721913: from=<root@mail.linux.com>, size=597, nrcpt=1 (queue active)
+May 27 08:08:01 server postfix/local[12090]: 65B0C21915: to=<mark001@mail.linux.com>, orig_to=<mark001>, relay=local, delay=0.14, delays=0.11/0/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:08:01 server postfix/qmgr[12034]: 65B0C21915: removed
+May 27 08:08:01 server postfix/local[12091]: 7914721913: to=<vishal@mail.linux.com>, orig_to=<vishal>, relay=local, delay=0.15, delays=0.13/0/0/0.02, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:08:01 server postfix/qmgr[12034]: 7914721913: removed
+^C
+
+[root@server config]# useradd test
+useradd: user 'test' already exists
+
+[root@server config]# useradd b
+
+[root@server config]# passwd b
+Changing password for user b.
+New password:
+BAD PASSWORD: it is WAY too short
+BAD PASSWORD: is a palindrome
+Retype new password:
+passwd: all authentication tokens updated successfully.
+
+[root@server config]# tail -f /var/log/maillog
+May 27 08:08:01 server postfix/pickup[12033]: 7914721913: uid=514 from=<root>
+May 27 08:08:01 server postfix/cleanup[12088]: 7914721913: message-id=<20140527023801.7914721913@mail.linux.com>
+May 27 08:08:01 server postfix/qmgr[12034]: 7914721913: from=<root@mail.linux.com>, size=597, nrcpt=1 (queue active)
+May 27 08:08:01 server postfix/local[12090]: 65B0C21915: to=<mark001@mail.linux.com>, orig_to=<mark001>, relay=local, delay=0.14, delays=0.11/0/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:08:01 server postfix/qmgr[12034]: 65B0C21915: removed
+May 27 08:08:01 server postfix/local[12091]: 7914721913: to=<vishal@mail.linux.com>, orig_to=<vishal>, relay=local, delay=0.15, delays=0.13/0/0/0.02, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:08:01 server postfix/qmgr[12034]: 7914721913: removed
+May 27 08:08:32 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=12552, secured
+May 27 08:08:32 server dovecot: imap(b): Error: user b: Initialization failed: mail_location not set and autodetection failed: Mail storage autodetection failed with home=/home/b
+May 27 08:08:32 server dovecot: imap(b): Error: Invalid user settings. Refer to server log for more information.
+
+
+
+
+
+^C
+[root@server config]# vi /etc/dovecot/dovecot.conf
+
+[root@server config]# vi /etc/postfix/main.cf
+
+[root@server config]# service postfix restart
+Shutting down postfix:                                     [FAILED]
+Starting postfix:                                          [FAILED]
+
+[root@server config]# vi /etc/postfix/main.cf
+
+[root@server config]# hostname localhost.localdomain
+
+[root@server config]# domainname
+(none)
+
+[root@server config]# domainname localdomain
+
+[root@server config]# service postfix restart
+Shutting down postfix:                                     [FAILED]
+Starting postfix:                                          [FAILED]
+
+[root@server config]# tail -f /var/log/maillog
+May 27 08:10:55 server postfix[12659]: fatal: unknown inet_protocols value "localhost" in "localhost"
+May 27 08:10:56 server postfix[12662]: fatal: unknown inet_protocols value "localhost" in "localhost"
+May 27 08:11:01 server postfix/sendmail[12681]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:11:01 server postfix/sendmail[12681]: warning: or the command is run from a set-uid root process
+May 27 08:11:01 server postfix/sendmail[12681]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:11:01 server postfix/sendmail[12681]: fatal: unknown inet_protocols value "localhost" in "localhost"
+May 27 08:11:01 server postfix/sendmail[12683]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:11:01 server postfix/sendmail[12683]: warning: or the command is run from a set-uid root process
+May 27 08:11:01 server postfix/sendmail[12683]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:11:01 server postfix/sendmail[12683]: fatal: unknown inet_protocols value "localhost" in "localhost"
+^[[A^[[A^C
+
+[root@server config]# domainname localdomain
+
+[root@server config]# vi /etc/postfix/main.cf
+
+[root@server config]# service postfix restart
+Shutting down postfix:                                     [  OK  ]
+Starting postfix:                                          [  OK  ]
+
+[root@server config]# service dovecot restart
+Stopping Dovecot Imap:                                     [  OK  ]
+Starting Dovecot Imap:                                     [  OK  ]
+
+[root@server config]# tail -f /var/log/maillog
+May 27 08:11:01 server postfix/sendmail[12683]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:11:01 server postfix/sendmail[12683]: warning: or the command is run from a set-uid root process
+May 27 08:11:01 server postfix/sendmail[12683]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:11:01 server postfix/sendmail[12683]: fatal: unknown inet_protocols value "localhost" in "localhost"
+May 27 08:11:38 server postfix/postfix-script[12713]: stopping the Postfix mail system
+May 27 08:11:38 server postfix/master[12031]: terminating on signal 15
+May 27 08:11:39 server postfix/postfix-script[12785]: starting the Postfix mail system
+May 27 08:11:39 server postfix/master[12786]: daemon started -- version 2.6.6, configuration /etc/postfix
+May 27 08:11:47 server dovecot: master: Warning: Killed with signal 15 (by pid=12795 uid=0 code=kill)
+May 27 08:11:48 server dovecot: master: Dovecot v2.0.beta6 (3156315704ef) starting up (core dumps disabled)
+
+
+
+
+May 27 08:12:01 server postfix/sendmail[12825]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:12:01 server postfix/sendmail[12825]: warning: or the command is run from a set-uid root process
+May 27 08:12:01 server postfix/sendmail[12825]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:12:01 server postfix/sendmail[12828]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:12:01 server postfix/sendmail[12828]: warning: or the command is run from a set-uid root process
+May 27 08:12:01 server postfix/sendmail[12828]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:12:01 server postfix/pickup[12788]: 5704921917: uid=505 from=<root>
+May 27 08:12:01 server postfix/cleanup[12842]: 5704921917: message-id=<20140527024201.5704921917@localhost.localdomain>
+May 27 08:12:01 server postfix/qmgr[12789]: 5704921917: from=<root@localhost.localdomain>, size=625, nrcpt=1 (queue active)
+May 27 08:12:01 server postfix/pickup[12788]: 62D3621915: uid=514 from=<root>
+May 27 08:12:01 server postfix/cleanup[12842]: 62D3621915: message-id=<20140527024201.62D3621915@localhost.localdomain>
+May 27 08:12:01 server postfix/local[12844]: 5704921917: to=<mark001@localhost.localdomain>, orig_to=<mark001>, relay=local, delay=0.13, delays=0.09/0.01/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:12:01 server postfix/qmgr[12789]: 5704921917: removed
+May 27 08:12:01 server postfix/qmgr[12789]: 62D3621915: from=<root@localhost.localdomain>, size=628, nrcpt=1 (queue active)
+May 27 08:12:01 server postfix/local[12844]: 62D3621915: to=<vishal@localhost.localdomain>, orig_to=<vishal>, relay=local, delay=0.18, delays=0.14/0/0/0.04, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:12:01 server postfix/qmgr[12789]: 62D3621915: removed
+May 27 08:12:02 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=12849, secured
+May 27 08:12:02 server dovecot: imap(b): Error: user b: Initialization failed: mail_location not set and autodetection failed: Mail storage autodetection failed with home=/home/b
+May 27 08:12:02 server dovecot: imap(b): Error: Invalid user settings. Refer to server log for more information.
+cd ^C
+[root@server config]# cd /home/b
+
+[root@server b]# ls
+
+[root@server b]# ls
+
+[root@server b]# vi /etc/postfix/main.cf
+
+[root@server b]# clear
+
+[root@server b]# tail -f /var/log/maillog
+May 27 08:13:01 server postfix/pickup[12788]: 76E1321917: uid=514 from=<root>
+May 27 08:13:01 server postfix/cleanup[12842]: 76E1321917: message-id=<20140527024301.76E1321917@localhost.localdomain>
+May 27 08:13:01 server postfix/qmgr[12789]: 76E1321917: from=<root@localhost.localdomain>, size=628, nrcpt=1 (queue active)
+May 27 08:13:01 server postfix/pickup[12788]: 8EF9D21916: uid=505 from=<root>
+May 27 08:13:01 server postfix/cleanup[12842]: 8EF9D21916: message-id=<20140527024301.8EF9D21916@localhost.localdomain>
+May 27 08:13:01 server postfix/qmgr[12789]: 8EF9D21916: from=<root@localhost.localdomain>, size=625, nrcpt=1 (queue active)
+May 27 08:13:01 server postfix/local[12844]: 76E1321917: to=<vishal@localhost.localdomain>, orig_to=<vishal>, relay=local, delay=0.16, delays=0.13/0/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:13:01 server postfix/qmgr[12789]: 76E1321917: removed
+May 27 08:13:01 server postfix/local[12844]: 8EF9D21916: to=<mark001@localhost.localdomain>, orig_to=<mark001>, relay=local, delay=0.2, delays=0.17/0.01/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:13:01 server postfix/qmgr[12789]: 8EF9D21916: removed
+
+
+
+May 27 08:13:39 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=13240, secured
+May 27 08:13:39 server dovecot: imap(b): Error: user b: Initialization failed: mail_location not set and autodetection failed: Mail storage autodetection failed with home=/home/b
+May 27 08:13:39 server dovecot: imap(b): Error: Invalid user settings. Refer to server log for more information.
+May 27 08:14:01 server postfix/sendmail[13257]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:14:01 server postfix/sendmail[13257]: warning: or the command is run from a set-uid root process
+May 27 08:14:01 server postfix/sendmail[13257]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:14:01 server postfix/sendmail[13260]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:14:01 server postfix/sendmail[13260]: warning: or the command is run from a set-uid root process
+May 27 08:14:01 server postfix/sendmail[13260]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:14:01 server postfix/pickup[12788]: A33C221916: uid=505 from=<root>
+May 27 08:14:01 server postfix/cleanup[12842]: A33C221916: message-id=<20140527024401.A33C221916@localhost.localdomain>
+May 27 08:14:01 server postfix/qmgr[12789]: A33C221916: from=<root@localhost.localdomain>, size=625, nrcpt=1 (queue active)
+May 27 08:14:01 server postfix/pickup[12788]: B4B68203A5: uid=514 from=<root>
+May 27 08:14:01 server postfix/cleanup[12842]: B4B68203A5: message-id=<20140527024401.B4B68203A5@localhost.localdomain>
+May 27 08:14:01 server postfix/local[12889]: A33C221916: to=<mark001@localhost.localdomain>, orig_to=<mark001>, relay=local, delay=0.15, delays=0.12/0/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:14:01 server postfix/qmgr[12789]: A33C221916: removed
+May 27 08:14:01 server postfix/qmgr[12789]: B4B68203A5: from=<root@localhost.localdomain>, size=628, nrcpt=1 (queue active)
+May 27 08:14:01 server postfix/local[12844]: B4B68203A5: to=<vishal@localhost.localdomain>, orig_to=<vishal>, relay=local, delay=0.17, delays=0.15/0/0/0.02, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:14:01 server postfix/qmgr[12789]: B4B68203A5: removed
+^C
+[root@server b]# vi /etc/dovecot/dovecot.conf
+
+[root@server b]#
+
+[root@server b]# doveco
+doveconf  dovecot
+[root@server b]# dovecot -n
+# 2.0.beta6 (3156315704ef): /etc/dovecot/dovecot.conf
+# OS: Linux 2.6.32-71.el6.i686 i686 Red Hat Enterprise Linux Server release 6.0 (Santiago)
+mbox_write_locks = fcntl
+passdb {
+  driver = pam
+}
+protocols = imap
+ssl_cert = </etc/pki/dovecot/certs/dovecot.pem
+ssl_key = </etc/pki/dovecot/private/dovecot.pem
+userdb {
+  driver = passwd
+}
+
+[root@server b]# vi /etc/dovecot/dovecot.conf
+
+[root@server b]# service dovecot restart
+Stopping Dovecot Imap:                                     [  OK  ]
+Starting Dovecot Imap:                                     [  OK  ]
+[root@server b]# tail -f /var/log/maillog
+May 27 08:17:01 server postfix/qmgr[12789]: 67F0021917: from=<root@localhost.localdomain>, size=625, nrcpt=1 (queue active)
+May 27 08:17:01 server postfix/pickup[12788]: 7477B21915: uid=514 from=<root>
+May 27 08:17:01 server postfix/cleanup[12842]: 7477B21915: message-id=<20140527024701.7477B21915@localhost.localdomain>
+May 27 08:17:01 server postfix/local[12889]: 67F0021917: to=<mark001@localhost.localdomain>, orig_to=<mark001>, relay=local, delay=0.11, delays=0.08/0/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:17:01 server postfix/qmgr[12789]: 67F0021917: removed
+May 27 08:17:01 server postfix/qmgr[12789]: 7477B21915: from=<root@localhost.localdomain>, size=628, nrcpt=1 (queue active)
+May 27 08:17:01 server postfix/local[12844]: 7477B21915: to=<vishal@localhost.localdomain>, orig_to=<vishal>, relay=local, delay=0.15, delays=0.12/0/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:17:01 server postfix/qmgr[12789]: 7477B21915: removed
+May 27 08:17:19 server dovecot: master: Warning: Killed with signal 15 (by pid=13393 uid=0 code=kill)
+May 27 08:17:20 server dovecot: master: Dovecot v2.0.beta6 (3156315704ef) starting up (core dumps disabled)
+
+
+
+
+May 27 08:17:53 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=13411, secured
+May 27 08:17:53 server dovecot: imap(b): Disconnected: Logged out bytes=28/635
+May 27 08:17:54 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=13413, secured
+May 27 08:17:54 server dovecot: imap(b): Error: chown(/home/b/mail/.imap/INBOX, -1, 12(mail)) failed: Operation not permitted (egid=532(b), group based on /var/mail/b)
+May 27 08:17:54 server dovecot: imap(b): Error: mkdir(/home/b/mail/.imap/INBOX) failed: Operation not permitted
+May 27 08:17:54 server dovecot: imap(b): Connection closed bytes=21/398
+May 27 08:17:54 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=13415, secured
+May 27 08:17:54 server dovecot: imap(b): Error: fchown(/home/b/mail/.imap/INBOX/dovecot.index.log.newlock, -1, 12(mail)) failed: Operation not permitted (egid=532(b), group based on /var/mail/b)
+May 27 08:17:54 server dovecot: imap(b): Disconnected: Logged out bytes=386/1293
+May 27 08:17:59 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=13417, secured
+May 27 08:17:59 server dovecot: imap(b): Disconnected: Logged out bytes=117/1395
+May 27 08:18:01 server postfix/sendmail[13435]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:18:01 server postfix/sendmail[13435]: warning: or the command is run from a set-uid root process
+May 27 08:18:01 server postfix/sendmail[13435]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:18:01 server postfix/sendmail[13437]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:18:01 server postfix/sendmail[13437]: warning: or the command is run from a set-uid root process
+May 27 08:18:01 server postfix/sendmail[13437]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:18:01 server postfix/pickup[12788]: 85D9B21917: uid=514 from=<root>
+May 27 08:18:01 server postfix/cleanup[12842]: 85D9B21917: message-id=<20140527024801.85D9B21917@localhost.localdomain>
+May 27 08:18:01 server postfix/qmgr[12789]: 85D9B21917: from=<root@localhost.localdomain>, size=628, nrcpt=1 (queue active)
+May 27 08:18:01 server postfix/pickup[12788]: 962E621916: uid=505 from=<root>
+May 27 08:18:01 server postfix/cleanup[12842]: 962E621916: message-id=<20140527024801.962E621916@localhost.localdomain>
+May 27 08:18:01 server postfix/qmgr[12789]: 962E621916: from=<root@localhost.localdomain>, size=625, nrcpt=1 (queue active)
+May 27 08:18:01 server postfix/local[12889]: 85D9B21917: to=<vishal@localhost.localdomain>, orig_to=<vishal>, relay=local, delay=0.14, delays=0.08/0/0/0.06, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:18:01 server postfix/qmgr[12789]: 85D9B21917: removed
+May 27 08:18:01 server postfix/local[12844]: 962E621916: to=<mark001@localhost.localdomain>, orig_to=<mark001>, relay=local, delay=0.17, delays=0.14/0/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:18:01 server postfix/qmgr[12789]: 962E621916: removed
+May 27 08:18:16 server postfix/pickup[12788]: 386F321915: uid=48 from=<b@localhost>
+May 27 08:18:16 server postfix/cleanup[12842]: 386F321915: message-id=<fe429bc2b66214b8b214cbf4c7e68a0a.squirrel@192.168.2.70>
+May 27 08:18:16 server postfix/qmgr[12789]: 386F321915: from=<b@localhost.localdomain>, size=662, nrcpt=1 (queue active)
+May 27 08:18:16 server postfix/local[12889]: 386F321915: to=<b@localhost.localdomain>, orig_to=<b@localhost>, relay=local, delay=0.07, delays=0.05/0/0/0.02, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:18:16 server postfix/qmgr[12789]: 386F321915: removed
+May 27 08:18:16 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=13456, secured
+May 27 08:18:16 server dovecot: imap(b): Disconnected: Logged out bytes=589/461
+May 27 08:18:16 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=13458, secured
+May 27 08:18:16 server dovecot: imap(b): Error: fchown(/home/b/mail/.imap/INBOX/dovecot.index.cache.lock, -1, 12(mail)) failed: Operation not permitted (egid=532(b), group based on /var/mail/b)
+May 27 08:18:16 server dovecot: imap(b): Disconnected: Logged out bytes=292/1966
+May 27 08:18:42 server postfix/pickup[12788]: 94BF821916: uid=48 from=<b@localhost>
+May 27 08:18:42 server postfix/cleanup[12842]: 94BF821916: message-id=<cf9e7a602671b9568fdcb5dc14dfd0f7.squirrel@192.168.2.70>
+May 27 08:18:42 server postfix/qmgr[12789]: 94BF821916: from=<b@localhost.localdomain>, size=705, nrcpt=1 (queue active)
+May 27 08:18:42 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=13808, secured
+May 27 08:18:42 server dovecot: imap(b): Disconnected: Logged out bytes=644/459
+May 27 08:18:42 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=13810, secured
+May 27 08:18:42 server dovecot: imap(b): Disconnected: Logged out bytes=292/1966
+May 27 08:18:45 server postfix/smtp[13807]: 94BF821916: to=<jankoti.acharya@yahoo.com>, relay=mta6.am0.yahoodns.net[66.196.118.240]:25, delay=2.9, delays=0.07/0.03/2.6/0.26, dsn=5.0.0, status=bounced (host mta6.am0.yahoodns.net[66.196.118.240] said: 553 Mail from 219.64.201.97 not allowed - 5.7.1 [BL23] Connections not accepted from IP addresses on Spamhaus XBL; see http://postmaster.yahoo.com/errors/550-bl23.html [550] (in reply to MAIL FROM command))
+May 27 08:18:45 server postfix/smtp[13807]: 94BF821916: lost connection with mta6.am0.yahoodns.net[66.196.118.240] while sending RCPT TO
+May 27 08:18:45 server postfix/cleanup[12842]: 89C8C21917: message-id=<20140527024845.89C8C21917@localhost.localdomain>
+May 27 08:18:45 server postfix/qmgr[12789]: 89C8C21917: from=<>, size=3017, nrcpt=1 (queue active)
+May 27 08:18:45 server postfix/bounce[13811]: 94BF821916: sender non-delivery notification: 89C8C21917
+May 27 08:18:45 server postfix/qmgr[12789]: 94BF821916: removed
+May 27 08:18:45 server postfix/local[12844]: 89C8C21917: to=<b@localhost.localdomain>, relay=local, delay=0.04, delays=0.02/0/0/0.02, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:18:45 server postfix/qmgr[12789]: 89C8C21917: removed
+May 27 08:19:01 server postfix/sendmail[13824]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:19:01 server postfix/sendmail[13824]: warning: or the command is run from a set-uid root process
+May 27 08:19:01 server postfix/sendmail[13824]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:19:01 server postfix/sendmail[13831]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:19:01 server postfix/sendmail[13831]: warning: or the command is run from a set-uid root process
+May 27 08:19:01 server postfix/sendmail[13831]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:19:01 server postfix/pickup[12788]: B4D4321918: uid=505 from=<root>
+May 27 08:19:01 server postfix/cleanup[12842]: B4D4321918: message-id=<20140527024901.B4D4321918@localhost.localdomain>
+May 27 08:19:01 server postfix/qmgr[12789]: B4D4321918: from=<root@localhost.localdomain>, size=625, nrcpt=1 (queue active)
+May 27 08:19:01 server postfix/pickup[12788]: D2B40203A5: uid=514 from=<root>
+May 27 08:19:01 server postfix/cleanup[12842]: D2B40203A5: message-id=<20140527024901.D2B40203A5@localhost.localdomain>
+May 27 08:19:01 server postfix/local[12889]: B4D4321918: to=<mark001@localhost.localdomain>, orig_to=<mark001>, relay=local, delay=0.2, delays=0.17/0/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:19:01 server postfix/qmgr[12789]: B4D4321918: removed
+May 27 08:19:01 server postfix/qmgr[12789]: D2B40203A5: from=<root@localhost.localdomain>, size=628, nrcpt=1 (queue active)
+May 27 08:19:01 server postfix/local[12844]: D2B40203A5: to=<vishal@localhost.localdomain>, orig_to=<vishal>, relay=local, delay=0.22, delays=0.2/0/0/0.02, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:19:01 server postfix/qmgr[12789]: D2B40203A5: removed
+May 27 08:19:03 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=13847, secured
+May 27 08:19:03 server dovecot: imap(b): Disconnected: Logged out bytes=294/2460
+May 27 08:19:05 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=13849, secured
+May 27 08:19:05 server dovecot: imap(b): Disconnected: Logged out bytes=176/3794
+May 27 08:19:31 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=13851, secured
+May 27 08:19:31 server dovecot: imap(b): Disconnected: Logged out bytes=294/2465
+May 27 08:19:34 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=13853, secured
+May 27 08:19:34 server dovecot: imap(b): Disconnected: Logged out bytes=143/1761
+May 27 08:20:01 server postfix/sendmail[13878]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:20:01 server postfix/sendmail[13878]: warning: or the command is run from a set-uid root process
+May 27 08:20:01 server postfix/sendmail[13878]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:20:01 server postfix/sendmail[13877]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:20:01 server postfix/sendmail[13877]: warning: or the command is run from a set-uid root process
+May 27 08:20:01 server postfix/sendmail[13877]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:20:01 server postfix/pickup[12788]: E9B4F21918: uid=514 from=<root>
+May 27 08:20:01 server postfix/cleanup[12842]: E9B4F21918: message-id=<20140527025001.E9B4F21918@localhost.localdomain>
+May 27 08:20:02 server postfix/qmgr[12789]: E9B4F21918: from=<root@localhost.localdomain>, size=628, nrcpt=1 (queue active)
+May 27 08:20:02 server postfix/pickup[12788]: 0F49621916: uid=505 from=<root>
+May 27 08:20:02 server postfix/cleanup[12842]: 0F49621916: message-id=<20140527025002.0F49621916@localhost.localdomain>
+May 27 08:20:02 server postfix/local[12889]: E9B4F21918: to=<vishal@localhost.localdomain>, orig_to=<vishal>, relay=local, delay=0.17, delays=0.15/0/0/0.02, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:20:02 server postfix/qmgr[12789]: E9B4F21918: removed
+May 27 08:20:02 server postfix/qmgr[12789]: 0F49621916: from=<root@localhost.localdomain>, size=625, nrcpt=1 (queue active)
+May 27 08:20:02 server postfix/local[12844]: 0F49621916: to=<mark001@localhost.localdomain>, orig_to=<mark001>, relay=local, delay=0.18, delays=0.17/0/0/0.02, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:20:02 server postfix/qmgr[12789]: 0F49621916: removed
+May 27 08:21:01 server postfix/sendmail[13914]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:21:01 server postfix/sendmail[13914]: warning: or the command is run from a set-uid root process
+May 27 08:21:01 server postfix/sendmail[13914]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:21:01 server postfix/sendmail[13916]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:21:01 server postfix/sendmail[13916]: warning: or the command is run from a set-uid root process
+May 27 08:21:01 server postfix/sendmail[13916]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:21:01 server postfix/pickup[12788]: 6A51821918: uid=514 from=<root>
+May 27 08:21:01 server postfix/cleanup[12842]: 6A51821918: message-id=<20140527025101.6A51821918@localhost.localdomain>
+May 27 08:21:01 server postfix/qmgr[12789]: 6A51821918: from=<root@localhost.localdomain>, size=628, nrcpt=1 (queue active)
+May 27 08:21:01 server postfix/pickup[12788]: 7C48F21916: uid=505 from=<root>
+May 27 08:21:01 server postfix/cleanup[12842]: 7C48F21916: message-id=<20140527025101.7C48F21916@localhost.localdomain>
+May 27 08:21:01 server postfix/qmgr[12789]: 7C48F21916: from=<root@localhost.localdomain>, size=625, nrcpt=1 (queue active)
+May 27 08:21:01 server postfix/local[12889]: 6A51821918: to=<vishal@localhost.localdomain>, orig_to=<vishal>, relay=local, delay=0.13, delays=0.1/0/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:21:01 server postfix/qmgr[12789]: 6A51821918: removed
+May 27 08:21:01 server postfix/local[12844]: 7C48F21916: to=<mark001@localhost.localdomain>, orig_to=<mark001>, relay=local, delay=0.16, delays=0.12/0/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:21:01 server postfix/qmgr[12789]: 7C48F21916: removed
+^C
+[root@server b]# service dovecot stop
+Stopping Dovecot Imap:                                     [  OK  ]
+
+[root@server b]# clear
+
+[root@server b]# tail -f /var/log/maillog
+May 27 08:25:02 server postfix/pickup[12788]: 0895A21912: uid=505 from=<root>
+May 27 08:25:02 server postfix/cleanup[12842]: 0895A21912: message-id=<20140527025502.0895A21912@localhost.localdomain>
+May 27 08:25:02 server postfix/qmgr[12789]: 0895A21912: from=<root@localhost.localdomain>, size=625, nrcpt=1 (queue active)
+May 27 08:25:02 server postfix/pickup[12788]: 1D923203A5: uid=514 from=<root>
+May 27 08:25:02 server postfix/cleanup[12842]: 1D923203A5: message-id=<20140527025502.1D923203A5@localhost.localdomain>
+May 27 08:25:02 server postfix/local[12889]: 0895A21912: to=<mark001@localhost.localdomain>, orig_to=<mark001>, relay=local, delay=0.15, delays=0.13/0/0/0.02, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:25:02 server postfix/qmgr[12789]: 0895A21912: removed
+May 27 08:25:02 server postfix/qmgr[12789]: 1D923203A5: from=<root@localhost.localdomain>, size=628, nrcpt=1 (queue active)
+May 27 08:25:02 server postfix/local[12844]: 1D923203A5: to=<vishal@localhost.localdomain>, orig_to=<vishal>, relay=local, delay=0.17, delays=0.15/0/0/0.02, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:25:02 server postfix/qmgr[12789]: 1D923203A5: removed
+
+
+
+
+May 27 08:26:01 server postfix/sendmail[14448]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:26:01 server postfix/sendmail[14448]: warning: or the command is run from a set-uid root process
+May 27 08:26:01 server postfix/sendmail[14448]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:26:01 server postfix/sendmail[14451]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:26:01 server postfix/sendmail[14451]: warning: or the command is run from a set-uid root process
+May 27 08:26:01 server postfix/sendmail[14451]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:26:01 server postfix/pickup[12788]: 787D421912: uid=505 from=<root>
+May 27 08:26:01 server postfix/cleanup[12842]: 787D421912: message-id=<20140527025601.787D421912@localhost.localdomain>
+May 27 08:26:01 server postfix/qmgr[12789]: 787D421912: from=<root@localhost.localdomain>, size=625, nrcpt=1 (queue active)
+May 27 08:26:01 server postfix/pickup[12788]: 8A06E2190F: uid=514 from=<root>
+May 27 08:26:01 server postfix/cleanup[12842]: 8A06E2190F: message-id=<20140527025601.8A06E2190F@localhost.localdomain>
+May 27 08:26:01 server postfix/qmgr[12789]: 8A06E2190F: from=<root@localhost.localdomain>, size=628, nrcpt=1 (queue active)
+May 27 08:26:01 server postfix/local[12889]: 787D421912: to=<mark001@localhost.localdomain>, orig_to=<mark001>, relay=local, delay=0.13, delays=0.1/0/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:26:01 server postfix/qmgr[12789]: 787D421912: removed
+May 27 08:26:01 server postfix/local[12844]: 8A06E2190F: to=<vishal@localhost.localdomain>, orig_to=<vishal>, relay=local, delay=0.14, delays=0.12/0/0/0.02, dsn=2.0.0, status=sent (delivered to mailbox)
+May 27 08:26:01 server postfix/qmgr[12789]: 8A06E2190F: removed
+^C
+
+[root@server b]# service dovecot start
+Starting Dovecot Imap:                                     [  OK  ]
+
+[root@server b]# service postfix stop
+Shutting down postfix:                                     [  OK  ]
+
+[root@server b]# tail -f /var/log/maillog
+May 27 08:26:01 server postfix/qmgr[12789]: 8A06E2190F: removed
+May 27 08:26:24 server dovecot: master: Dovecot v2.0.beta6 (3156315704ef) starting up (core dumps disabled)
+May 27 08:26:29 server postfix/postfix-script[14494]: stopping the Postfix mail system
+May 27 08:26:29 server postfix/master[12786]: terminating on signal 15
+May 27 08:26:33 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=14502, secured
+May 27 08:26:33 server dovecot: imap(b): Disconnected: Logged out bytes=28/635
+May 27 08:26:34 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=14504, secured
+May 27 08:26:34 server dovecot: imap(b): Disconnected: Logged out bytes=357/1617
+May 27 08:26:34 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=14506, secured
+May 27 08:26:34 server dovecot: imap(b): Disconnected: Logged out bytes=294/2377
+
+
+
+
+
+
+**********
+
+
+
+May 27 08:27:01 server postfix/sendmail[14526]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:27:01 server postfix/sendmail[14526]: warning: or the command is run from a set-uid root process
+May 27 08:27:01 server postfix/sendmail[14526]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:27:01 server postfix/sendmail[14528]: warning: the Postfix sendmail command has set-uid root file permissions
+May 27 08:27:01 server postfix/sendmail[14528]: warning: or the command is run from a set-uid root process
+May 27 08:27:01 server postfix/sendmail[14528]: warning: the Postfix sendmail command must be installed without set-uid root file permissions
+May 27 08:27:02 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=14544, secured
+May 27 08:27:02 server dovecot: imap(b): Disconnected: Logged out bytes=570/459
+May 27 08:27:02 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=14546, secured
+May 27 08:27:02 server dovecot: imap(b): Disconnected: Logged out bytes=294/2377
+May 27 08:27:05 server dovecot: imap-login: Login: user=<b>, method=PLAIN, rip=127.0.0.1, lip=127.0.0.1, mpid=14548, secured
+May 27 08:27:05 server dovecot: imap(b): Disconnected: Logged out bytes=294/2377
+^C
+[root@server b]# mailq
+postqueue: warning: Mail system is down -- accessing queue directly
+-Queue ID- --Size-- ----Arrival Time---- -Sender/Recipient-------
+929F5218E5      430 Tue May 27 02:57:01  root
+                                         mark001
+
+940FC21913      432 Tue May 27 02:57:01  root
+                                         vishal
+
+0B9F821916      583 Tue May 27 02:57:02  b@localhost
+                                         b@localhost
+
+-- 1 Kbytes in 3 Requests.
+[root@server b]# service postfix start
+Starting postfix:                                          [  OK  ]
+[root@server b]# mailq
+Mail queue is empty
+[root@server b]# clear
+[root@server b]# cd /etc/httpd/conf.d/
+[root@server conf.d]# ls
+manual.conf     mrtg.conf  php.conf  squirrelmail.conf  welcome.conf
+mod_dnssd.conf  perl.conf  README    webalizer.conf
+[root@server conf.d]# vi squirrelmail.conf
+[root@server conf.d]# service httpd restart
+Stopping httpd:                                            [  OK  ]
+Starting httpd:                                            [  OK  ]
+[root@server conf.d]# vi squirrelmail.conf
+[root@server conf.d]# vi squirrelmail.conf
+[root@server conf.d]# chmod 000 /usr/share/squirrelmail
+[root@server conf.d]# tail -f /var/log/httpd/error_log
+[Tue May 27 08:30:46 2014] [notice] caught SIGTERM, shutting down
+[Tue May 27 08:30:47 2014] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Tue May 27 08:30:47 2014] [notice] Digest: generating secret for digest authentication ...
+[Tue May 27 08:30:47 2014] [notice] Digest: done
+[Tue May 27 08:30:47 2014] [warn] ./mod_dnssd.c: No services found to register
+[Tue May 27 08:30:47 2014] [notice] Apache/2.2.15 (Unix) DAV/2 PHP/5.3.2 mod_perl/2.0.4 Perl/v5.10.1 configured -- resuming normal operations
+[Tue May 27 08:31:44 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/src/signout.php denied, referer: http://192.168.2.70/mymail/src/right_main.php
+[Tue May 27 08:31:51 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.php denied
+[Tue May 27 08:31:51 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.html denied
+[Tue May 27 08:31:51 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.html.var denied
+
+
+
+**************
+
+^C
+[root@server conf.d]# ls
+manual.conf     mrtg.conf  php.conf  squirrelmail.conf  welcome.conf
+mod_dnssd.conf  perl.conf  README    webalizer.conf
+[root@server conf.d]# cd /var/log/httpd/
+[root@server httpd]# ls
+access_log           access_log-20140513  access_log-20140527  error_log-20140507  error_log-20140519
+access_log-20140507  access_log-20140522  error_log            error_log-20140512  error_log-20140525
+[root@server httpd]# ls -lrt
+total 528
+-rw-r--r-- 1 root root 451162 Nov 17  2003 access_log-20140507
+-rw-r--r-- 1 root root   3475 May  7 11:07 error_log-20140507
+-rw-r--r-- 1 root root   9656 May 12 08:23 error_log-20140512
+-rw-r--r-- 1 root root    938 May 12 10:21 access_log-20140513
+-rw-r--r-- 1 root root   4813 May 19 11:15 error_log-20140519
+-rw-r--r-- 1 root root    687 May 22 08:15 access_log-20140522
+-rw-r--r-- 1 root root   6420 May 25 03:17 error_log-20140525
+-rw-r--r-- 1 root root   4117 May 26 10:54 access_log-20140527
+-rw-r--r-- 1 root root   5581 May 27 08:31 error_log
+-rw-r--r-- 1 root root  19477 May 27 08:32 access_log
+[root@server httpd]# tail -f access_log
+192.168.2.246 - - [27/May/2014:08:31:02 +0530] "POST /mymail/src/redirect.php HTTP/1.1" 302 - "http://192.168.2.70/mymail/src/login.php" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
+192.168.2.246 - - [27/May/2014:08:31:02 +0530] "GET /mymail/src/webmail.php HTTP/1.1" 200 318 "http://192.168.2.70/mymail/src/login.php" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
+192.168.2.246 - - [27/May/2014:08:31:03 +0530] "GET /mymail/src/right_main.php HTTP/1.1" 200 8477 "http://192.168.2.70/mymail/src/webmail.php" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
+192.168.2.246 - - [27/May/2014:08:31:03 +0530] "GET /mymail/src/left_main.php HTTP/1.1" 200 2576 "http://192.168.2.70/mymail/src/webmail.php" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
+192.168.2.246 - - [27/May/2014:08:31:44 +0530] "GET /mymail/src/signout.php HTTP/1.1" 403 303 "http://192.168.2.70/mymail/src/right_main.php" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
+192.168.2.246 - - [27/May/2014:08:31:51 +0530] "GET /mymail/ HTTP/1.1" 403 288 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
+192.168.2.246 - - [27/May/2014:08:32:31 +0530] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
+192.168.2.246 - - [27/May/2014:08:32:55 +0530] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
+192.168.2.246 - - [27/May/2014:08:32:56 +0530] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
+192.168.2.246 - - [27/May/2014:08:32:57 +0530] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
+
+
+
+
+
+192.168.2.246 - - [27/May/2014:08:33:32 +0530] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
+192.168.2.246 - - [27/May/2014:08:33:43 +0530] "GET /mylog HTTP/1.1" 404 282 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
+192.168.2.246 - - [27/May/2014:08:33:44 +0530] "GET /mymail/ HTTP/1.1" 403 288 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
+
+
+
+
+
+
+192.168.2.246 - - [27/May/2014:08:33:54 +0530] "GET /mylog HTTP/1.1" 404 282 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
+^C
+[root@server httpd]# tail -f error_log
+[Tue May 27 08:30:47 2014] [notice] Apache/2.2.15 (Unix) DAV/2 PHP/5.3.2 mod_perl/2.0.4 Perl/v5.10.1 configured -- resuming normal operations
+[Tue May 27 08:31:44 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/src/signout.php denied, referer: http://192.168.2.70/mymail/src/right_main.php
+[Tue May 27 08:31:51 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.php denied
+[Tue May 27 08:31:51 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.html denied
+[Tue May 27 08:31:51 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.html.var denied
+[Tue May 27 08:33:43 2014] [error] [client 192.168.2.246] File does not exist: /var/www/html/mainweb/mylog
+[Tue May 27 08:33:44 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.php denied
+[Tue May 27 08:33:44 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.html denied
+[Tue May 27 08:33:44 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.html.var denied
+[Tue May 27 08:33:54 2014] [error] [client 192.168.2.246] File does not exist: /var/www/html/mainweb/mylog
+
+
+
+
+
+
+
+[Tue May 27 08:34:25 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.php denied
+[Tue May 27 08:34:25 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.html denied
+[Tue May 27 08:34:25 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.html.var denied
+^C
+[root@server httpd]# chmod 555 /usr/share/squirrelmail/
+[root@server httpd]# tail -f error_log
+[Tue May 27 08:31:51 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.html denied
+[Tue May 27 08:31:51 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.html.var denied
+[Tue May 27 08:33:43 2014] [error] [client 192.168.2.246] File does not exist: /var/www/html/mainweb/mylog
+[Tue May 27 08:33:44 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.php denied
+[Tue May 27 08:33:44 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.html denied
+[Tue May 27 08:33:44 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.html.var denied
+[Tue May 27 08:33:54 2014] [error] [client 192.168.2.246] File does not exist: /var/www/html/mainweb/mylog
+[Tue May 27 08:34:25 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.php denied
+[Tue May 27 08:34:25 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.html denied
+[Tue May 27 08:34:25 2014] [error] [client 192.168.2.246] (13)Permission denied: access to /mymail/index.html.var denied
+
+
+
+
+
+^C
+[root@server httpd]# service httpd stop
+Stopping httpd:                                            [  OK  ]
+ 
+[root@server httpd]# service httpd start
+Starting httpd:                                            [  OK  ]
+
+[root@server httpd]# cleasr
+-bash: cleasr: command not found
+
+[root@server httpd]# clear
+
+[root@server httpd]# vi /etc/httpd/conf/httpd.conf
+
+[root@server httpd]# service httpd restart
+Stopping httpd:                                            [  OK  ]
+Starting httpd:                                            [  OK  ]
+
+[root@server httpd]# vi /etc/httpd/conf/httpd.conf
+
+[root@server httpd]# service httpd restart
+Stopping httpd:                                            [  OK  ]
+Starting httpd:                                            [  OK  ]
+
+[root@server httpd]# tail -f error_log
+[Tue May 27 08:36:54 2014] [notice] Digest: done
+[Tue May 27 08:36:54 2014] [warn] ./mod_dnssd.c: No services found to register
+[Tue May 27 08:36:54 2014] [notice] Apache/2.2.15 (Unix) DAV/2 PHP/5.3.2 mod_perl/2.0.4 Perl/v5.10.1 configured -- resuming normal operations
+[Tue May 27 08:37:25 2014] [notice] caught SIGTERM, shutting down
+[Tue May 27 08:37:26 2014] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Tue May 27 08:37:26 2014] [notice] Digest: generating secret for digest authentication ...
+[Tue May 27 08:37:26 2014] [notice] Digest: done
+[Tue May 27 08:37:26 2014] [warn] ./mod_dnssd.c: No services found to register
+[Tue May 27 08:37:26 2014] [notice] Apache/2.2.15 (Unix) DAV/2 PHP/5.3.2 mod_perl/2.0.4 Perl/v5.10.1 configured -- resuming normal operations
+[Tue May 27 08:37:28 2014] [error] [client 192.168.2.246] File does not exist: /etc/httpd/htdocs
+
+
+
+
+^C
+[root@server httpd]# chmod 000 /var/www/html/mainweb/
+
+[root@server httpd]# vi /etc/httpd/conf/httpd.conf
+
+[root@server httpd]# service httpd restart
+Stopping httpd:                                            [  OK  ]
+Starting httpd: no listening sockets available, shutting down
+Unable to open logs
+                                                           [FAILED]
+[root@server httpd]# tail -f error_log
+[Tue May 27 08:36:54 2014] [warn] ./mod_dnssd.c: No services found to register
+[Tue May 27 08:36:54 2014] [notice] Apache/2.2.15 (Unix) DAV/2 PHP/5.3.2 mod_perl/2.0.4 Perl/v5.10.1 configured -- resuming normal operations
+[Tue May 27 08:37:25 2014] [notice] caught SIGTERM, shutting down
+[Tue May 27 08:37:26 2014] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Tue May 27 08:37:26 2014] [notice] Digest: generating secret for digest authentication ...
+[Tue May 27 08:37:26 2014] [notice] Digest: done
+[Tue May 27 08:37:26 2014] [warn] ./mod_dnssd.c: No services found to register
+[Tue May 27 08:37:26 2014] [notice] Apache/2.2.15 (Unix) DAV/2 PHP/5.3.2 mod_perl/2.0.4 Perl/v5.10.1 configured -- resuming normal operations
+[Tue May 27 08:37:28 2014] [error] [client 192.168.2.246] File does not exist: /etc/httpd/htdocs
+[Tue May 27 08:39:03 2014] [notice] caught SIGTERM, shutting down
+
+
+
+
+^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[hhfkyhrfkcbhmfy^L^L^L

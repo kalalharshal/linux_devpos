@@ -1,0 +1,21 @@
+subnet 192.168.2.0 netmask 255.255.255.0
+{
+range 192.168.2.230 192.168.2.232; 		 # its for providing the range 
+range 192.168.2.235 192.168.2.239;
+default-lease-time 1000;	   		 # Min lease time 
+max-lease-time 7200;		   		 # Max Lease time 
+option subnet-mask 255.255.255.0;		 # subnet mask setting 
+option broadcast-address 192.168.2.255;		 # broadcast setting 
+option routers 192.168.2.1;			 # Gatewal setting 
+option domain-name-servers 192.168.2.1, 192.168.2.2; # Primary and Secondary DNS Setting 
+option domain-name "linux-test.com";		#  Domain Name 
+authoritative;                                  # making this server as primary to give IP 
+
+}
+
+   host dataclient {
+              hardware ethernet 00:1B:B9:D3:3B:6F;
+              fixed-address 192.168.2.241;
+            }
+ 
+

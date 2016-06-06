@@ -1,0 +1,2084 @@
+system-config-printer-libs.i686     1.1.16-17.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+system-config-printer-udev.i686     1.1.16-17.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+system-config-services.noarch       0.99.45-1.el6.3          @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+system-config-services-docs.noarch  1.1.8-1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+system-config-users.noarch          1.2.104-1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+system-config-users-docs.noarch     1.0.8-1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+system-gnome-theme.noarch           60.0.2-1.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+system-icon-theme.noarch            6.0.0-2.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+system-setup-keyboard.i686          0.7-4.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+systemtap.i686                      1.2-9.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+systemtap-client.i686               1.2-9.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+systemtap-grapher.i686              1.2-9.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+systemtap-initscript.i686           1.2-9.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+systemtap-runtime.i686              1.2-9.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+sysvinit-tools.i686                 2.87-3.dsf.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+taglib.i686                         1.6.1-1.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+talk.i686                           0.17-34.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+talk-server.i686                    0.17-34.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tar.i686                            2:1.23-3.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tcl.i686                            1:8.5.7-6.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tcp_wrappers.i686                   7.6-56.3.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tcp_wrappers-libs.i686              7.6-56.3.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tcpdump.i686                        14:4.0.0-3.20090921gitdf3cb4.1.el6
+                                                             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tcsh.i686                           6.17-8.el6               @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+telnet.i686                         1:0.17-46.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+telnet-server.i686                  1:0.17-46.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tftp.i686                           0.49-5.1.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+thai-scalable-fonts-common.noarch   0.4.12-2.1.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+thai-scalable-waree-fonts.noarch    0.4.12-2.1.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+theora-tools.i686                   1:1.1.0-2.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tibetan-machine-uni-fonts.noarch    1.901-5.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tigervnc.i686                       1.0.90-0.10.20100115svn3945.el6
+                                                             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tigervnc-server.i686                1.0.90-0.10.20100115svn3945.el6
+                                                             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+time.i686                           1.7-37.1.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tix.i686                            1:8.4.3-5.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tk.i686                             1:8.5.7-5.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tkinter.i686                        2.6.5-3.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tmpwatch.i686                       2.9.16-3.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tn5250.i686                         0.17.4-3.2.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tokyocabinet.i686                   1.4.33-6.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+totem.i686                          2.28.6-2.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+totem-nautilus.i686                 2.28.6-2.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+totem-pl-parser.i686                2.28.3-1.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+totem-upnp.i686                     2.28.6-2.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tpm-tools.i686                      1.3.4-2.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+trace-cmd.i686                      1.0.4-7.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+traceroute.i686                     3:2.0.14-2.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+trousers.i686                       0.3.4-4.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tsclient.i686                       2.0.2-6.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+ttmkfdir.i686                       3.0.9-32.1.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tunctl.i686                         1.5-3.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tuned.noarch                        0.2.11-8.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tuned-utils.noarch                  0.2.11-8.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tzdata.noarch                       2010l-1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+tzdata-java.noarch                  2010l-1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+udev.i686                           147-2.29.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+udftools.i686                       1.0.0b3-12.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+udisks.i686                         1.0.1-2.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+un-core-dotum-fonts.noarch          1.0.2-0.15.080608.el6    @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+un-core-fonts-common.noarch         1.0.2-0.15.080608.el6    @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+unicap.i686                         0.9.5-4.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+unique.i686                         1.1.4-2.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+units.i686                          1.87-7.el6               @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+unix2dos.i686                       2.2-35.el6               @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+unixODBC.i686                       2.2.14-11.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+unixODBC-devel.i686                 2.2.14-11.el6            @serverrepo
+unzip.i686                          6.0-1.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+upstart.i686                        0.6.5-6.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+urlview.i686                        0.9-7.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+urw-fonts.noarch                    2.4-10.el6               @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+usbmuxd.i686                        1.0.2-1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+usbutils.i686                       0.86-2.el6               @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+usermode.i686                       1.102-3.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+usermode-gtk.i686                   1.102-3.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+ustr.i686                           1.0.4-9.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+util-linux-ng.i686                  2.17.2-6.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+uuidd.i686                          2.17.2-6.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+valgrind.i686                       1:3.5.0-18.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+vconfig.i686                        1.9-8.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+vim-X11.i686                        2:7.2.411-1.4.el6        @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+vim-common.i686                     2:7.2.411-1.4.el6        @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+vim-enhanced.i686                   2:7.2.411-1.4.el6        @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+vim-minimal.i686                    2:7.2.411-1.4.el6        @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+vinagre.i686                        2.28.1-7.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+vino.i686                           2.28.1-3.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+vlgothic-fonts.noarch               20091202-2.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+vlgothic-fonts-common.noarch        20091202-2.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+volume_key.i686                     0.3.1-3.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+volume_key-libs.i686                0.3.1-3.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+vorbis-tools.i686                   1:1.2.0-7.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+vsftpd.i686                         2.2.2-6.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+vte.i686                            0.25.1-5.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+wacomcpl.i686                       0.9.0-1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+wacomexpresskeys.i686               0.4.2-3.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+wavpack.i686                        4.60-1.1.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+webkitgtk.i686                      1.2.3-1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+webmin.noarch                       1.680-1                  @/webmin-1.680-1.noarch
+wget.i686                           1.12-1.4.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+which.i686                          2.19-5.1.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+wireless-tools.i686                 1:29-5.1.1.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+wireshark.i686                      1.2.10-2.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+wodim.i686                          1.1.9-11.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+words.noarch                        3.0-17.el6               @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+wpa_supplicant.i686                 1:0.6.8-10.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+wqy-zenhei-fonts.noarch             0.9.45-3.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+wsdl4j.noarch                       1.5.2-7.8.el6            @serverrepo
+wvdial.i686                         1.60-12.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+x3270.i686                          3.3.6-10.4.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+x3270-text.i686                     3.3.6-10.4.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+x3270-x11.i686                      3.3.6-10.4.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+x86info.i686                        1:1.25-1.32.el6          @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xcb-util.i686                       0.3.6-1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xdg-user-dirs.i686                  0.12-4.el6               @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xdg-user-dirs-gtk.i686              0.8-7.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xdg-utils.noarch                    1.0.2-15.20091016cvs.el6 @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xguest.noarch                       1.0.8-6.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xinetd.i686                         2:2.3.14-29.el6          @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xkeyboard-config.noarch             1.6-7.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xml-common.noarch                   0.6.3-32.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xml-commons-apis.i686               1.3.04-3.6.el6           @serverrepo
+xml-commons-resolver.i686           1.1-4.18.el6             @serverrepo
+xmlrpc-c.i686                       1.16.24-1200.1840.el6    @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xmlrpc-c-client.i686                1.16.24-1200.1840.el6    @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-apps.i686                  7.4-10.el6               @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drivers.i686               7.3-13.2.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-acecad.i686            1.4.0-2.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-aiptek.i686            1.3.0-2.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-apm.i686               1.2.2-1.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-ast.i686               0.89.9-1.1.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-ati.i686               6.13.0-6.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-ati-firmware.noarch    6.13.0-6.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-cirrus.i686            1.3.2-1.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-dummy.i686             0.3.3-1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-elographics.i686       1.2.3-5.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-evdev.i686             2.3.2-8.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-fbdev.i686             0.4.2-1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-fpit.i686              1.3.0-5.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-geode.i686             2.11.4.1-1.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-glint.i686             1.2.4-1.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-hyperpen.i686          1.3.0-4.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-i128.i686              1.3.3-1.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-i740.i686              1.3.2-1.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-intel.i686             2.11.0-7.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-keyboard.i686          1.4.0-3.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-mach64.i686            6.8.2-1.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-mga.i686               1.4.12-2.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-mouse.i686             1.5.0-4.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-mutouch.i686           1.2.1-5.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-neomagic.i686          1.2.4-2.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-nouveau.i686           1:0.0.16-8.20100423git13c1043.el6
+                                                             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-nv.i686                2.1.15-4.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-openchrome.i686        0.2.904-1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-penmount.i686          1.4.0-5.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-qxl.i686               0.0.12-2.1.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-r128.i686              6.8.1-2.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-rendition.i686         4.2.2-4.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-s3virge.i686           1.10.4-1.1.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-savage.i686            2.3.1-1.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-siliconmotion.i686     1.7.3-1.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-sis.i686               0.10.2-1.1.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-sisusb.i686            0.9.3-1.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-synaptics.i686         1.2.1-5.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-tdfx.i686              1.4.3-1.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-trident.i686           1.3.3-1.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-v4l.i686               0.2.0-3.el6.3            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-vesa.i686              2.3.0-1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-vmmouse.i686           12.6.5-3.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-vmware.i686            10.16.7-2.1.el6          @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-void.i686              1.3.0-4.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-voodoo.i686            1.2.3-1.1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-drv-wacom.i686             0.10.5-6.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-font-utils.i686            1:7.2-10.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-100dpi.noarch        7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-75dpi.noarch         7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-ISO8859-1-100dpi.noarch
+                                    7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-ISO8859-1-75dpi.noarch
+                                    7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-ISO8859-14-100dpi.noarch
+                                    7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-ISO8859-14-75dpi.noarch
+                                    7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-ISO8859-15-75dpi.noarch
+                                    7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-ISO8859-2-100dpi.noarch
+                                    7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-ISO8859-2-75dpi.noarch
+                                    7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-ISO8859-9-100dpi.noarch
+                                    7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-ISO8859-9-75dpi.noarch
+                                    7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-Type1.noarch         7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-cyrillic.noarch      7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-ethiopic.noarch      7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-fonts-misc.noarch          7.2-9.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-server-Xephyr.i686         1.7.7-26.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-server-Xorg.i686           1.7.7-26.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-server-common.i686         1.7.7-26.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-server-utils.i686          7.4-15.el6               @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-twm.i686                   1:1.0.3-5.1.el6          @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-utils.i686                 7.4-8.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-xauth.i686                 1:1.0.2-7.1.el6          @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-xdm.i686                   1:1.1.6-14.1.el6         @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-xinit.i686                 1.0.9-13.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xorg-x11-xkb-utils.i686             7.4-6.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xrestop.i686                        0.4-7.1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xsettings-kde.i686                  0.11-1.el6               @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xterm.i686                          253-1.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xulrunner.i686                      1.9.2.9-1.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xvattr.i686                         1.3-18.el6               @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xz.i686                             4.999.9-0.3.beta.20091007git.el6
+                                                             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xz-libs.i686                        4.999.9-0.3.beta.20091007git.el6
+                                                             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+xz-lzma-compat.i686                 4.999.9-0.3.beta.20091007git.el6
+                                                             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yelp.i686                           2.28.1-8.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yp-tools.i686                       2.9-10.el6               @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+ypbind.i686                         3:1.20.4-29.el6          @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yum.noarch                          3.2.27-14.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yum-metadata-parser.i686            1.1.2-14.1.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yum-plugin-aliases.noarch           1.1.26-11.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yum-plugin-changelog.noarch         1.1.26-11.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yum-plugin-downloadonly.noarch      1.1.26-11.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yum-plugin-protect-packages.noarch  1.1.26-11.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yum-plugin-security.noarch          1.1.26-11.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yum-plugin-tmprepo.noarch           1.1.26-11.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yum-plugin-verify.noarch            1.1.26-11.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yum-plugin-versionlock.noarch       1.1.26-11.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yum-presto.noarch                   0.6.2-1.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yum-rhn-plugin.noarch               0.9.1-5.el6              @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+yum-utils.noarch                    1.1.26-11.el6            @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+zd1211-firmware.noarch              1.4-4.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+zenity.i686                         2.28.0-1.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+zip.i686                            3.0-1.el6                @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+zlib.i686                           1.2.3-25.el6             @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+zlib-devel.i686                     1.2.3-25.el6             @serverrepo
+zsh.i686                            4.3.10-4.1.el6           @anaconda-RedHatEnterpriseLinux-201009221732.i386/6.0
+Available Packages
+ElectricFence.i686                  2.2.2-28.el6             serverrepo
+GConf2-devel.i686                   2.28.0-6.el6             serverrepo
+ImageMagick-c++.i686                6.5.4.7-5.el6            serverrepo
+MySQL-python.i686                   1.2.3-0.3.c1.1.el6       serverrepo
+ORBit2-devel.i686                   2.14.17-3.1.el6          serverrepo
+OpenIPMI.i686                       2.0.16-12.el6            serverrepo
+OpenIPMI-libs.i686                  2.0.16-12.el6            serverrepo
+PyGreSQL.i686                       3.8.1-2.el6              serverrepo
+PyQt4-devel.i686                    4.6.2-8.el6              serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-as-IN.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-bn-IN.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-de-DE.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-es-ES.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-fr-FR.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-gu-IN.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-hi-IN.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-it-IT.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-ja-JP.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-kn-IN.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-ko-KR.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-ml-IN.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-mr-IN.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-or-IN.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-pa-IN.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-pt-BR.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-ru-RU.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-si-LK.noarch
+                                    1-14.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-ta-IN.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-te-IN.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-zh-CN.noarch
+                                    1-21.el6                 serverrepo
+Red_Hat_Enterprise_Linux-Release_Notes-6-zh-TW.noarch
+                                    1-21.el6                 serverrepo
+SDL-devel.i686                      1.2.14-2.el6             serverrepo
+TurboGears2.noarch                  2.0.3-4.el6              serverrepo
+Xaw3d.i686                          1.5E-15.1.el6            serverrepo
+alsa-lib-devel.i686                 1.0.21-3.el6             serverrepo
+amanda-server.i686                  2.6.1p2-7.el6            serverrepo
+ant.i686                            1.7.1-13.el6             serverrepo
+ant-antlr.i686                      1.7.1-13.el6             serverrepo
+ant-apache-bcel.i686                1.7.1-13.el6             serverrepo
+ant-apache-bsf.i686                 1.7.1-13.el6             serverrepo
+ant-apache-log4j.i686               1.7.1-13.el6             serverrepo
+ant-apache-oro.i686                 1.7.1-13.el6             serverrepo
+ant-apache-regexp.i686              1.7.1-13.el6             serverrepo
+ant-apache-resolver.i686            1.7.1-13.el6             serverrepo
+ant-commons-logging.i686            1.7.1-13.el6             serverrepo
+ant-commons-net.i686                1.7.1-13.el6             serverrepo
+ant-javamail.i686                   1.7.1-13.el6             serverrepo
+ant-jdepend.i686                    1.7.1-13.el6             serverrepo
+ant-jsch.i686                       1.7.1-13.el6             serverrepo
+ant-junit.i686                      1.7.1-13.el6             serverrepo
+ant-nodeps.i686                     1.7.1-13.el6             serverrepo
+ant-swing.i686                      1.7.1-13.el6             serverrepo
+ant-trax.i686                       1.7.1-13.el6             serverrepo
+antlr.i686                          2.7.7-6.5.el6            serverrepo
+arts-devel.i686                     8:1.5.10-10.el6          serverrepo
+aspell.i686                         12:0.60.6-12.el6         serverrepo
+atk-devel.i686                      1.28.0-2.el6             serverrepo
+atlas-3dnow.i686                    3.8.3-12.4.el6           serverrepo
+atlas-sse.i686                      3.8.3-12.4.el6           serverrepo
+atlas-sse2.i686                     3.8.3-12.4.el6           serverrepo
+atlas-sse3.i686                     3.8.3-12.4.el6           serverrepo
+audit-libs-devel.i686               2.0.4-1.el6              serverrepo
+augeas-libs.i686                    0.7.2-3.el6              serverrepo
+autoconf.noarch                     2.63-5.1.el6             serverrepo
+automake.noarch                     1.11.1-1.2.el6           serverrepo
+automoc.i686                        1.0-0.14.rc3.el6         serverrepo
+avalon-framework.i686               4.1.4-7.el6              serverrepo
+babel.noarch                        0.9.4-5.1.el6            serverrepo
+babl.i686                           0.1.2-4.el6              serverrepo
+batik.i686                          1.7-6.3.el6              serverrepo
+bind.i686                           32:9.7.0-5.P2.el6        serverrepo
+bind-chroot.i686                    32:9.7.0-5.P2.el6        serverrepo
+bind-dyndb-ldap.i686                0.1.0-0.9.b.el6          serverrepo
+binutils-devel.i686                 2.20.51.0.2-5.11.el6     serverrepo
+bison.i686                          2.4.1-5.el6              serverrepo
+boost.i686                          1.41.0-11.el6            serverrepo
+boost-date-time.i686                1.41.0-11.el6            serverrepo
+boost-devel.i686                    1.41.0-11.el6            serverrepo
+boost-graph.i686                    1.41.0-11.el6            serverrepo
+boost-iostreams.i686                1.41.0-11.el6            serverrepo
+boost-python.i686                   1.41.0-11.el6            serverrepo
+boost-regex.i686                    1.41.0-11.el6            serverrepo
+boost-serialization.i686            1.41.0-11.el6            serverrepo
+boost-signals.i686                  1.41.0-11.el6            serverrepo
+boost-test.i686                     1.41.0-11.el6            serverrepo
+boost-thread.i686                   1.41.0-11.el6            serverrepo
+boost-wave.i686                     1.41.0-11.el6            serverrepo
+bpg-chveulebrivi-fonts.noarch       3.002-6.1.el6            serverrepo
+bpg-courier-fonts.noarch            4.002-6.1.el6            serverrepo
+bpg-fonts-common.noarch             20090205-6.1.el6         serverrepo
+bpg-glaho-fonts.noarch              9.000-6.1.el6            serverrepo
+bsf.noarch                          2.4.0-4.1.el6            serverrepo
+byacc.i686                          1.9.20070509-6.1.el6     serverrepo
+bzip2-devel.i686                    1.0.5-6.1.el6            serverrepo
+bzr.i686                            2.1.1-2.el6              serverrepo
+cairo-devel.i686                    1.8.8-3.1.el6            serverrepo
+check.i686                          0.9.8-1.1.el6            serverrepo
+check-devel.i686                    0.9.8-1.1.el6            serverrepo
+chrpath.i686                        0.13-7.el6               serverrepo
+cim-schema.noarch                   2.22.0-2.1.el6           serverrepo
+cmake.i686                          2.6.4-5.el6              serverrepo
+compat-gcc-34.i686                  3.4.6-19.el6             serverrepo
+compat-gcc-34-c++.i686              3.4.6-19.el6             serverrepo
+compat-gcc-34-g77.i686              3.4.6-19.el6             serverrepo
+compat-readline5.i686               5.2-17.1.el6             serverrepo
+conman.i686                         0.2.5-2.3.el6            serverrepo
+cronie-noanacron.i686               1.4.4-2.el6              serverrepo
+crypto-utils.i686                   2.4.1-24.2.el6           serverrepo
+cscope.i686                         15.6-6.el6               serverrepo
+ctags.i686                          5.8-2.el6                serverrepo
+ctags-etags.i686                    5.8-2.el6                serverrepo
+ctan-cm-lgc-fonts-common.noarch     0.5-17.1.el6             serverrepo
+ctan-cm-lgc-roman-fonts.noarch      0.5-17.1.el6             serverrepo
+ctan-cm-lgc-sans-fonts.noarch       0.5-17.1.el6             serverrepo
+ctan-cm-lgc-typewriter-fonts.noarch 0.5-17.1.el6             serverrepo
+ctan-kerkis-fonts-common.noarch     2.0-23.el6               serverrepo
+ctan-kerkis-sans-fonts.noarch       2.0-23.el6               serverrepo
+ctan-kerkis-serif-fonts.noarch      2.0-23.el6               serverrepo
+ctapi-common.i686                   1.1-6.1.el6              serverrepo
+culmus-aharoni-clm-fonts.noarch     0.103-7.el6              serverrepo
+culmus-caladings-clm-fonts.noarch   0.103-7.el6              serverrepo
+culmus-david-clm-fonts.noarch       0.103-7.el6              serverrepo
+culmus-drugulin-clm-fonts.noarch    0.103-7.el6              serverrepo
+culmus-ellinia-clm-fonts.noarch     0.103-7.el6              serverrepo
+culmus-fonts-common.noarch          0.103-7.el6              serverrepo
+culmus-frank-ruehl-clm-fonts.noarch 0.103-7.el6              serverrepo
+culmus-miriam-clm-fonts.noarch      0.103-7.el6              serverrepo
+culmus-miriam-mono-clm-fonts.noarch 0.103-7.el6              serverrepo
+culmus-nachlieli-clm-fonts.noarch   0.103-7.el6              serverrepo
+culmus-yehuda-clm-fonts.noarch      0.103-7.el6              serverrepo
+cups-devel.i686                     1:1.4.2-35.el6           serverrepo
+cyrus-imapd.i686                    2.3.16-6.el6             serverrepo
+cyrus-imapd-utils.i686              2.3.16-6.el6             serverrepo
+cyrus-sasl-md5.i686                 2.1.23-8.el6             serverrepo
+dbus-devel.i686                     1:1.2.24-3.el6           serverrepo
+dbus-glib-devel.i686                0.86-5.el6               serverrepo
+dcraw.i686                          8.96-1.1.el6             serverrepo
+dejagnu.noarch                      1:1.4.4-17.el6           serverrepo
+dejavu-lgc-sans-mono-fonts.noarch   2.30-2.el6               serverrepo
+devhelp.i686                        2.28.1-3.el6             serverrepo
+dhcp.i686                           12:4.1.1-12.P1.el6       serverrepo
+diffstat.i686                       1.51-2.el6               serverrepo
+docbook-simple.noarch               1.1-8.el6                serverrepo
+docbook-slides.noarch               3.4.0-9.el6              serverrepo
+docbook-style-dsssl.noarch          1.79-10.el6              serverrepo
+docbook-style-xsl.noarch            1.75.2-6.el6             serverrepo
+docbook-utils.noarch                0.6.14-24.el6            serverrepo
+docbook-utils-pdf.noarch            0.6.14-24.el6            serverrepo
+docbook5-schemas.noarch             5.0-4.1.el6              serverrepo
+docbook5-style-xsl.noarch           1.75.2-4.el6             serverrepo
+dovecot-mysql.i686                  1:2.0-0.10.beta6.20100630.el6
+                                                             serverrepo
+dovecot-pgsql.i686                  1:2.0-0.10.beta6.20100630.el6
+                                                             serverrepo
+dovecot-pigeonhole.i686             1:2.0-0.10.beta6.20100630.el6
+                                                             serverrepo
+doxygen.i686                        1:1.6.1-4.el6            serverrepo
+dracut-fips.noarch                  004-32.el6               serverrepo
+dracut-network.noarch               004-32.el6               serverrepo
+dtach.i686                          0.8-4.el6                serverrepo
+dvipng.i686                         1.11-3.2.el6             serverrepo
+e2fsprogs-devel.i686                1.41.12-3.el6            serverrepo
+eclipse-birt.i686                   2.5.2-1.el6              serverrepo
+eclipse-callgraph.i686              0.5.0-1.el6              serverrepo
+eclipse-cdt.i686                    1:6.0.2-3.el6            serverrepo
+eclipse-changelog.i686              1:2.6.7-5.el6            serverrepo
+eclipse-dtp.i686                    1.7.2-1.el6              serverrepo
+eclipse-emf.i686                    2.5.0-4.4.el6            serverrepo
+eclipse-gef.i686                    3.5.2-1.el6              serverrepo
+eclipse-jdt.i686                    1:3.5.2-5.el6            serverrepo
+eclipse-linuxprofilingframework.i686
+                                    0.3.0-5.el6              serverrepo
+eclipse-mylyn.i686                  3.3.2-4.5.el6            serverrepo
+eclipse-mylyn-cdt.i686              3.3.2-4.5.el6            serverrepo
+eclipse-mylyn-java.i686             3.3.2-4.5.el6            serverrepo
+eclipse-mylyn-pde.i686              3.3.2-4.5.el6            serverrepo
+eclipse-mylyn-trac.i686             3.3.2-4.5.el6            serverrepo
+eclipse-mylyn-webtasks.i686         3.3.2-4.5.el6            serverrepo
+eclipse-mylyn-wikitext.i686         3.3.2-4.5.el6            serverrepo
+eclipse-nls.i686                    3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-ar.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-bg.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-cs.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-da.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-de.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-el.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-es.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-et.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-fi.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-fr.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-he.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-hi.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-hu.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-it.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-ja.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-ko.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-mn.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-nl.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-no.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-pl.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-pt.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-pt_BR.i686              3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-ro.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-ru.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-sv.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-tr.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-uk.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-zh.i686                 3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-nls-zh_TW.i686              3.5.0.v20090620043401-4.el6
+                                                             serverrepo
+eclipse-oprofile.i686               0.5.0-1.el6              serverrepo
+eclipse-pde.i686                    1:3.5.2-5.el6            serverrepo
+eclipse-platform.i686               1:3.5.2-5.el6            serverrepo
+eclipse-rcp.i686                    1:3.5.2-5.el6            serverrepo
+eclipse-rpm-editor.i686             0.5.0-2.el6              serverrepo
+eclipse-rse.i686                    3.1.2-1.el6              serverrepo
+eclipse-subclipse.i686              1.6.5-6.el6              serverrepo
+eclipse-subclipse-graph.i686        1.6.5-6.el6              serverrepo
+eclipse-svnkit.i686                 1.3.0-3.el6              serverrepo
+eclipse-swt.i686                    1:3.5.2-5.el6            serverrepo
+eclipse-valgrind.i686               0.5.0-1.el6              serverrepo
+elfutils-devel.i686                 0.148-1.el6              serverrepo
+emacs.i686                          1:23.1-20.el6            serverrepo
+emacs-auctex.noarch                 11.85-10.el6             serverrepo
+emacs-common.i686                   1:23.1-20.el6            serverrepo
+emacs-gnuplot.i686                  4.2.6-2.el6              serverrepo
+emacs-nox.i686                      1:23.1-20.el6            serverrepo
+evolution-data-server-devel.i686    2.28.3-10.el6            serverrepo
+evolution-data-server-doc.noarch    2.28.3-10.el6            serverrepo
+expect.i686                         5.44.1.15-2.el6          serverrepo
+fakeroot.i686                       1.12.2-22.2.el6          serverrepo
+fakeroot-libs.i686                  1.12.2-22.2.el6          serverrepo
+fence-virtd.i686                    0.2.1-5.el6              serverrepo
+fence-virtd-libvirt.i686            0.2.1-5.el6              serverrepo
+fence-virtd-multicast.i686          0.2.1-5.el6              serverrepo
+fence-virtd-serial.i686             0.2.1-5.el6              serverrepo
+file-devel.i686                     5.04-5.el6               serverrepo
+flex.i686                           2.5.35-8.el6             serverrepo
+fontconfig-devel.i686               2.8.0-3.el6              serverrepo
+fop.i686                            0.95-4.2.el6             serverrepo
+freeipmi.i686                       0.7.16-3.el6             serverrepo
+freeipmi-bmc-watchdog.i686          0.7.16-3.el6             serverrepo
+freeipmi-ipmidetectd.i686           0.7.16-3.el6             serverrepo
+freeradius.i686                     2.1.9-3.el6              serverrepo
+freetype-devel.i686                 2.3.11-5.el6             serverrepo
+fuse-devel.i686                     2.8.3-1.el6              serverrepo
+gamin-devel.i686                    0.1.10-9.el6             serverrepo
+gc.i686                             7.1-10.el6               serverrepo
+gegl.i686                           0.1.2-3.el6              serverrepo
+gettext-devel.i686                  0.17-16.el6              serverrepo
+gettext-libs.i686                   0.17-16.el6              serverrepo
+gimp.i686                           2:2.6.9-4.el6            serverrepo
+gimp-data-extras.noarch             2.0.2-3.1.el6            serverrepo
+gimp-help.noarch                    2.4.2-5.1.el6            serverrepo
+gimp-help-browser.i686              2:2.6.9-4.el6            serverrepo
+gimp-libs.i686                      2:2.6.9-4.el6            serverrepo
+git.i686                            1.7.1-2.el6              serverrepo
+glade3.i686                         3.6.7-2.1.el6            serverrepo
+glade3-libgladeui.i686              3.6.7-2.1.el6            serverrepo
+glib2-devel.i686                    2.22.5-5.el6             serverrepo
+gmp-devel.i686                      4.3.1-7.el6              serverrepo
+gnome-common.noarch                 2.28.0-1.1.el6           serverrepo
+gnome-desktop-devel.i686            2.28.2-8.el6             serverrepo
+gnome-devel-docs.noarch             2.28.0-1.el6             serverrepo
+gnome-doc-utils.noarch              0.18.1-1.el6             serverrepo
+gnome-keyring-devel.i686            2.28.2-6.el6             serverrepo
+gnome-vfs2-devel.i686               2.24.2-6.el6             serverrepo
+gnutls-devel.i686                   2.8.5-4.el6              serverrepo
+gsl.i686                            1.13-1.el6               serverrepo
+gstreamer-devel.i686                0.10.29-1.el6            serverrepo
+gstreamer-plugins-base-devel.i686   0.10.29-1.el6            serverrepo
+gtk-doc.noarch                      1.11-5.1.el6             serverrepo
+gtk-vnc-python.i686                 0.3.10-3.el6             serverrepo
+gtk2-devel.i686                     2.18.9-4.el6             serverrepo
+gtk2-devel-docs.i686                2.18.9-4.el6             serverrepo
+gutenprint-plugin.i686              5.2.5-2.el6              serverrepo
+gvfs-devel.i686                     1.4.3-9.el6              serverrepo
+hal-devel.i686                      0.5.14-8.el6             serverrepo
+hamcrest.i686                       1.1-9.4.el6              serverrepo
+hardlink.i686                       1:1.0-10.el6             serverrepo
+hsqldb.i686                         1:1.8.0.10-8.el6         serverrepo
+hunspell-ar.noarch                  0.20080110-4.1.el6       serverrepo
+hunspell-as.noarch                  1.0.3-3.1.el6            serverrepo
+hunspell-az.noarch                  0.20040827-4.1.el6       serverrepo
+hunspell-be.noarch                  1.1-1.1.el6              serverrepo
+hunspell-ber.noarch                 0.20080210-3.1.el6       serverrepo
+hunspell-bg.noarch                  4.1-5.1.el6              serverrepo
+hunspell-bn.noarch                  1:0.04-2.el6             serverrepo
+hunspell-br.noarch                  1:0.2-2.1.el6            serverrepo
+hunspell-ca.noarch                  0.20090630-2.1.el6       serverrepo
+hunspell-cop.noarch                 0.2.0-4.1.el6            serverrepo
+hunspell-cs.noarch                  20060303-10.el6          serverrepo
+hunspell-csb.noarch                 0.20050311-4.1.el6       serverrepo
+hunspell-cy.noarch                  0.20040425-5.1.el6       serverrepo
+hunspell-da.noarch                  1.7.29-1.1.el6           serverrepo
+hunspell-de.noarch                  0.20090107-4.1.el6       serverrepo
+hunspell-devel.i686                 1.2.8-16.el6             serverrepo
+hunspell-el.noarch                  1:0.7-5.el6              serverrepo
+hunspell-eo.noarch                  0.20041129-3.1.el6       serverrepo
+hunspell-es.noarch                  0.20081215-3.1.el6       serverrepo
+hunspell-et.noarch                  0.20030606-5.1.el6       serverrepo
+hunspell-eu.noarch                  0.20080507-3.1.el6       serverrepo
+hunspell-fa.noarch                  0.20070116-3.1.el6       serverrepo
+hunspell-fj.noarch                  0.20050811-4.1.el6       serverrepo
+hunspell-fo.noarch                  0.2.37-1.1.el6           serverrepo
+hunspell-fr.noarch                  3.4-1.1.el6              serverrepo
+hunspell-fur.noarch                 0.20050912-4.1.el6       serverrepo
+hunspell-fy.noarch                  2.0.0-4.1.el6            serverrepo
+hunspell-ga.noarch                  4.4-3.1.el6              serverrepo
+hunspell-gd.noarch                  1.0.0-0.3.rc.2.el6       serverrepo
+hunspell-gl.noarch                  0.20080515-3.1.el6       serverrepo
+hunspell-gu.noarch                  20061015-3.1.el6         serverrepo
+hunspell-gv.noarch                  0.20040505-4.1.el6       serverrepo
+hunspell-he.i686                    1.1-3.2.el6              serverrepo
+hunspell-hi.noarch                  20050726-6.el6           serverrepo
+hunspell-hil.noarch                 1:0.13-1.el6             serverrepo
+hunspell-hr.noarch                  1:0.20040608-4.1.el6     serverrepo
+hunspell-hsb.noarch                 0.20060327.2-3.1.el6     serverrepo
+hunspell-hu.noarch                  1.5-3.el6                serverrepo
+hunspell-hy.noarch                  0.10.1-3.1.el6           serverrepo
+hunspell-ia.noarch                  0.20050226-3.1.el6       serverrepo
+hunspell-id.noarch                  0.20040812-3.1.el6       serverrepo
+hunspell-is.noarch                  0.20090823-1.1.el6       serverrepo
+hunspell-it.noarch                  2.4-0.3.20070901.1.el6   serverrepo
+hunspell-kk.noarch                  1.1-1.1.el6              serverrepo
+hunspell-km.noarch                  1.1-2.1.el6              serverrepo
+hunspell-kn.noarch                  1.0.3-2.1.el6            serverrepo
+hunspell-ko.noarch                  0.3.3-1.el6              serverrepo
+hunspell-ku.noarch                  0.21-6.1.el6             serverrepo
+hunspell-la.noarch                  0.20080903-4.1.el6       serverrepo
+hunspell-lt.noarch                  1.2.1-5.1.el6            serverrepo
+hunspell-lv.noarch                  0.8.2-2.el6              serverrepo
+hunspell-mai.noarch                 1.0.1-1.1.el6            serverrepo
+hunspell-mg.noarch                  0.20050109-4.1.el6       serverrepo
+hunspell-mi.noarch                  0.20080630-3.1.el6       serverrepo
+hunspell-mk.noarch                  0.20051126-3.1.el6       serverrepo
+hunspell-ml.noarch                  0.1-4.1.el6              serverrepo
+hunspell-mn.noarch                  0.20080709-2.1.el6       serverrepo
+hunspell-mr.noarch                  20060920-6.1.el6         serverrepo
+hunspell-ms.noarch                  0.20050117-4.1.el6       serverrepo
+hunspell-mt.noarch                  0.20020708-4.1.el6       serverrepo
+hunspell-nb.noarch                  2.0.10-5.1.el6           serverrepo
+hunspell-nds.noarch                 0.1-3.1.el6              serverrepo
+hunspell-ne.noarch                  20080425-1.1.el6         serverrepo
+hunspell-nl.noarch                  1.10-2.el6               serverrepo
+hunspell-nn.noarch                  2.0.10-5.1.el6           serverrepo
+hunspell-nr.noarch                  0.20060120-4.1.el6       serverrepo
+hunspell-nso.noarch                 0.20060120-3.1.el6       serverrepo
+hunspell-ny.noarch                  0.20050108-4.1.el6       serverrepo
+hunspell-oc.noarch                  0.5-3.1.el6              serverrepo
+hunspell-or.noarch                  1:0.03-1.el6             serverrepo
+hunspell-pa.noarch                  20050726-4.1.el6         serverrepo
+hunspell-pl.noarch                  0.20090908-1.1.el6       serverrepo
+hunspell-pt.noarch                  0.20090702-4.el6         serverrepo
+hunspell-ro.noarch                  3.3-1.el6                serverrepo
+hunspell-ru.noarch                  1:0.99f7-4.1.el6         serverrepo
+hunspell-rw.noarch                  0.20050109-3.1.el6       serverrepo
+hunspell-sc.noarch                  0.20081101-4.1.el6       serverrepo
+hunspell-si.noarch                  0.2.1-2.el6              serverrepo
+hunspell-sk.noarch                  1:0.20090330-2.1.el6     serverrepo
+hunspell-sl.noarch                  0.20070127-4.1.el6       serverrepo
+hunspell-so.noarch                  0.1.2-2.1.el6            serverrepo
+hunspell-sq.noarch                  1.6-3.1.el6              serverrepo
+hunspell-sr.noarch                  0.20090511-2.1.el6       serverrepo
+hunspell-ss.noarch                  0.20060705-3.1.el6       serverrepo
+hunspell-st.noarch                  0.20060123-3.1.el6       serverrepo
+hunspell-sv.noarch                  1.39-3.el6               serverrepo
+hunspell-sw.noarch                  0.20050819-4.1.el6       serverrepo
+hunspell-ta.noarch                  20100226-1.el6           serverrepo
+hunspell-te.noarch                  0.20050929-5.el6         serverrepo
+hunspell-tet.noarch                 0.20050108-5.1.el6       serverrepo
+hunspell-th.noarch                  0.20061212-4.1.el6       serverrepo
+hunspell-tk.noarch                  0.20080213-3.1.el6       serverrepo
+hunspell-tl.noarch                  0.20050109-4.1.el6       serverrepo
+hunspell-tn.noarch                  0.20060123-5.el6         serverrepo
+hunspell-ts.noarch                  0.20060123-3.1.el6       serverrepo
+hunspell-uk.noarch                  1.6.0-1.1.el6            serverrepo
+hunspell-ur.noarch                  0.64-2.1.el6             serverrepo
+hunspell-uz.noarch                  0.6-3.1.el6              serverrepo
+hunspell-ve.noarch                  0.20060706-3.1.el6       serverrepo
+hunspell-vi.noarch                  0.20080604-3.1.el6       serverrepo
+hunspell-wa.noarch                  0.4.15-4.1.el6           serverrepo
+hunspell-xh.noarch                  0.20060123-3.1.el6       serverrepo
+hunspell-zu.noarch                  0.20060120-4.1.el6       serverrepo
+ibus-table-cangjie.noarch           1.2.0.20100210-1.el6     serverrepo
+ibus-table-erbi.noarch              1.2.0.20090901-6.el6     serverrepo
+ibus-table-wubi.noarch              1.2.0.20090715-8.el6     serverrepo
+icu4j-eclipse.i686                  1:4.0.1-3.3.el6          serverrepo
+imake.i686                          1.0.2-11.el6             serverrepo
+indent.i686                         2.2.10-5.1.el6           serverrepo
+inkscape.i686                       0.47-6.el6               serverrepo
+intltool.noarch                     0.41.0-1.1.el6           serverrepo
+ipa-gothic-fonts.noarch             003.02-4.2.el6           serverrepo
+ipa-mincho-fonts.noarch             003.02-3.1.el6           serverrepo
+ipa-pgothic-fonts.noarch            003.02-4.1.el6           serverrepo
+ipa-pmincho-fonts.noarch            003.02-3.1.el6           serverrepo
+ipmitool.i686                       1.8.11-6.el6             serverrepo
+iptables-devel.i686                 1.4.7-3.el6              serverrepo
+isns-utils.i686                     0.93-1.0.el6             serverrepo
+jadetex.noarch                      3.13-8.el6               serverrepo
+jakarta-commons-codec.i686          1.3-11.7.el6             serverrepo
+jakarta-commons-collections.noarch  3.2.1-3.4.el6            serverrepo
+jakarta-commons-daemon.i686         1:1.0.1-8.9.el6          serverrepo
+jakarta-commons-dbcp-tomcat5.noarch 1.2.1-13.8.el6           serverrepo
+jakarta-commons-io.noarch           1.4-3.el6                serverrepo
+jakarta-commons-lang.noarch         2.4-1.1.el6              serverrepo
+jakarta-commons-net.noarch          2.0-2.1.el6              serverrepo
+jakarta-commons-pool-tomcat5.i686   1.3-12.7.el6             serverrepo
+jakarta-oro.i686                    2.0.8-6.6.el6            serverrepo
+java-1.5.0-gcj-devel.i686           1.5.0.0-29.1.el6         serverrepo
+java-1.5.0-gcj-javadoc.i686         1.5.0.0-29.1.el6         serverrepo
+java-1.6.0-openjdk-javadoc.i686     1:1.6.0.0-1.21.b17.el6   serverrepo
+jdepend.noarch                      2.9-1.2.el6              serverrepo
+jdom.noarch                         1.1.1-1.el6              serverrepo
+jetty-eclipse.noarch                6.1.21-1.el6             serverrepo
+jna.i686                            3.2.4-2.el6              serverrepo
+jsch.noarch                         0.1.41-2.2.el6           serverrepo
+junit.i686                          3.8.2-6.5.el6            serverrepo
+junit4.noarch                       4.5-5.3.el6              serverrepo
+jzlib.i686                          1.0.7-7.5.el6            serverrepo
+kacst-art-fonts.noarch              2.0-7.el6                serverrepo
+kacst-book-fonts.noarch             2.0-7.el6                serverrepo
+kacst-decorative-fonts.noarch       2.0-7.el6                serverrepo
+kacst-digital-fonts.noarch          2.0-7.el6                serverrepo
+kacst-farsi-fonts.noarch            2.0-7.el6                serverrepo
+kacst-fonts-common.noarch           2.0-7.el6                serverrepo
+kacst-letter-fonts.noarch           2.0-7.el6                serverrepo
+kacst-naskh-fonts.noarch            2.0-7.el6                serverrepo
+kacst-office-fonts.noarch           2.0-7.el6                serverrepo
+kacst-one-fonts.noarch              2.0-7.el6                serverrepo
+kacst-pen-fonts.noarch              2.0-7.el6                serverrepo
+kacst-poster-fonts.noarch           2.0-7.el6                serverrepo
+kacst-qurn-fonts.noarch             2.0-7.el6                serverrepo
+kacst-screen-fonts.noarch           2.0-7.el6                serverrepo
+kacst-title-fonts.noarch            2.0-7.el6                serverrepo
+kacst-titlel-fonts.noarch           2.0-7.el6                serverrepo
+kde-i18n-Arabic.noarch              1:3.5.10-11.el6          serverrepo
+kde-i18n-Bengali.noarch             1:3.5.10-11.el6          serverrepo
+kde-i18n-Brazil.noarch              1:3.5.10-11.el6          serverrepo
+kde-i18n-British.noarch             1:3.5.10-11.el6          serverrepo
+kde-i18n-Bulgarian.noarch           1:3.5.10-11.el6          serverrepo
+kde-i18n-Catalan.noarch             1:3.5.10-11.el6          serverrepo
+kde-i18n-Chinese.noarch             1:3.5.10-11.el6          serverrepo
+kde-i18n-Chinese-Big5.noarch        1:3.5.10-11.el6          serverrepo
+kde-i18n-Czech.noarch               1:3.5.10-11.el6          serverrepo
+kde-i18n-Danish.noarch              1:3.5.10-11.el6          serverrepo
+kde-i18n-Dutch.noarch               1:3.5.10-11.el6          serverrepo
+kde-i18n-Estonian.noarch            1:3.5.10-11.el6          serverrepo
+kde-i18n-Finnish.noarch             1:3.5.10-11.el6          serverrepo
+kde-i18n-French.noarch              1:3.5.10-11.el6          serverrepo
+kde-i18n-German.noarch              1:3.5.10-11.el6          serverrepo
+kde-i18n-Greek.noarch               1:3.5.10-11.el6          serverrepo
+kde-i18n-Hebrew.noarch              1:3.5.10-11.el6          serverrepo
+kde-i18n-Hindi.noarch               1:3.5.10-11.el6          serverrepo
+kde-i18n-Hungarian.noarch           1:3.5.10-11.el6          serverrepo
+kde-i18n-Icelandic.noarch           1:3.5.10-11.el6          serverrepo
+kde-i18n-Italian.noarch             1:3.5.10-11.el6          serverrepo
+kde-i18n-Japanese.noarch            1:3.5.10-11.el6          serverrepo
+kde-i18n-Korean.noarch              1:3.5.10-11.el6          serverrepo
+kde-i18n-Lithuanian.noarch          1:3.5.10-11.el6          serverrepo
+kde-i18n-Norwegian.noarch           1:3.5.10-11.el6          serverrepo
+kde-i18n-Norwegian-Nynorsk.noarch   1:3.5.10-11.el6          serverrepo
+kde-i18n-Polish.noarch              1:3.5.10-11.el6          serverrepo
+kde-i18n-Portuguese.noarch          1:3.5.10-11.el6          serverrepo
+kde-i18n-Punjabi.noarch             1:3.5.10-11.el6          serverrepo
+kde-i18n-Romanian.noarch            1:3.5.10-11.el6          serverrepo
+kde-i18n-Russian.noarch             1:3.5.10-11.el6          serverrepo
+kde-i18n-Serbian.noarch             1:3.5.10-11.el6          serverrepo
+kde-i18n-Slovak.noarch              1:3.5.10-11.el6          serverrepo
+kde-i18n-Slovenian.noarch           1:3.5.10-11.el6          serverrepo
+kde-i18n-Spanish.noarch             1:3.5.10-11.el6          serverrepo
+kde-i18n-Swedish.noarch             1:3.5.10-11.el6          serverrepo
+kde-i18n-Tamil.noarch               1:3.5.10-11.el6          serverrepo
+kde-i18n-Turkish.noarch             1:3.5.10-11.el6          serverrepo
+kde-i18n-Ukrainian.noarch           1:3.5.10-11.el6          serverrepo
+kde-l10n.noarch                     4.3.4-5.el6              serverrepo
+kde-l10n-Arabic.noarch              4.3.4-5.el6              serverrepo
+kde-l10n-Basque.noarch              4.3.4-5.el6              serverrepo
+kde-l10n-Bengali-India.noarch       4.3.4-5.el6              serverrepo
+kde-l10n-Brazil.noarch              4.3.4-5.el6              serverrepo
+kde-l10n-British.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Bulgarian.noarch           4.3.4-5.el6              serverrepo
+kde-l10n-Catalan.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Chhattisgarhi.noarch       4.3.4-5.el6              serverrepo
+kde-l10n-Chinese.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Chinese-Traditional.noarch 4.3.4-5.el6              serverrepo
+kde-l10n-Croatian.noarch            4.3.4-5.el6              serverrepo
+kde-l10n-Czech.noarch               4.3.4-5.el6              serverrepo
+kde-l10n-Danish.noarch              4.3.4-5.el6              serverrepo
+kde-l10n-Dutch.noarch               4.3.4-5.el6              serverrepo
+kde-l10n-Estonian.noarch            4.3.4-5.el6              serverrepo
+kde-l10n-Finnish.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-French.noarch              4.3.4-5.el6              serverrepo
+kde-l10n-Frisian.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Galician.noarch            4.3.4-5.el6              serverrepo
+kde-l10n-German.noarch              4.3.4-5.el6              serverrepo
+kde-l10n-Greek.noarch               4.3.4-5.el6              serverrepo
+kde-l10n-Gujarati.noarch            4.3.4-5.el6              serverrepo
+kde-l10n-Hebrew.noarch              4.3.4-5.el6              serverrepo
+kde-l10n-Hindi.noarch               4.3.4-5.el6              serverrepo
+kde-l10n-Hungarian.noarch           4.3.4-5.el6              serverrepo
+kde-l10n-Icelandic.noarch           4.3.4-5.el6              serverrepo
+kde-l10n-Irish.noarch               4.3.4-5.el6              serverrepo
+kde-l10n-Italian.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Japanese.noarch            4.3.4-5.el6              serverrepo
+kde-l10n-Kannada.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Kashubian.noarch           4.3.4-5.el6              serverrepo
+kde-l10n-Kazakh.noarch              4.3.4-5.el6              serverrepo
+kde-l10n-Khmer.noarch               4.3.4-5.el6              serverrepo
+kde-l10n-Korean.noarch              4.3.4-5.el6              serverrepo
+kde-l10n-Kurdish.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Latvian.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Lithuanian.noarch          4.3.4-5.el6              serverrepo
+kde-l10n-LowSaxon.noarch            4.3.4-5.el6              serverrepo
+kde-l10n-Macedonian.noarch          4.3.4-5.el6              serverrepo
+kde-l10n-Maithili.noarch            4.3.4-5.el6              serverrepo
+kde-l10n-Malayalam.noarch           4.3.4-5.el6              serverrepo
+kde-l10n-Marathi.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Norwegian.noarch           4.3.4-5.el6              serverrepo
+kde-l10n-Norwegian-Nynorsk.noarch   4.3.4-5.el6              serverrepo
+kde-l10n-Polish.noarch              4.3.4-5.el6              serverrepo
+kde-l10n-Portuguese.noarch          4.3.4-5.el6              serverrepo
+kde-l10n-Punjabi.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Romanian.noarch            4.3.4-5.el6              serverrepo
+kde-l10n-Russian.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Serbian.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Slovak.noarch              4.3.4-5.el6              serverrepo
+kde-l10n-Slovenian.noarch           4.3.4-5.el6              serverrepo
+kde-l10n-Spanish.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Swedish.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Tajik.noarch               4.3.4-5.el6              serverrepo
+kde-l10n-Thai.noarch                4.3.4-5.el6              serverrepo
+kde-l10n-Turkish.noarch             4.3.4-5.el6              serverrepo
+kde-l10n-Ukrainian.noarch           4.3.4-5.el6              serverrepo
+kde-l10n-Walloon.noarch             4.3.4-5.el6              serverrepo
+kdebase-devel.i686                  6:4.3.4-4.el6            serverrepo
+kdebase-workspace-devel.i686        4.3.4-19.el6             serverrepo
+kdegraphics-devel.i686              7:4.3.4-6.el6            serverrepo
+kdelibs-apidocs.noarch              6:4.3.4-10.el6           serverrepo
+kdelibs-devel.i686                  6:4.3.4-10.el6           serverrepo
+kdelibs3-devel.i686                 3.5.10-23.el6            serverrepo
+kdemultimedia-devel.i686            6:4.3.4-3.el6            serverrepo
+kdenetwork-devel.i686               7:4.3.4-10.el6           serverrepo
+kdepim-devel.i686                   6:4.3.4-5.el6            serverrepo
+kdepimlibs-devel.i686               4.3.4-4.el6              serverrepo
+kdesdk.i686                         4.3.4-4.el6              serverrepo
+kdesdk-devel.i686                   4.3.4-4.el6              serverrepo
+kdesdk-libs.i686                    4.3.4-4.el6              serverrepo
+kdesdk-utils.i686                   4.3.4-4.el6              serverrepo
+kernel-debug.i686                   2.6.32-71.el6            serverrepo
+kernel-debug-devel.i686             2.6.32-71.el6            serverrepo
+khmeros-battambang-fonts.noarch     5.0-9.el6                serverrepo
+khmeros-bokor-fonts.noarch          5.0-9.el6                serverrepo
+khmeros-handwritten-fonts.noarch    5.0-9.el6                serverrepo
+khmeros-metal-chrieng-fonts.noarch  5.0-9.el6                serverrepo
+khmeros-muol-fonts.noarch           5.0-9.el6                serverrepo
+khmeros-siemreap-fonts.noarch       5.0-9.el6                serverrepo
+krb5-server.i686                    1.8.2-3.el6              serverrepo
+krb5-server-ldap.i686               1.8.2-3.el6              serverrepo
+kross-python.i686                   4.3.4-5.el6              serverrepo
+libICE-devel.i686                   1.0.6-1.el6              serverrepo
+libIDL-devel.i686                   0.8.13-2.1.el6           serverrepo
+libSM-devel.i686                    1.1.0-7.1.el6            serverrepo
+libX11-devel.i686                   1.3-2.el6                serverrepo
+libXScrnSaver-devel.i686            1.2.0-1.el6              serverrepo
+libXau-devel.i686                   1.0.5-1.el6              serverrepo
+libXaw-devel.i686                   1.0.6-4.1.el6            serverrepo
+libXcomposite-devel.i686            0.4.1-2.el6              serverrepo
+libXcursor-devel.i686               1.1.10-2.el6             serverrepo
+libXdamage-devel.i686               1.1.2-1.el6              serverrepo
+libXdmcp-devel.i686                 1.0.3-1.el6              serverrepo
+libXext-devel.i686                  1.1-3.el6                serverrepo
+libXfixes-devel.i686                4.0.4-1.el6              serverrepo
+libXft-devel.i686                   2.1.13-4.1.el6           serverrepo
+libXi-devel.i686                    1.3-3.el6                serverrepo
+libXinerama-devel.i686              1.1-1.el6                serverrepo
+libXmu-devel.i686                   1.0.5-1.el6              serverrepo
+libXp-devel.i686                    1.0.0-15.1.el6           serverrepo
+libXpm-devel.i686                   3.5.8-2.el6              serverrepo
+libXrandr-devel.i686                1.3.0-4.el6              serverrepo
+libXrender-devel.i686               0.9.5-1.el6              serverrepo
+libXt-devel.i686                    1.0.7-1.el6              serverrepo
+libXtst-devel.i686                  1.0.99.2-3.el6           serverrepo
+libXv-devel.i686                    1.0.5-1.el6              serverrepo
+libXxf86misc-devel.i686             1.0.2-1.el6              serverrepo
+libXxf86vm-devel.i686               1.1.0-1.el6              serverrepo
+libacl-devel.i686                   2.2.49-4.el6             serverrepo
+libart_lgpl-devel.i686              2.3.20-5.1.el6           serverrepo
+libattr-devel.i686                  2.4.44-4.el6             serverrepo
+libblkid-devel.i686                 2.17.2-6.el6             serverrepo
+libbonobo-devel.i686                2.24.2-4.el6             serverrepo
+libbonoboui-devel.i686              2.24.2-3.el6             serverrepo
+libcanberra-devel.i686              0.22-1.el6               serverrepo
+libcap-devel.i686                   2.16-5.2.el6             serverrepo
+libcap-ng-devel.i686                0.6.4-3.el6              serverrepo
+libcgroup-devel.i686                0.36.1-6.el6             serverrepo
+libcmpiCppImpl0.i686                2.0.1-5.el6              serverrepo
+libcmpiutil.i686                    0.5.1-1.el6.1            serverrepo
+libcroco-devel.i686                 0.6.2-5.el6              serverrepo
+libcurl-devel.i686                  7.19.7-16.el6            serverrepo
+libdbi.i686                         0.8.3-3.1.el6            serverrepo
+libdbi-dbd-mysql.i686               0.8.3-5.1.el6            serverrepo
+libdbi-dbd-pgsql.i686               0.8.3-5.1.el6            serverrepo
+libdbi-drivers.i686                 0.8.3-5.1.el6            serverrepo
+libdrm-devel.i686                   2.4.20-2.el6             serverrepo
+libexif-devel.i686                  0.6.16-4.1.el6           serverrepo
+libgcj-src.i686                     4.4.4-13.el6             serverrepo
+libgcrypt-devel.i686                1.4.5-3.el6              serverrepo
+libglade2-devel.i686                2.6.4-3.1.el6            serverrepo
+libgnome-devel.i686                 2.28.0-11.el6            serverrepo
+libgnomecanvas-devel.i686           2.26.0-4.el6             serverrepo
+libgnomeui-devel.i686               2.24.1-4.el6             serverrepo
+libgpg-error-devel.i686             1.7-3.el6                serverrepo
+libgphoto2-devel.i686               2.4.7-4.el6              serverrepo
+libgsf-devel.i686                   1.14.15-5.el6            serverrepo
+libgudev1-devel.i686                147-2.29.el6             serverrepo
+libgweather-devel.i686              2.28.0-4.el6             serverrepo
+libhugetlbfs-devel.i686             2.8-2.el6                serverrepo
+libibverbs-devel.i686               1.1.4-2.el6              serverrepo
+libical-devel.i686                  0.43-5.1.el6             serverrepo
+libidn-devel.i686                   1.18-2.el6               serverrepo
+libieee1284-devel.i686              0.2.11-9.el6             serverrepo
+libjpeg-devel.i686                  6b-46.el6                serverrepo
+libmemcached.i686                   0.31-1.1.el6             serverrepo
+libmng-devel.i686                   1.0.10-4.1.el6           serverrepo
+libnl-devel.i686                    1.1-12.el6               serverrepo
+libnotify-devel.i686                0.5.0-1.el6              serverrepo
+libotf.i686                         0.9.9-3.1.el6            serverrepo
+libpng-devel.i686                   2:1.2.44-1.el6           serverrepo
+librsvg2-devel.i686                 2.26.0-5.el6             serverrepo
+libsoup-devel.i686                  2.28.2-1.el6             serverrepo
+libspiro.i686                       20071029-3.1.el6         serverrepo
+libstdc++-docs.i686                 4.4.4-13.el6             serverrepo
+libtasn1-devel.i686                 2.3-3.el6                serverrepo
+libtiff-devel.i686                  3.9.4-1.el6              serverrepo
+libtool.i686                        2.2.6-15.5.el6           serverrepo
+libtopology-devel.i686              0.3-7.el6                serverrepo
+libudev-devel.i686                  147-2.29.el6             serverrepo
+libusb-devel.i686                   0.1.12-23.el6            serverrepo
+libuuid-devel.i686                  2.17.2-6.el6             serverrepo
+libvirt.i686                        0.8.1-27.el6             serverrepo
+libvirt-cim.i686                    0.5.8-3.el6              serverrepo
+libvirt-client.i686                 0.8.1-27.el6             serverrepo
+libvirt-devel.i686                  0.8.1-27.el6             serverrepo
+libvirt-java.noarch                 0.4.5-2.el6              serverrepo
+libvirt-java-devel.noarch           0.4.5-2.el6              serverrepo
+libvirt-python.i686                 0.8.1-27.el6             serverrepo
+libvirt-qpid.i686                   0.2.22-3.el6             serverrepo
+libwmf.i686                         0.2.8.4-22.el6           serverrepo
+libwpd.i686                         0.8.14-4.1.el6           serverrepo
+libwpg.i686                         0.1.3-4.1.el6            serverrepo
+libwsman1.i686                      2.2.3-6.el6              serverrepo
+libxcb-devel.i686                   1.5-1.el6                serverrepo
+libxkbfile-devel.i686               1.0.6-1.1.el6            serverrepo
+libxml2-devel.i686                  2.7.6-1.el6              serverrepo
+libxslt-devel.i686                  1.1.26-2.el6             serverrepo
+lm_sensors-devel.i686               3.1.1-10.el6             serverrepo
+lohit-malayalam-fonts.noarch        2.4.4-4.el6              serverrepo
+lpg-java-compat.noarch              1.1.0-4.1.el6            serverrepo
+lsscsi.i686                         0.23-2.el6               serverrepo
+lucene.noarch                       2.3.1-5.9.el6            serverrepo
+lucene-contrib.noarch               2.3.1-5.9.el6            serverrepo
+lynx.i686                           2.8.6-27.el6             serverrepo
+m17n-contrib-czech.noarch           1.1.10-3.el6             serverrepo
+m17n-contrib-kashmiri.noarch        1.1.10-3.el6             serverrepo
+m17n-contrib-nepali.noarch          1.1.10-3.el6             serverrepo
+m17n-contrib-sindhi.noarch          1.1.10-3.el6             serverrepo
+m17n-db-datafiles.noarch            1.5.5-1.1.el6            serverrepo
+m17n-db-sanskrit.noarch             1.5.5-1.1.el6            serverrepo
+m17n-db-tibetan.noarch              1.5.5-1.1.el6            serverrepo
+mailman.i686                        3:2.1.12-14.el6          serverrepo
+man-pages-cs.noarch                 0.18.20090209-2.1.el6    serverrepo
+man-pages-es.noarch                 1.55-14.el6              serverrepo
+man-pages-es-extra.noarch           1.55-14.el6              serverrepo
+man-pages-fr.noarch                 3.23-3.4.el6             serverrepo
+man-pages-it.noarch                 2.80-6.el6               serverrepo
+man-pages-ja.noarch                 20100115-2.el6           serverrepo
+man-pages-ko.noarch                 2:20050219-17.el6        serverrepo
+man-pages-pl.noarch                 0.24-8.1.el6             serverrepo
+man-pages-ru.noarch                 0.97-9.el6               serverrepo
+man-pages-uk.noarch                 0.1-0.11.20071108.el6    serverrepo
+mc.i686                             1:4.7.0.2-3.el6          serverrepo
+mcstrans.i686                       0.3.1-4.el6              serverrepo
+memcached.i686                      1.4.4-3.el6              serverrepo
+mercurial.i686                      1.4-3.el6                serverrepo
+mesa-libGL-devel.i686               7.7-2.el6                serverrepo
+mesa-libGLU-devel.i686              7.7-2.el6                serverrepo
+mgetty.i686                         1.1.36-8.el6             serverrepo
+migrationtools.noarch               47-7.el6                 serverrepo
+mod_auth_kerb.i686                  5.4-6.el6                serverrepo
+mod_auth_mysql.i686                 1:3.0.0-11.el6           serverrepo
+mod_auth_pgsql.i686                 2.0.3-10.1.el6           serverrepo
+mod_authz_ldap.i686                 0.26-15.el6              serverrepo
+mod_dav_svn.i686                    1.6.11-2.el6             serverrepo
+mod_nss.i686                        1.0.8-8.el6              serverrepo
+mod_ssl.i686                        1:2.2.15-5.el6           serverrepo
+mod_wsgi.i686                       3.2-1.el6                serverrepo
+mt-st.i686                          1.1-4.el6                serverrepo
+mtx.i686                            1.3.12-5.el6             serverrepo
+nafees-web-naskh-fonts.noarch       1.2-5.el6                serverrepo
+nasm.i686                           2.07-7.el6               serverrepo
+ncurses-devel.i686                  5.7-3.20090208.el6       serverrepo
+net-snmp-devel.i686                 1:5.5-27.el6             serverrepo
+net-snmp-perl.i686                  1:5.5-27.el6             serverrepo
+net-snmp-python.i686                1:5.5-27.el6             serverrepo
+net-snmp-utils.i686                 1:5.5-27.el6             serverrepo
+netcf-libs.i686                     0.1.6-4.el6              serverrepo
+nspluginwrapper.i686                1.3.0-14.el6             serverrepo
+nspr-devel.i686                     4.8.6-1.el6              serverrepo
+nss-devel.i686                      3.12.7-2.el6             serverrepo
+nss-softokn-devel.i686              3.12.7-1.1.el6           serverrepo
+nss-util-devel.i686                 3.12.7-1.el6             serverrepo
+numactl-devel.i686                  2.0.3-9.el6              serverrepo
+objectweb-asm.noarch                3.1-7.2.el6              serverrepo
+openct.i686                         0.6.19-4.el6             serverrepo
+openhpi.i686                        2.14.1-3.el6             serverrepo
+openhpi-libs.i686                   2.14.1-3.el6             serverrepo
+openhpi-subagent.i686               2.3.4-10.el6             serverrepo
+openjade.i686                       1.3.2-36.el6             serverrepo
+openmotif-devel.i686                2.3.3-1.el6              serverrepo
+opensp.i686                         1.5.2-12.1.el6           serverrepo
+openwsman-client.i686               2.2.3-6.el6              serverrepo
+openwsman-server.i686               2.2.3-6.el6              serverrepo
+pam-devel.i686                      1.1.1-4.el6              serverrepo
+pango-devel.i686                    1.28.1-3.el6             serverrepo
+papi-devel.i686                     4.1.0-2.el6              serverrepo
+passivetex.noarch                   1.25-11.el6              serverrepo
+patchutils.i686                     0.3.1-3.1.el6            serverrepo
+pcre-devel.i686                     7.8-3.1.el6              serverrepo
+pcsc-lite-openct.i686               0.6.19-4.el6             serverrepo
+perl-CGI.i686                       3.49-115.el6             serverrepo
+perl-CGI-Session.noarch             4.35-5.el6               serverrepo
+perl-Cache-Memcached.noarch         1.28-2.el6               serverrepo
+perl-Config-General.noarch          2.44-1.el6               serverrepo
+perl-DBD-Pg.i686                    2.15.1-3.el6             serverrepo
+perl-Devel-Symdump.noarch           1:2.08-2.el6             serverrepo
+perl-Error.noarch                   1:0.17015-4.el6          serverrepo
+perl-FreezeThaw.noarch              0.45-5.el6               serverrepo
+perl-Git.noarch                     1.7.1-2.el6              serverrepo
+perl-Newt.i686                      1.08-26.el6              serverrepo
+perl-Perlilog.noarch                0.3-4.el6                serverrepo
+perl-Pod-Coverage.noarch            0.20-4.el6               serverrepo
+perl-SGMLSpm.noarch                 1.03ii-21.el6            serverrepo
+perl-String-CRC32.i686              1.4-9.el6                serverrepo
+perl-Sys-Virt.i686                  0.2.4-1.el6              serverrepo
+perl-Test-Pod.noarch                1.40-1.el6               serverrepo
+perl-Test-Pod-Coverage.noarch       1.08-8.1.el6             serverrepo
+perl-XML-DOM.noarch                 1.44-7.el6               serverrepo
+perl-XML-RegExp.noarch              0.03-7.el6               serverrepo
+perltidy.noarch                     20090616-2.1.el6         serverrepo
+pixman-devel.i686                   0.16.6-1.el6             serverrepo
+policycoreutils-newrole.i686        2.0.83-19.1.el6          serverrepo
+polkit-devel.i686                   0.96-2.el6               serverrepo
+polkit-docs.i686                    0.96-2.el6               serverrepo
+popt-devel.i686                     1.13-7.el6               serverrepo
+postgresql.i686                     8.4.4-2.el6              serverrepo
+postgresql-contrib.i686             8.4.4-2.el6              serverrepo
+postgresql-devel.i686               8.4.4-2.el6              serverrepo
+postgresql-docs.i686                8.4.4-2.el6              serverrepo
+postgresql-jdbc.i686                8.4.701-3.el6            serverrepo
+postgresql-odbc.i686                08.04.0200-1.el6         serverrepo
+postgresql-plperl.i686              8.4.4-2.el6              serverrepo
+postgresql-plpython.i686            8.4.4-2.el6              serverrepo
+postgresql-pltcl.i686               8.4.4-2.el6              serverrepo
+postgresql-server.i686              8.4.4-2.el6              serverrepo
+postgresql-test.i686                8.4.4-2.el6              serverrepo
+pothana2000-fonts.noarch            1.3.2-3.el6              serverrepo
+pulseaudio-libs-devel.i686          0.9.21-13.el6            serverrepo
+pulseaudio-libs-zeroconf.i686       0.9.21-13.el6            serverrepo
+pycairo-devel.i686                  1.8.6-2.1.el6            serverrepo
+pygobject2-codegen.i686             2.20.0-5.el6             serverrepo
+pygobject2-devel.i686               2.20.0-5.el6             serverrepo
+pygobject2-doc.i686                 2.20.0-5.el6             serverrepo
+pygtk2-codegen.i686                 2.16.0-3.el6             serverrepo
+pygtk2-devel.i686                   2.16.0-3.el6             serverrepo
+pygtk2-doc.noarch                   2.16.0-3.el6             serverrepo
+python-babel.noarch                 0.9.4-5.1.el6            serverrepo
+python-cheetah.i686                 2.4.1-1.el6              serverrepo
+python-decoratortools.noarch        1.7-4.1.el6              serverrepo
+python-devel.i686                   2.6.5-3.el6              serverrepo
+python-docs.noarch                  2.6.5-2.el6              serverrepo
+python-enchant.i686                 1.3.1-5.2.el6            serverrepo
+python-formencode.noarch            1.2.2-2.1.el6            serverrepo
+python-genshi.i686                  0.5.1-7.1.el6            serverrepo
+python-lxml.i686                    2.2.3-1.1.el6            serverrepo
+python-magic.i686                   5.04-5.el6               serverrepo
+python-markdown.noarch              2.0.1-3.1.el6            serverrepo
+python-memcached.noarch             1.43-5.3.el6             serverrepo
+python-myghty.noarch                1.1-11.el6               serverrepo
+python-paste.noarch                 1.7.4-1.el6              serverrepo
+python-paste-deploy.noarch          1.3.3-2.1.el6            serverrepo
+python-paste-script.noarch          1.7.3-4.el6              serverrepo
+python-peak-rules.noarch            0.5a1.dev-9.2582.1.el6   serverrepo
+python-peak-util-addons.noarch      0.6-4.1.el6              serverrepo
+python-peak-util-assembler.noarch   0.5.1-1.el6              serverrepo
+python-peak-util-extremes.noarch    1.1-4.1.el6              serverrepo
+python-peak-util-symbols.noarch     1.0-4.1.el6              serverrepo
+python-prioritized-methods.noarch   0.2.1-5.1.el6            serverrepo
+python-psycopg2.i686                2.0.13-2.el6             serverrepo
+python-pygments.noarch              1.1.1-1.el6              serverrepo
+python-pylons.noarch                0.9.7-2.el6              serverrepo
+python-qmf.noarch                   0.7.946106-5.el6         serverrepo
+python-qpid.noarch                  0.7.946106-12.el6        serverrepo
+python-repoze-tm2.noarch            1.0-0.5.a4.el6           serverrepo
+python-repoze-what.noarch           1.0.8-6.el6              serverrepo
+python-repoze-what-pylons.noarch    1.0-4.el6                serverrepo
+python-repoze-who.noarch            1.0.13-2.el6             serverrepo
+python-repoze-who-testutil.noarch   1.0-0.4.rc1.el6          serverrepo
+python-routes.noarch                1.10.3-2.el6             serverrepo
+python-saslwrapper.i686             0.1.934605-2.el6         serverrepo
+python-simplejson.i686              2.0.9-3.1.el6            serverrepo
+python-sqlalchemy.noarch            0.5.5-2.1.el6            serverrepo
+python-tempita.noarch               0.4-2.el6                serverrepo
+python-toscawidgets.noarch          0.9.8-1.el6              serverrepo
+python-transaction.noarch           1.0.1-1.el6              serverrepo
+python-turbojson.noarch             1.2.1-8.1.el6            serverrepo
+python-virtinst.noarch              0.500.3-7.el6            serverrepo
+python-weberror.noarch              0.10.2-1.el6             serverrepo
+python-webflash.noarch              0.1-0.2.a9.el6           serverrepo
+python-webhelpers.noarch            0.6.4-4.el6              serverrepo
+python-webob.noarch                 0.9.6.1-3.el6            serverrepo
+python-webtest.noarch               1.2-2.el6                serverrepo
+python-zope-sqlalchemy.noarch       0.4-3.el6                serverrepo
+qdox.noarch                         1.9.2-2.el6              serverrepo
+qmf.i686                            0.7.946106-5.el6         serverrepo
+qpid-cpp-client.i686                0.7.946106-5.el6         serverrepo
+qpid-cpp-server.i686                0.7.946106-5.el6         serverrepo
+qpid-tests.noarch                   0.7.946106-1.el6         serverrepo
+qpid-tools.noarch                   0.7.946106-4.el6         serverrepo
+qt-devel.i686                       1:4.6.2-16.el6           serverrepo
+qt-doc.noarch                       1:4.6.2-16.el6           serverrepo
+qt3-devel.i686                      3.3.8b-29.el6            serverrepo
+quagga.i686                         0.99.15-5.el6            serverrepo
+radvd.i686                          1.6-1.el6                serverrepo
+rcs.i686                            5.7-37.el6               serverrepo
+rdist.i686                          1:6.1.5-49.el6           serverrepo
+readline-devel.i686                 6.0-3.el6                serverrepo
+redhat-rpm-config.noarch            9.0.3-25.el6             serverrepo
+rhdb-utils.i686                     8.4.0-3.el6              serverrepo
+rome.noarch                         0.9-4.2.el6              serverrepo
+rpm-build.i686                      4.8.0-12.el6             serverrepo
+rpm-devel.i686                      4.8.0-12.el6             serverrepo
+rpmdevtools.noarch                  7.5-1.el6                serverrepo
+rpmlint.noarch                      0.94-2.el6               serverrepo
+rrdtool.i686                        1.3.8-6.el6              serverrepo
+rsyslog-mysql.i686                  4.6.2-2.el6              serverrepo
+rsyslog-pgsql.i686                  4.6.2-2.el6              serverrepo
+ruby.i686                           1.8.7.299-4.el6          serverrepo
+ruby-libs.i686                      1.8.7.299-4.el6          serverrepo
+ruby-qmf.i686                       0.7.946106-5.el6         serverrepo
+ruby-qpid.i686                      0.7.946106-2.el6         serverrepo
+saab-fonts.noarch                   0.91-4.el6               serverrepo
+sac.i686                            1.3-5.1.el6              serverrepo
+samyak-devanagari-fonts.noarch      1.2.1-9.el6              serverrepo
+samyak-fonts-common.noarch          1.2.1-9.el6              serverrepo
+samyak-gujarati-fonts.noarch        1.2.1-9.el6              serverrepo
+samyak-malayalam-fonts.noarch       1.2.1-9.el6              serverrepo
+samyak-oriya-fonts.noarch           1.2.1-9.el6              serverrepo
+samyak-tamil-fonts.noarch           1.2.1-9.el6              serverrepo
+sane-backends-devel.i686            1.0.21-3.el6             serverrepo
+sane-backends-libs-gphoto2.i686     1.0.21-3.el6             serverrepo
+sane-frontends.i686                 1.0.14-9.2.el6           serverrepo
+saslwrapper.i686                    0.1.934605-2.el6         serverrepo
+sat4j.noarch                        2.1.1-1.2.el6            serverrepo
+saxon.noarch                        6.5.5-3.5.el6            serverrepo
+sblim-cim-client.noarch             1.3.9.1-1.el6            serverrepo
+sblim-cim-client2.noarch            2.1.3-1.el6              serverrepo
+sblim-cmpi-base.i686                1.6.0-1.el6              serverrepo
+sblim-cmpi-dhcp.i686                1.0-1.el6                serverrepo
+sblim-cmpi-dns.i686                 1.0-1.el6                serverrepo
+sblim-cmpi-fsvol.i686               1.5.0-2.el6              serverrepo
+sblim-cmpi-network.i686             1.4.0-1.el6              serverrepo
+sblim-cmpi-nfsv3.i686               1.1.0-1.el6              serverrepo
+sblim-cmpi-nfsv4.i686               1.1.0-1.el6              serverrepo
+sblim-cmpi-params.i686              1.3.0-1.el6              serverrepo
+sblim-cmpi-samba.i686               1.0-1.el6                serverrepo
+sblim-cmpi-sysfs.i686               1.2.0-1.el6              serverrepo
+sblim-cmpi-syslog.i686              0.8.0-1.el6              serverrepo
+sblim-gather.i686                   2.2.1-2.el6              serverrepo
+sblim-gather-provider.i686          2.2.1-2.el6              serverrepo
+sblim-indication_helper.i686        0.5.0-1.el6              serverrepo
+sblim-sfcb.i686                     1.3.8-1.el6              serverrepo
+sblim-sfcc.i686                     2.2.1-4.el6              serverrepo
+sblim-smis-hba.i686                 1.0.0-1.el6              serverrepo
+sblim-tools-libra.i686              1.0-1.el6                serverrepo
+sblim-wbemcli.i686                  1.6.1-1.el6              serverrepo
+screen.i686                         4.0.3-15.el6             serverrepo
+scrub.i686                          2.2-1.el6                serverrepo
+scsi-target-utils.i686              1.0.4-3.el6              serverrepo
+selinux-policy-minimum.noarch       3.7.19-54.el6            serverrepo
+selinux-policy-mls.noarch           3.7.19-54.el6            serverrepo
+sendmail.i686                       8.14.4-8.el6             serverrepo
+sendmail-cf.noarch                  8.14.4-8.el6             serverrepo
+sip-devel.i686                      4.9.3-1.el6              serverrepo
+slf4j.noarch                        1.5.8-7.el6              serverrepo
+smc-anjalioldlipi-fonts.noarch      04.2-11.el6              serverrepo
+smc-dyuthi-fonts.noarch             04.2-11.el6              serverrepo
+smc-kalyani-fonts.noarch            04.2-11.el6              serverrepo
+smc-rachana-fonts.noarch            04.2-11.el6              serverrepo
+smc-raghumalayalam-fonts.noarch     04.2-11.el6              serverrepo
+smc-suruma-fonts.noarch             04.2-11.el6              serverrepo
+sqlite-devel.i686                   3.6.20-1.el6             serverrepo
+squid.i686                          7:3.1.4-1.el6            serverrepo
+startup-notification-devel.i686     0.10-2.1.el6             serverrepo
+strigi-devel.i686                   0.7.0-2.el6              serverrepo
+subversion.i686                     1.6.11-2.el6             serverrepo
+subversion-javahl.i686              1.6.11-2.el6             serverrepo
+svnkit.i686                         1.3.0-3.el6              serverrepo
+swig.i686                           1.3.40-5.el6             serverrepo
+symlinks.i686                       1.4-2.1.el6              serverrepo
+systemtap-sdt-devel.i686            1.2-9.el6                serverrepo
+systemtap-server.i686               1.2-9.el6                serverrepo
+t1lib.i686                          5.1.2-6.el6              serverrepo
+tcl-devel.i686                      1:8.5.7-6.el6            serverrepo
+tcl-pgtcl.i686                      1.6.2-3.el6              serverrepo
+tcp_wrappers-devel.i686             7.6-56.3.el6             serverrepo
+terminus-fonts.noarch               4.30-1.el6               serverrepo
+tex-cm-lgc.noarch                   0.5-17.1.el6             serverrepo
+tex-kerkis.noarch                   2.0-23.el6               serverrepo
+tex-preview.noarch                  11.85-10.el6             serverrepo
+texinfo.i686                        4.13a-8.el6              serverrepo
+texlive.i686                        2007-56.el6              serverrepo
+texlive-dvips.i686                  2007-56.el6              serverrepo
+texlive-latex.i686                  2007-56.el6              serverrepo
+texlive-texmf.noarch                2007-35.el6              serverrepo
+texlive-texmf-dvips.noarch          2007-35.el6              serverrepo
+texlive-texmf-errata.noarch         2007-7.1.el6             serverrepo
+texlive-texmf-errata-dvips.noarch   2007-7.1.el6             serverrepo
+texlive-texmf-errata-fonts.noarch   2007-7.1.el6             serverrepo
+texlive-texmf-errata-latex.noarch   2007-7.1.el6             serverrepo
+texlive-texmf-fonts.noarch          2007-35.el6              serverrepo
+texlive-texmf-latex.noarch          2007-35.el6              serverrepo
+texlive-utils.i686                  2007-56.el6              serverrepo
+tftp-server.i686                    0.49-5.1.el6             serverrepo
+thai-scalable-garuda-fonts.noarch   0.4.12-2.1.el6           serverrepo
+thai-scalable-kinnari-fonts.noarch  0.4.12-2.1.el6           serverrepo
+thai-scalable-loma-fonts.noarch     0.4.12-2.1.el6           serverrepo
+thai-scalable-norasi-fonts.noarch   0.4.12-2.1.el6           serverrepo
+thai-scalable-purisa-fonts.noarch   0.4.12-2.1.el6           serverrepo
+thai-scalable-sawasdee-fonts.noarch 0.4.12-2.1.el6           serverrepo
+thai-scalable-tlwgmono-fonts.noarch 0.4.12-2.1.el6           serverrepo
+thai-scalable-tlwgtypewriter-fonts.noarch
+                                    0.4.12-2.1.el6           serverrepo
+thai-scalable-tlwgtypist-fonts.noarch
+                                    0.4.12-2.1.el6           serverrepo
+thai-scalable-tlwgtypo-fonts.noarch 0.4.12-2.1.el6           serverrepo
+thai-scalable-umpush-fonts.noarch   0.4.12-2.1.el6           serverrepo
+tk-devel.i686                       1:8.5.7-5.el6            serverrepo
+tog-pegasus.i686                    2:2.9.1-5.el6            serverrepo
+tomcat6.noarch                      6.0.24-15.el6            serverrepo
+tomcat6-el-2.1-api.noarch           6.0.24-15.el6            serverrepo
+tomcat6-jsp-2.1-api.noarch          6.0.24-15.el6            serverrepo
+tomcat6-lib.noarch                  6.0.24-15.el6            serverrepo
+tomcat6-servlet-2.5-api.noarch      6.0.24-15.el6            serverrepo
+totem-mozplugin.i686                2.28.6-2.el6             serverrepo
+transfig.i686                       1:3.2.5-9.el6            serverrepo
+tree.i686                           1.5.3-2.el6              serverrepo
+trilead-ssh2.noarch                 213-6.2.el6              serverrepo
+un-core-batang-fonts.noarch         1.0.2-0.15.080608.el6    serverrepo
+un-core-dinaru-fonts.noarch         1.0.2-0.15.080608.el6    serverrepo
+un-core-graphic-fonts.noarch        1.0.2-0.15.080608.el6    serverrepo
+un-core-gungseo-fonts.noarch        1.0.2-0.15.080608.el6    serverrepo
+un-core-pilgi-fonts.noarch          1.0.2-0.15.080608.el6    serverrepo
+unique-devel.i686                   1.1.4-2.el6              serverrepo
+uuid.i686                           1.6.1-10.el6             serverrepo
+vemana2000-fonts.noarch             1.1.2-3.el6              serverrepo
+virt-manager.noarch                 0.8.4-8.el6              serverrepo
+virt-top.i686                       1.0.4-3.1.el6            serverrepo
+virt-viewer.i686                    0.2.1-2.el6              serverrepo
+vlgothic-p-fonts.noarch             20091202-2.el6           serverrepo
+vlock.i686                          1.3-31.el6               serverrepo
+w3m.i686                            0.5.2-16.el6             serverrepo
+watchdog.i686                       5.5-7.1.el6              serverrepo
+webalizer.i686                      2.21_02-3.3.el6          serverrepo
+ws-commons-util.noarch              1.0.1-13.el6             serverrepo
+ws-jaxme.noarch                     0.5.1-4.6.el6            serverrepo
+wsmancli.i686                       2.2.3-1.el6              serverrepo
+xalan-j2.noarch                     2.7.0-9.8.el6            serverrepo
+xdelta.i686                         1.1.4-8.el6              serverrepo
+xerces-j2.i686                      2.7.1-12.5.el6           serverrepo
+xferstats.i686                      2.16-21.el6              serverrepo
+xfig.i686                           3.2.5-22.a.1.el6         serverrepo
+xfig-common.i686                    3.2.5-22.a.1.el6         serverrepo
+xfig-plain.i686                     3.2.5-22.a.1.el6         serverrepo
+xmldb-api.noarch                    1:0.1-0.4.20011111cvs.1.5.el6
+                                                             serverrepo
+xmldb-api-sdk.noarch                1:0.1-0.4.20011111cvs.1.5.el6
+                                                             serverrepo
+xmlgraphics-commons.noarch          1.3.1-1.1.el6            serverrepo
+xmlrpc3-client.noarch               3.0-4.15.el6             serverrepo
+xmlrpc3-common.noarch               3.0-4.15.el6             serverrepo
+xmltex.noarch                       20020625-16.el6          serverrepo
+xmlto.i686                          0.0.23-3.el6             serverrepo
+xmlto-tex.noarch                    0.0.23-3.el6             serverrepo
+xmltoman.noarch                     0.4-4.el6                serverrepo
+xorg-x11-docs.noarch                1.3-6.1.el6              serverrepo
+xorg-x11-proto-devel.noarch         7.4-35.el6               serverrepo
+xsane.i686                          0.997-8.el6              serverrepo
+xsane-common.i686                   0.997-8.el6              serverrepo
+xsane-gimp.i686                     0.997-8.el6              serverrepo
+xz-devel.i686                       4.999.9-0.3.beta.20091007git.el6
+                                                             serverrepo
+yajl.i686                           1.0.7-3.el6              serverrepo
+ypserv.i686                         2.19-18.el6              serverrepo
+[root@sys96 ~]# yum install httpd -y
+Loaded plugins: aliases, changelog, downloadonly, kabi, presto, protect-packages, refresh-packagekit, rhnplugin,
+              : security, tmprepo, verify, versionlock
+This system is not registered with RHN.
+RHN support will be disabled.
+Loading support for Red Hat kernel ABI
+Existing lock /var/run/yum.pid: another copy is running as pid 3852.
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory :  28 M RSS ( 42 MB VSZ)
+    Started: Mon May 26 08:49:09 2014 - 00:04 ago
+    State  : Sleeping, pid: 3852
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory :  28 M RSS ( 42 MB VSZ)
+    Started: Mon May 26 08:49:09 2014 - 00:06 ago
+    State  : Sleeping, pid: 3852
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory :  28 M RSS ( 42 MB VSZ)
+    Started: Mon May 26 08:49:09 2014 - 00:08 ago
+    State  : Sleeping, pid: 3852
+Setting up Install Process
+Package httpd-2.2.15-5.el6.i686 already installed and latest version
+Nothing to do
+[root@sys96 ~]# yum install php* -y
+Loaded plugins: aliases, changelog, downloadonly, kabi, presto, protect-packages, refresh-packagekit, rhnplugin,
+              : security, tmprepo, verify, versionlock
+This system is not registered with RHN.
+RHN support will be disabled.
+Loading support for Red Hat kernel ABI
+Setting up Install Process
+Package 1:php-pear-1.9.0-2.el6.noarch already installed and latest version
+Package php-pdo-5.3.2-6.el6.i686 already installed and latest version
+Package php-pecl-memcache-3.0.4-3.2.el6.2.i686 already installed and latest version
+Package php-xmlrpc-5.3.2-6.el6.i686 already installed and latest version
+Package php-soap-5.3.2-6.el6.i686 already installed and latest version
+Package php-ldap-5.3.2-6.el6.i686 already installed and latest version
+Package php-odbc-5.3.2-6.el6.i686 already installed and latest version
+Package php-pecl-apc-3.1.3p1-1.2.el6.1.i686 already installed and latest version
+Package php-xml-5.3.2-6.el6.i686 already installed and latest version
+Package php-mysql-5.3.2-6.el6.i686 already installed and latest version
+Package php-cli-5.3.2-6.el6.i686 already installed and latest version
+Package php-pgsql-5.3.2-6.el6.i686 already installed and latest version
+Package php-common-5.3.2-6.el6.i686 already installed and latest version
+Package php-gd-5.3.2-6.el6.i686 already installed and latest version
+Package php-5.3.2-6.el6.i686 already installed and latest version
+Nothing to do
+[root@sys96 ~]# yum install perl* -y
+Loaded plugins: aliases, changelog, downloadonly, kabi, presto, protect-packages, refresh-packagekit, rhnplugin,
+              : security, tmprepo, verify, versionlock
+This system is not registered with RHN.
+RHN support will be disabled.
+Loading support for Red Hat kernel ABI
+Setting up Install Process
+Package perl-MailTools-2.04-4.el6.noarch already installed and latest version
+Package 4:perl-libs-5.10.1-115.el6.i686 already installed and latest version
+Package perl-XML-Twig-3.34-1.el6.noarch already installed and latest version
+Package perl-XML-Dumper-0.81-6.el6.noarch already installed and latest version
+Package 1:perl-parent-0.221-115.el6.i686 already installed and latest version
+Package perl-Archive-Tar-1.58-115.el6.i686 already installed and latest version
+Package 4:perl-Time-HiRes-1.9721-115.el6.i686 already installed and latest version
+Package perl-Socket6-0.23-3.el6.i686 already installed and latest version
+Package perl-IO-Compress-Zlib-2.020-115.el6.i686 already installed and latest version
+Package perl-IO-Compress-Base-2.020-115.el6.i686 already installed and latest version
+Package perl-Crypt-OpenSSL-Random-0.04-9.1.el6.i686 already installed and latest version
+Package perl-GSSAPI-0.26-5.el6.i686 already installed and latest version
+Package perl-DBD-SQLite-1.27-3.el6.i686 already installed and latest version
+Package perl-XML-NamespaceSupport-1.10-3.el6.noarch already installed and latest version
+Package perl-Authen-SASL-2.13-2.el6.noarch already installed and latest version
+Package perl-HTML-Tagset-3.20-4.el6.noarch already installed and latest version
+Package perl-Digest-SHA1-2.12-2.el6.i686 already installed and latest version
+Package 4:perl-devel-5.10.1-115.el6.i686 already installed and latest version
+Package perl-Crypt-PasswdMD5-1.3-6.el6.noarch already installed and latest version
+Package 1:perl-Parse-CPAN-Meta-1.40-115.el6.i686 already installed and latest version
+Package 1:perl-LDAP-0.40-1.el6.noarch already installed and latest version
+Package perl-CPANPLUS-0.88-115.el6.i686 already installed and latest version
+Package perl-ExtUtils-Embed-1.28-115.el6.i686 already installed and latest version
+Package perl-CPAN-1.9402-115.el6.i686 already installed and latest version
+Package perl-Bit-Vector-7.1-2.el6.i686 already installed and latest version
+Package 1:perl-Object-Accessor-0.34-115.el6.i686 already installed and latest version
+Package 1:perl-Params-Check-0.26-115.el6.i686 already installed and latest version
+Package 1:perl-Module-Build-0.3500-115.el6.i686 already installed and latest version
+Package perl-XML-SAX-0.96-7.el6.noarch already installed and latest version
+Package 1:perl-Module-Pluggable-3.90-115.el6.i686 already installed and latest version
+Package 1:perl-IPC-Cmd-0.56-115.el6.i686 already installed and latest version
+Package perl-Text-Iconv-1.7-6.el6.i686 already installed and latest version
+Package perl-Net-LibIDN-0.12-3.el6.i686 already installed and latest version
+Package perl-DBIx-Simple-1.32-3.el6.noarch already installed and latest version
+Package perl-Frontier-RPC-doc-0.07b4p1-9.el6.noarch already installed and latest version
+Package perl-core-5.10.1-115.el6.i686 already installed and latest version
+Package perl-Crypt-OpenSSL-RSA-0.25-10.1.el6.i686 already installed and latest version
+Package perl-Term-UI-0.20-115.el6.i686 already installed and latest version
+Package perl-libxml-perl-0.08-10.el6.noarch already installed and latest version
+Package perl-NetAddr-IP-4.027-3.el6.i686 already installed and latest version
+Package 1:perl-Digest-SHA-5.47-115.el6.i686 already installed and latest version
+Package perl-Test-Simple-0.92-115.el6.i686 already installed and latest version
+Package perl-Compress-Zlib-2.020-115.el6.i686 already installed and latest version
+Package perl-XML-SAX-Writer-0.50-8.el6.noarch already installed and latest version
+Package perl-Module-CoreList-2.18-115.el6.i686 already installed and latest version
+Package 1:perl-Log-Message-0.02-115.el6.i686 already installed and latest version
+Package perl-libwww-perl-5.833-2.el6.noarch already installed and latest version
+Package perl-URI-1.40-2.el6.noarch already installed and latest version
+Package perl-XML-Grove-0.46alpha-40.el6.noarch already installed and latest version
+Package 1:perl-Archive-Extract-0.38-115.el6.i686 already installed and latest version
+Package 1:perl-Module-Load-0.16-115.el6.i686 already installed and latest version
+Package 1:perl-XML-LibXML-1.70-5.el6.i686 already installed and latest version
+Package 1:perl-ExtUtils-ParseXS-2.2003.0-115.el6.i686 already installed and latest version
+Package perl-Carp-Clan-6.03-2.el6.noarch already installed and latest version
+Package perl-DBI-1.609-4.el6.i686 already installed and latest version
+Package perl-XML-Parser-2.36-7.el6.i686 already installed and latest version
+Package 1:perl-Package-Constants-0.02-115.el6.i686 already installed and latest version
+Package perl-Module-Load-Conditional-0.30-115.el6.i686 already installed and latest version
+Package 1:perl-TimeDate-1.16-11.1.el6.noarch already installed and latest version
+Package perl-Test-Harness-3.17-115.el6.i686 already installed and latest version
+Package 1:perl-ExtUtils-CBuilder-0.27-115.el6.i686 already installed and latest version
+Package perl-Convert-ASN1-0.22-1.el6.noarch already installed and latest version
+Package 4:perl-5.10.1-115.el6.i686 already installed and latest version
+Package perl-Crypt-OpenSSL-Bignum-0.04-8.1.el6.i686 already installed and latest version
+Package perl-Mail-DKIM-0.37-2.el6.noarch already installed and latest version
+Package perl-Frontier-RPC-0.07b4p1-9.el6.noarch already installed and latest version
+Package 3:perl-version-0.77-115.el6.i686 already installed and latest version
+Package 1:perl-IO-Zlib-1.09-115.el6.i686 already installed and latest version
+Package 1:perl-Locale-Maketext-Simple-0.18-115.el6.i686 already installed and latest version
+Package perl-HTML-Parser-3.64-2.el6.i686 already installed and latest version
+Package 1:perl-Module-Loaded-0.02-115.el6.i686 already installed and latest version
+Package perl-Compress-Raw-Zlib-2.023-115.el6.i686 already installed and latest version
+Package perl-Encode-Detect-1.01-2.el6.i686 already installed and latest version
+Package perl-BSD-Resource-1.29.03-3.el6.i686 already installed and latest version
+Package perl-Date-Calc-6.3-2.el6.noarch already installed and latest version
+Package perl-XML-Filter-BufferText-1.01-8.el6.noarch already installed and latest version
+Package 1:perl-Pod-Simple-3.13-115.el6.i686 already installed and latest version
+Package perl-DBD-MySQL-4.013-3.el6.i686 already installed and latest version
+Package perl-File-Fetch-0.26-115.el6.i686 already installed and latest version
+Package perl-ExtUtils-MakeMaker-6.55-115.el6.i686 already installed and latest version
+Package perl-Net-DNS-0.65-2.el6.i686 already installed and latest version
+Package 4:perl-suidperl-5.10.1-115.el6.i686 already installed and latest version
+Package perl-Date-Manip-5.54-4.el6.noarch already installed and latest version
+Package perl-IO-Socket-SSL-1.31-2.el6.noarch already installed and latest version
+Package perl-Time-Piece-1.15-115.el6.i686 already installed and latest version
+Package perl-Digest-HMAC-1.01-22.el6.noarch already installed and latest version
+Package perl-Log-Message-Simple-0.04-115.el6.i686 already installed and latest version
+Package 1:perl-Pod-Escapes-1.04-115.el6.i686 already installed and latest version
+Package perl-Net-SSLeay-1.35-9.el6.i686 already installed and latest version
+Package perl-Crypt-SSLeay-0.57-16.el6.i686 already installed and latest version
+Package perl-SNMP_Session-1.12-4.el6.noarch already installed and latest version
+Package perl-IO-Socket-INET6-2.56-4.el6.noarch already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package perl-CGI.i686 0:3.49-115.el6 set to be updated
+---> Package perl-CGI-Session.noarch 0:4.35-5.el6 set to be updated
+---> Package perl-Cache-Memcached.noarch 0:1.28-2.el6 set to be updated
+---> Package perl-Config-General.noarch 0:2.44-1.el6 set to be updated
+---> Package perl-DBD-Pg.i686 0:2.15.1-3.el6 set to be updated
+---> Package perl-Devel-Symdump.noarch 1:2.08-2.el6 set to be updated
+---> Package perl-Error.noarch 1:0.17015-4.el6 set to be updated
+---> Package perl-FreezeThaw.noarch 0:0.45-5.el6 set to be updated
+---> Package perl-Git.noarch 0:1.7.1-2.el6 set to be updated
+--> Processing Dependency: git = 1.7.1-2.el6 for package: perl-Git-1.7.1-2.el6.noarch
+---> Package perl-Newt.i686 0:1.08-26.el6 set to be updated
+---> Package perl-Perlilog.noarch 0:0.3-4.el6 set to be updated
+---> Package perl-Pod-Coverage.noarch 0:0.20-4.el6 set to be updated
+---> Package perl-SGMLSpm.noarch 0:1.03ii-21.el6 set to be updated
+--> Processing Dependency: openjade for package: perl-SGMLSpm-1.03ii-21.el6.noarch
+---> Package perl-String-CRC32.i686 0:1.4-9.el6 set to be updated
+---> Package perl-Sys-Virt.i686 0:0.2.4-1.el6 set to be updated
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.6.4) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.7.2) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.6.1) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.8.1) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.2.3) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.1.1) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.7.3) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.1.9) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.2.1) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.4.5) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.2.0) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0 for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.1.5) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.7.0) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.0.5) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.4.2) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.7.1) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.3.3) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.6.3) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.6.0) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.4.0) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.5.0) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.7.7) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.1.4) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.7.5) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.3.0) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.3.2) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.8.0) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.0.3) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.1.0) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+--> Processing Dependency: libvirt.so.0(LIBVIRT_0.4.1) for package: perl-Sys-Virt-0.2.4-1.el6.i686
+---> Package perl-Test-Pod.noarch 0:1.40-1.el6 set to be updated
+---> Package perl-Test-Pod-Coverage.noarch 0:1.08-8.1.el6 set to be updated
+---> Package perl-XML-DOM.noarch 0:1.44-7.el6 set to be updated
+---> Package perl-XML-RegExp.noarch 0:0.03-7.el6 set to be updated
+---> Package perltidy.noarch 0:20090616-2.1.el6 set to be updated
+--> Running transaction check
+---> Package git.i686 0:1.7.1-2.el6 set to be updated
+---> Package libvirt-client.i686 0:0.8.1-27.el6 set to be updated
+--> Processing Dependency: libnetcf.so.1(NETCF_1.3.0) for package: libvirt-client-0.8.1-27.el6.i686
+--> Processing Dependency: libaugeas.so.0 for package: libvirt-client-0.8.1-27.el6.i686
+--> Processing Dependency: libnetcf.so.1(NETCF_1.2.0) for package: libvirt-client-0.8.1-27.el6.i686
+--> Processing Dependency: cyrus-sasl-md5 for package: libvirt-client-0.8.1-27.el6.i686
+--> Processing Dependency: libnetcf.so.1 for package: libvirt-client-0.8.1-27.el6.i686
+--> Processing Dependency: libyajl.so.1 for package: libvirt-client-0.8.1-27.el6.i686
+--> Processing Dependency: libnetcf.so.1(NETCF_1.0.0) for package: libvirt-client-0.8.1-27.el6.i686
+---> Package openjade.i686 0:1.3.2-36.el6 set to be updated
+--> Processing Dependency: libosp.so.5 for package: openjade-1.3.2-36.el6.i686
+--> Running transaction check
+---> Package augeas-libs.i686 0:0.7.2-3.el6 set to be updated
+---> Package cyrus-sasl-md5.i686 0:2.1.23-8.el6 set to be updated
+---> Package netcf-libs.i686 0:0.1.6-4.el6 set to be updated
+---> Package opensp.i686 0:1.5.2-12.1.el6 set to be updated
+---> Package yajl.i686 0:1.0.7-3.el6 set to be updated
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+==================================================================================================================
+ Package                            Arch               Version                       Repository              Size
+==================================================================================================================
+Installing:
+ perl-CGI                           i686               3.49-115.el6                  serverrepo             191 k
+ perl-CGI-Session                   noarch             4.35-5.el6                    serverrepo             120 k
+ perl-Cache-Memcached               noarch             1.28-2.el6                    serverrepo              26 k
+ perl-Config-General                noarch             2.44-1.el6                    serverrepo              68 k
+ perl-DBD-Pg                        i686               2.15.1-3.el6                  serverrepo             191 k
+ perl-Devel-Symdump                 noarch             1:2.08-2.el6                  serverrepo              17 k
+ perl-Error                         noarch             1:0.17015-4.el6               serverrepo              29 k
+ perl-FreezeThaw                    noarch             0.45-5.el6                    serverrepo              19 k
+ perl-Git                           noarch             1.7.1-2.el6                   serverrepo              28 k
+ perl-Newt                          i686               1.08-26.el6                   serverrepo              72 k
+ perl-Perlilog                      noarch             0.3-4.el6                     serverrepo              61 k
+ perl-Pod-Coverage                  noarch             0.20-4.el6                    serverrepo              27 k
+ perl-SGMLSpm                       noarch             1.03ii-21.el6                 serverrepo              26 k
+ perl-String-CRC32                  i686               1.4-9.el6                     serverrepo              15 k
+ perl-Sys-Virt                      i686               0.2.4-1.el6                   serverrepo             171 k
+ perl-Test-Pod                      noarch             1.40-1.el6                    serverrepo              14 k
+ perl-Test-Pod-Coverage             noarch             1.08-8.1.el6                  serverrepo              13 k
+ perl-XML-DOM                       noarch             1.44-7.el6                    serverrepo             136 k
+ perl-XML-RegExp                    noarch             0.03-7.el6                    serverrepo             9.7 k
+ perltidy                           noarch             20090616-2.1.el6              serverrepo             356 k
+Installing for dependencies:
+ augeas-libs                        i686               0.7.2-3.el6                   serverrepo             253 k
+ cyrus-sasl-md5                     i686               2.1.23-8.el6                  serverrepo              46 k
+ git                                i686               1.7.1-2.el6                   serverrepo             4.5 M
+ libvirt-client                     i686               0.8.1-27.el6                  serverrepo             1.9 M
+ netcf-libs                         i686               0.1.6-4.el6                   serverrepo              48 k
+ openjade                           i686               1.3.2-36.el6                  serverrepo             815 k
+ opensp                             i686               1.5.2-12.1.el6                serverrepo             888 k
+ yajl                               i686               1.0.7-3.el6                   serverrepo              27 k
+
+Transaction Summary
+==================================================================================================================
+Install      28 Package(s)
+Upgrade       0 Package(s)
+
+Total download size: 10 M
+Installed size: 35 M
+Downloading Packages:
+Setting up and reading Presto delta metadata
+Processing delta metadata
+Package(s) data still to download: 10 M
+------------------------------------------------------------------------------------------------------------------
+Total                                                                              12 MB/s |  10 MB     00:00
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing     : augeas-libs-0.7.2-3.el6.i686                                                              1/28
+  Installing     : netcf-libs-0.1.6-4.el6.i686                                                               2/28
+  Installing     : opensp-1.5.2-12.1.el6.i686                                                                3/28
+  Installing     : openjade-1.3.2-36.el6.i686                                                                4/28
+  Installing     : cyrus-sasl-md5-2.1.23-8.el6.i686                                                          5/28
+  Installing     : yajl-1.0.7-3.el6.i686                                                                     6/28
+  Installing     : libvirt-client-0.8.1-27.el6.i686                                                          7/28
+  Installing     : perl-String-CRC32-1.4-9.el6.i686                                                          8/28
+  Installing     : perl-DBD-Pg-2.15.1-3.el6.i686                                                             9/28
+  Installing     : perl-Sys-Virt-0.2.4-1.el6.i686                                                           10/28
+  Installing     : perl-Newt-1.08-26.el6.i686                                                               11/28
+  Installing     : 1:perl-Error-0.17015-4.el6.noarch                                                        12/28
+  Installing     : perl-FreezeThaw-0.45-5.el6.noarch                                                        13/28
+  Installing     : 1:perl-Devel-Symdump-2.08-2.el6.noarch                                                   14/28
+  Installing     : perl-Pod-Coverage-0.20-4.el6.noarch                                                      15/28
+  Installing     : perl-XML-RegExp-0.03-7.el6.noarch                                                        16/28
+  Installing     : perl-XML-DOM-1.44-7.el6.noarch                                                           17/28
+  Installing     : perl-Test-Pod-Coverage-1.08-8.1.el6.noarch                                               18/28
+  Installing     : perl-CGI-Session-4.35-5.el6.noarch                                                       19/28
+  Installing     : perl-Cache-Memcached-1.28-2.el6.noarch                                                   20/28
+  Installing     : perl-SGMLSpm-1.03ii-21.el6.noarch                                                        21/28
+  Installing     : perl-Config-General-2.44-1.el6.noarch                                                    22/28
+  Installing     : perltidy-20090616-2.1.el6.noarch                                                         23/28
+  Installing     : perl-Test-Pod-1.40-1.el6.noarch                                                          24/28
+  Installing     : perl-Perlilog-0.3-4.el6.noarch                                                           25/28
+  Installing     : perl-CGI-3.49-115.el6.i686                                                               26/28
+  Installing     : git-1.7.1-2.el6.i686                                                                     27/28
+  Installing     : perl-Git-1.7.1-2.el6.noarch                                                              28/28
+
+Installed:
+  perl-CGI.i686 0:3.49-115.el6                               perl-CGI-Session.noarch 0:4.35-5.el6
+  perl-Cache-Memcached.noarch 0:1.28-2.el6                   perl-Config-General.noarch 0:2.44-1.el6
+  perl-DBD-Pg.i686 0:2.15.1-3.el6                            perl-Devel-Symdump.noarch 1:2.08-2.el6
+  perl-Error.noarch 1:0.17015-4.el6                          perl-FreezeThaw.noarch 0:0.45-5.el6
+  perl-Git.noarch 0:1.7.1-2.el6                              perl-Newt.i686 0:1.08-26.el6
+  perl-Perlilog.noarch 0:0.3-4.el6                           perl-Pod-Coverage.noarch 0:0.20-4.el6
+  perl-SGMLSpm.noarch 0:1.03ii-21.el6                        perl-String-CRC32.i686 0:1.4-9.el6
+  perl-Sys-Virt.i686 0:0.2.4-1.el6                           perl-Test-Pod.noarch 0:1.40-1.el6
+  perl-Test-Pod-Coverage.noarch 0:1.08-8.1.el6               perl-XML-DOM.noarch 0:1.44-7.el6
+  perl-XML-RegExp.noarch 0:0.03-7.el6                        perltidy.noarch 0:20090616-2.1.el6
+
+Dependency Installed:
+  augeas-libs.i686 0:0.7.2-3.el6         cyrus-sasl-md5.i686 0:2.1.23-8.el6     git.i686 0:1.7.1-2.el6
+  libvirt-client.i686 0:0.8.1-27.el6     netcf-libs.i686 0:0.1.6-4.el6          openjade.i686 0:1.3.2-36.el6
+  opensp.i686 0:1.5.2-12.1.el6           yajl.i686 0:1.0.7-3.el6
+
+Complete!
+[root@sys96 ~]# tail -f /var/log/httpd/error_log
+[Fri May 23 15:07:15 2014] [notice] Apache/2.2.15 (Unix) DAV/2 PHP/5.3.2 mod_perl/2.0.4 Perl/v5.10.1 configured -- resuming normal operations
+[Fri May 23 15:14:27 2014] [notice] caught SIGTERM, shutting down
+[Mon May 26 08:41:07 2014] [notice] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Mon May 26 08:41:07 2014] [notice] suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Mon May 26 08:41:07 2014] [notice] Digest: generating secret for digest authentication ...
+[Mon May 26 08:41:07 2014] [notice] Digest: done
+[Mon May 26 08:41:07 2014] [warn] ./mod_dnssd.c: No services found to register
+[Mon May 26 08:41:08 2014] [notice] Apache/2.2.15 (Unix) DAV/2 PHP/5.3.2 mod_perl/2.0.4 Perl/v5.10.1 configured -- resuming normal operations
+[Mon May 26 08:52:23 2014] [error] [client 192.168.5.11] Directory index forbidden by Options directive: /var/www/html/
+[Mon May 26 08:52:26 2014] [error] [client 192.168.5.11] File does not exist: /var/www/html/favicon.ico
+
+
+
+^[[B
+
+^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B[Mon May 26 08:53:07 2014] [error] [client 192.168.5.11] Directory index forbidden by Options directive: /var/www/html/
+[Mon May 26 08:53:09 2014] [error] [client 192.168.5.11] Directory index forbidden by Options directive: /var/www/html/
+cd /^C
+[root@sys96 ~]# cd /var/www/html/
+[root@sys96 html]# ls
+[root@sys96 html]# ls -l
+total 0
+[root@sys96 html]# cd /var/www/html
+[root@sys96 html]# ls
+[root@sys96 html]# ifconfig
+eth0      Link encap:Ethernet  HWaddr 00:0C:29:64:8D:F6
+          inet addr:192.168.5.21  Bcast:192.168.5.255  Mask:255.255.255.0
+          inet6 addr: fe80::20c:29ff:fe64:8df6/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:16655 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3689 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:1239378 (1.1 MiB)  TX bytes:812012 (792.9 KiB)
+          Interrupt:19 Base address:0x2000
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:125 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:125 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:12700 (12.4 KiB)  TX bytes:12700 (12.4 KiB)
+
+[root@sys96 html]# clear
+[root@sys96 html]# ls
+[root@sys96 html]# useradd -d /var/www/html/mainweb mainweb
+[root@sys96 html]# su - mainweb
+[mainweb@sys96 ~]$ vi index.html
+[mainweb@sys96 ~]$ ls -l
+total 4
+-rw-rw-r--. 1 mainweb mainweb 25 May 26 08:55 index.html
+[mainweb@sys96 ~]$ chmod 755 index.html
+[mainweb@sys96 ~]$ exit
+logout
+[root@sys96 html]# chmod 755 mainweb/
+[root@sys96 html]# vi /etc/httpd/conf/httpd.conf
+[root@sys96 html]# service httpd restart
+Stopping httpd:                                            [  OK  ]
+Starting httpd:                                            [  OK  ]
+[root@sys96 html]# elinks http://192.168.5.21
+                                                                                             http://192.168.5.21/
+   welcome
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     +--------------------------------------+
+                                     ¦                                      ¦
+                                     ¦  Do you really want to exit ELinks?  ¦
+                                     ¦                                      ¦
+                                     ¦          [ Yes ]   [ No ]            ¦
+                                     +--------------------------------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OK                                                                                                       [------]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@sys96 html]# vi /etc/samba/smb.conf
+[root@sys96 html]# smbpasswd -a mainweb
+New SMB password:
+Retype new SMB password:
+Added user mainweb.
+[root@sys96 html]# service smb restart
+Shutting down SMB services:                                [  OK  ]
+Starting SMB services:                                     [  OK  ]
+[root@sys96 html]# ifconfig
+eth0      Link encap:Ethernet  HWaddr 00:0C:29:64:8D:F6
+          inet addr:192.168.5.21  Bcast:192.168.5.255  Mask:255.255.255.0
+          inet6 addr: fe80::20c:29ff:fe64:8df6/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:23432 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:5943 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:1903042 (1.8 MiB)  TX bytes:1101898 (1.0 MiB)
+          Interrupt:19 Base address:0x2000
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:135 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:135 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:13682 (13.3 KiB)  TX bytes:13682 (13.3 KiB)
+
+[root@sys96 html]# clear
+[root@sys96 html]# ifconfig eth0:1 192.168.5.221
+[root@sys96 html]# ifconfig
+eth0      Link encap:Ethernet  HWaddr 00:0C:29:64:8D:F6
+          inet addr:192.168.5.21  Bcast:192.168.5.255  Mask:255.255.255.0
+          inet6 addr: fe80::20c:29ff:fe64:8df6/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:24086 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:6147 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:1958156 (1.8 MiB)  TX bytes:1122933 (1.0 MiB)
+          Interrupt:19 Base address:0x2000
+
+eth0:1    Link encap:Ethernet  HWaddr 00:0C:29:64:8D:F6
+          inet addr:192.168.5.221  Bcast:192.168.5.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          Interrupt:19 Base address:0x2000
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:135 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:135 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:13682 (13.3 KiB)  TX bytes:13682 (13.3 KiB)
+
+[root@sys96 html]# ping 192.168.2.221
+PING 192.168.2.221 (192.168.2.221) 56(84) bytes of data.
+From 192.168.5.19: icmp_seq=2 Redirect Network(New nexthop: 192.168.5.1)
+^C
+--- 192.168.2.221 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1917ms
+
+[root@sys96 html]# ping 192.168.5.221
+PING 192.168.5.221 (192.168.5.221) 56(84) bytes of data.
+64 bytes from 192.168.5.221: icmp_seq=1 ttl=64 time=0.188 ms
+64 bytes from 192.168.5.221: icmp_seq=2 ttl=64 time=0.095 ms
+^C
+--- 192.168.5.221 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1645ms
+rtt min/avg/max/mdev = 0.095/0.141/0.188/0.048 ms
+[root@sys96 html]# ping 192.168.5.21
+PING 192.168.5.21 (192.168.5.21) 56(84) bytes of data.
+64 bytes from 192.168.5.21: icmp_seq=1 ttl=64 time=0.043 ms
+64 bytes from 192.168.5.21: icmp_seq=2 ttl=64 time=0.051 ms
+^C
+--- 192.168.5.21 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1377ms
+rtt min/avg/max/mdev = 0.043/0.047/0.051/0.004 ms
+[root@sys96 html]# clear
+[root@sys96 html]# cd /etc/sysconfig/network-scripts/
+[root@sys96 network-scripts]# ls
+ifcfg-eth0   ifdown-ippp  ifdown-routes  ifup-bnep  ifup-isdn   ifup-routes       net.hotplug
+ifcfg-lo     ifdown-ipv6  ifdown-sit     ifup-eth   ifup-plip   ifup-sit          network-functions
+ifdown       ifdown-isdn  ifdown-tunnel  ifup-ib    ifup-plusb  ifup-tunnel       network-functions-ipv6
+ifdown-bnep  ifdown-post  ifup           ifup-ippp  ifup-post   ifup-wireless
+ifdown-eth   ifdown-ppp   ifup-aliases   ifup-ipv6  ifup-ppp    init.ipv6-global
+[root@sys96 network-scripts]# cp ifcfg-eth0 ifcfg-eth0:1
+[root@sys96 network-scripts]# vi ifcfg-eth0:1
+[root@sys96 network-scripts]# clear
+[root@sys96 network-scripts]# setup
+[root@sys96 network-scripts]# vi ifcfg-eth0
+[root@sys96 network-scripts]# vi ifcfg-eth0:1
+[root@sys96 network-scripts]# clear
+[root@sys96 network-scripts]# ifconfig
+eth0      Link encap:Ethernet  HWaddr 00:0C:29:64:8D:F6
+          inet addr:192.168.5.21  Bcast:192.168.5.255  Mask:255.255.255.0
+          inet6 addr: fe80::20c:29ff:fe64:8df6/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:28058 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:7188 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:2287370 (2.1 MiB)  TX bytes:1262970 (1.2 MiB)
+          Interrupt:19 Base address:0x2000
+
+eth0:1    Link encap:Ethernet  HWaddr 00:0C:29:64:8D:F6
+          inet addr:192.168.5.221  Bcast:192.168.5.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          Interrupt:19 Base address:0x2000
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:151 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:151 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:15154 (14.7 KiB)  TX bytes:15154 (14.7 KiB)
+
+[root@sys96 network-scripts]# useradd -d /var/www/html/website1 website1
+[root@sys96 network-scripts]# su - website1
+[website1@sys96 ~]$ vi index.html
+[website1@sys96 ~]$ ls -l
+total 4
+-rw-rw-r--. 1 website1 website1 37 May 26 09:02 index.html
+[website1@sys96 ~]$ chmod 755 index.html
+[website1@sys96 ~]$ cd ..
+[website1@sys96 html]$ exit
+logout
+[root@sys96 network-scripts]# ls -l
+total 216
+-rw-r--r--. 3 root root   292 May 26 09:01 ifcfg-eth0
+-rw-r--r--. 3 root root   295 May 26 09:02 ifcfg-eth0:1
+-rw-r--r--. 1 root root   254 Sep  1  2010 ifcfg-lo
+lrwxrwxrwx. 1 root root    20 Apr 15 19:55 ifdown -> ../../../sbin/ifdown
+-rwxr-xr-x. 1 root root   627 Sep  1  2010 ifdown-bnep
+-rwxr-xr-x. 1 root root  5059 Sep  1  2010 ifdown-eth
+-rwxr-xr-x. 1 root root   781 Sep  1  2010 ifdown-ippp
+-rwxr-xr-x. 1 root root  4246 Sep  1  2010 ifdown-ipv6
+lrwxrwxrwx. 1 root root    11 Apr 15 19:55 ifdown-isdn -> ifdown-ippp
+-rwxr-xr-x. 1 root root  1481 Sep  1  2010 ifdown-post
+-rwxr-xr-x. 1 root root  1064 Sep  1  2010 ifdown-ppp
+-rwxr-xr-x. 1 root root   651 Sep  1  2010 ifdown-routes
+-rwxr-xr-x. 1 root root  1367 Sep  1  2010 ifdown-sit
+-rwxr-xr-x. 1 root root  1431 Sep  1  2010 ifdown-tunnel
+lrwxrwxrwx. 1 root root    18 Apr 15 19:55 ifup -> ../../../sbin/ifup
+-rwxr-xr-x. 1 root root 13454 Sep  1  2010 ifup-aliases
+-rwxr-xr-x. 1 root root   859 Sep  1  2010 ifup-bnep
+-rwxr-xr-x. 1 root root  9944 Sep  1  2010 ifup-eth
+-rwxr-xr-x. 1 root root  9461 Aug 18  2010 ifup-ib
+-rwxr-xr-x. 1 root root 11971 Sep  1  2010 ifup-ippp
+-rwxr-xr-x. 1 root root 10679 Sep  1  2010 ifup-ipv6
+lrwxrwxrwx. 1 root root     9 Apr 15 19:55 ifup-isdn -> ifup-ippp
+-rwxr-xr-x. 1 root root   727 Sep  1  2010 ifup-plip
+-rwxr-xr-x. 1 root root   954 Sep  1  2010 ifup-plusb
+-rwxr-xr-x. 1 root root  2364 Sep  1  2010 ifup-post
+-rwxr-xr-x. 1 root root  4154 Sep  1  2010 ifup-ppp
+-rwxr-xr-x. 1 root root  1712 Sep  1  2010 ifup-routes
+-rwxr-xr-x. 1 root root  3490 Sep  1  2010 ifup-sit
+-rwxr-xr-x. 1 root root  2482 Sep  1  2010 ifup-tunnel
+-rwxr-xr-x. 1 root root  3770 Sep  1  2010 ifup-wireless
+-rwxr-xr-x. 1 root root  4508 Sep  1  2010 init.ipv6-global
+-rwxr-xr-x. 1 root root  1125 Sep  1  2010 net.hotplug
+-rw-r--r--. 1 root root  9966 Sep  1  2010 network-functions
+-rw-r--r--. 1 root root 29835 Sep  1  2010 network-functions-ipv6
+[root@sys96 network-scripts]# cd /var/www/html/
+[root@sys96 html]# ls
+mainweb  website1
+[root@sys96 html]# chmod 755 website1/
+[root@sys96 html]# vi /etc/httpd/conf/httpd.conf
+[root@sys96 html]# service httpd restart
+Stopping httpd:                                            [  OK  ]
+Starting httpd:                                            [  OK  ]
+[root@sys96 html]# clear
+[root@sys96 html]# vi /etc/httpd/conf/httpd.conf
+[root@sys96 html]# service httpd restart
+Stopping httpd:                                            [  OK  ]
+Starting httpd:                                            [  OK  ]
+[root@sys96 html]# clear
+[root@sys96 html]# yum install webalizer*
+Loaded plugins: aliases, changelog, downloadonly, kabi, presto, protect-packages, refresh-packagekit, rhnplugin,
+              : security, tmprepo, verify, versionlock
+This system is not registered with RHN.
+RHN support will be disabled.
+Loading support for Red Hat kernel ABI
+Setting up Install Process
+Resolving Dependencies
+--> Running transaction check
+---> Package webalizer.i686 0:2.21_02-3.3.el6 set to be updated
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+==================================================================================================================
+ Package                   Arch                 Version                          Repository                  Size
+==================================================================================================================
+Installing:
+ webalizer                 i686                 2.21_02-3.3.el6                  serverrepo                 126 k
+
+Transaction Summary
+==================================================================================================================
+Install       1 Package(s)
+Upgrade       0 Package(s)
+
+Total download size: 126 k
+Installed size: 329 k
+Is this ok [y/N]: y
+Downloading Packages:
+Setting up and reading Presto delta metadata
+Processing delta metadata
+Package(s) data still to download: 126 k
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing     : webalizer-2.21_02-3.3.el6.i686                                                             1/1
+
+Installed:
+  webalizer.i686 0:2.21_02-3.3.el6
+
+Complete!
+[root@sys96 html]# clear
+[root@sys96 html]# cd /etc/httpd/conf.d/
+[root@sys96 conf.d]# ls
+manual.conf  mod_dnssd.conf  mrtg.conf  perl.conf  php.conf  README  webalizer.conf  welcome.conf
+[root@sys96 conf.d]# vi webalizer.conf
+[root@sys96 conf.d]# service httpd  restart
+Stopping httpd:                                            [  OK  ]
+Starting httpd:                                            [  OK  ]
+[root@sys96 conf.d]# webalizer
+Warning: Invalid keyword 'Alias' (webalizer.conf)
+Webalizer V2.21-02 (Linux 2.6.32-71.el6.i686 i686) English
+Using logfile STDIN (clf)
+Creating output in current directory
+Hostname for reports is 'sys96'
+History file not found...
+
+Warning: Truncating oversized hostname
+Skipping bad record (1)
+^[[A
+Warning: Truncating oversized hostname
+Skipping bad record (2)
+
+Warning: Truncating oversized hostname
+Skipping bad record (3)
+^C^Z
+[1]+  Stopped                 webalizer
+[root@sys96 conf.d]# vi webalizer.conf
+[root@sys96 conf.d]# service httpd restart
+Stopping httpd:                                            [  OK  ]
+Starting httpd:                                            [  OK  ]
+[root@sys96 conf.d]# webalizer
+Warning: Invalid keyword 'Alias' (webalizer.conf)
+Webalizer V2.21-02 (Linux 2.6.32-71.el6.i686 i686) English
+Using logfile STDIN (clf)
+Creating output in current directory
+Hostname for reports is 'sys96'
+History file not found...
+
+Warning: Truncating oversized hostname
+Skipping bad record (1)
+^C
+[root@sys96 conf.d]# vi webalizer.conf
+[root@sys96 conf.d]# cd /var/www/usage
+[root@sys96 usage]# cd ..
+[root@sys96 www]# ls -l
+total 28
+drwxr-xr-x.  2 root      root 4096 Aug 14  2010 cgi-bin
+drwxr-xr-x.  3 root      root 4096 Apr 15 19:57 error
+drwxr-xr-x.  4 root      root 4096 May 26 09:02 html
+drwxr-xr-x.  3 root      root 4096 Apr 16 15:18 icons
+drwxr-xr-x. 14 root      root 4096 May 12 12:10 manual
+drwxr-xr-x.  2 root      root 4096 Apr 15 20:07 mrtg
+drwxr-xr-x.  2 webalizer root 4096 May 26 09:06 usage
+[root@sys96 www]# chmod 777 usage/
+[root@sys96 www]# webalizer
+[root@sys96 www]# crontab -e
+crontab: installing new crontab
+[root@sys96 www]# whereis webalizer
+webalizer: /usr/bin/webalizer /etc/webalizer.conf /usr/share/man/man1/webalizer.1.gz
+[root@sys96 www]# crontab -e
+crontab: no changes made to crontab
+[root@sys96 www]# vi /etc/httpd/conf/httpd.conf [root@sys96 html]# ifconfig
+          RX packets:16655 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3689 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:1239378 (1.1 MiB)  TX bytes:812012 (792.9 KiB)
+          Interrupt:19 Base address:0x2000
+
+lo        Link encap:Local Loopback
+4 files to edit
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:125 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:125 errors:0 dropped:0 overruns:0 carrier:0
+Warning: Truncating oversized hostname
+Skipping bad record (2)
+
+Warning: Truncating oversized hostname
+Skipping bad record (3)
+^C^Z
+[1]+  Stopped                 webalizer
+[root@sys96 conf.d]# vi webalizer.conf
+[root@sys96 conf.d]# service httpd restart
+Stopping httpd:                                            [  OK  ]
+Starting httpd:                                            [  OK  ]
+[root@sys96 conf.d]# webalizer
+Warning: Invalid keyword 'Alias' (webalizer.conf)
+Webalizer V2.21-02 (Linux 2.6.32-71.el6.i686 i686) English
+Using logfile STDIN (clf)
+Creating output in current directory
+Hostname for reports is 'sys96'
+History file not found...
+
+Warning: Truncating oversized hostname
+Skipping bad record (1)
+^C
+[root@sys96 conf.d]# vi webalizer.conf
+[root@sys96 conf.d]# cd /var/www/usage
+[root@sys96 usage]# cd ..
+[root@sys96 www]# ls -l
+total 28
+drwxr-xr-x.  2 root      root 4096 Aug 14  2010 cgi-bin
+drwxr-xr-x.  3 root      root 4096 Apr 15 19:57 error
+drwxr-xr-x.  4 root      root 4096 May 26 09:02 html
+drwxr-xr-x.  3 root      root 4096 Apr 16 15:18 icons
+drwxr-xr-x. 14 root      root 4096 May 12 12:10 manual
+drwxr-xr-x.  2 root      root 4096 Apr 15 20:07 mrtg
+drwxr-xr-x.  2 webalizer root 4096 May 26 09:06 usage
+[root@sys96 www]# chmod 777 usage/
+[root@sys96 www]# webalizer
+[root@sys96 www]# crontab -e
+crontab: installing new crontab
+[root@sys96 www]# whereis webalizer
+webalizer: /usr/bin/webalizer /etc/webalizer.conf /usr/share/man/man1/webalizer.1.gz
+[root@sys96 www]# crontab -e
+crontab: no changes made to crontab
+[root@sys96 www]#
+ServerTokens OS
+-- INSERT --
